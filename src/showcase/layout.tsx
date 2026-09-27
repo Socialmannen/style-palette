@@ -11,7 +11,7 @@ export function ShowcaseLayout({ children }: { children: ReactNode }) {
   const [menu, setMenu] = useState(false);
   const [exportOpen, setExportOpen] = useState(false);
   const [copied, setCopied] = useState(false);
-  useEffect(() => { document.documentElement.dataset.palette = palette; document.documentElement.classList.toggle('dark', dark); }, [palette, dark]);
+  useEffect(() => { document.documentElement.dataset['palette'] = palette; document.documentElement.classList.toggle('dark', dark); }, [palette, dark]);
   useEffect(() => { setMenu(false); }, [pathname]);
   return <div className="min-h-screen bg-background text-foreground">
     <header className="sticky top-0 z-30 border-b border-border bg-background/95 backdrop-blur-xl">

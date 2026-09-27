@@ -1,0 +1,3 @@
+- [x] Establish reusable typography, shapes, semantic palettes, and foundational components.
+- [x] Build multi-page live showcase with palette/theme switching and CSS export.
+- [ ] Verify preview and component interactions.

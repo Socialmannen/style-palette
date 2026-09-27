@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as ColorsRouteImport } from './routes/colors'
+import { Route as ComponentsRouteImport } from './routes/components'
 import { Route as TypographyRouteImport } from './routes/typography'
 
 const IndexRoute = IndexRouteImport.update({
@@ -23,6 +24,11 @@ const ColorsRoute = ColorsRouteImport.update({
   path: '/colors',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ComponentsRoute = ComponentsRouteImport.update({
+  id: '/components',
+  path: '/components',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const TypographyRoute = TypographyRouteImport.update({
   id: '/typography',
   path: '/typography',
@@ -32,30 +38,34 @@ const TypographyRoute = TypographyRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/colors': typeof ColorsRoute
+  '/components': typeof ComponentsRoute
   '/typography': typeof TypographyRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/colors': typeof ColorsRoute
+  '/components': typeof ComponentsRoute
   '/typography': typeof TypographyRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/colors': typeof ColorsRoute
+  '/components': typeof ComponentsRoute
   '/typography': typeof TypographyRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/colors' | '/typography'
+  fullPaths: '/' | '/colors' | '/components' | '/typography'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/colors' | '/typography'
-  id: '__root__' | '/' | '/colors' | '/typography'
+  to: '/' | '/colors' | '/components' | '/typography'
+  id: '__root__' | '/' | '/colors' | '/components' | '/typography'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   ColorsRoute: typeof ColorsRoute
+  ComponentsRoute: typeof ComponentsRoute
   TypographyRoute: typeof TypographyRoute
 }
 
@@ -75,6 +85,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ColorsRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/components': {
+      id: '/components'
+      path: '/components'
+      fullPath: '/components'
+      preLoaderRoute: typeof ComponentsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/typography': {
       id: '/typography'
       path: '/typography'
@@ -88,6 +105,7 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   ColorsRoute: ColorsRoute,
+  ComponentsRoute: ComponentsRoute,
   TypographyRoute: TypographyRoute,
 }
 export const routeTree = rootRouteImport

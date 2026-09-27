@@ -1,3 +1,11 @@
+@font-face { font-family: "Figtree"; src: url("../assets/fonts/figtree-400.ttf") format("truetype"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "Figtree"; src: url("../assets/fonts/figtree-500.ttf") format("truetype"); font-weight: 500; font-display: swap; }
+@font-face { font-family: "Figtree"; src: url("../assets/fonts/figtree-600.ttf") format("truetype"); font-weight: 600; font-display: swap; }
+@font-face { font-family: "Figtree"; src: url("../assets/fonts/figtree-700.ttf") format("truetype"); font-weight: 700; font-display: swap; }
+@font-face { font-family: "Outfit"; src: url("../assets/fonts/outfit-500.ttf") format("truetype"); font-weight: 500; font-display: swap; }
+@font-face { font-family: "Outfit"; src: url("../assets/fonts/outfit-600.ttf") format("truetype"); font-weight: 600; font-display: swap; }
+@font-face { font-family: "Outfit"; src: url("../assets/fonts/outfit-700.ttf") format("truetype"); font-weight: 700; font-display: swap; }
+
 @theme inline {
   --font-display: "Outfit", sans-serif;
   --font-sans: "Figtree", sans-serif;

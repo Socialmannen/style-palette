@@ -1,24 +1,17 @@
-import { createFileRoute } from "@tanstack/react-router";
-
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
-export const Route = createFileRoute("/")({
-  component: Index,
-});
-
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
-function Index() {
-  return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
-  );
-}
+import { createFileRoute, Link } from '@tanstack/react-router';
+import { ArrowRight, Box, Layers3, Palette, Type } from 'lucide-react';
+import { Button } from '../design-system/components/button';
+import { Badge } from '../design-system/components/badge';
+import { Card } from '../design-system/components/card';
+import { Input } from '../design-system/components/input';
+import { ShowcaseLayout } from '../showcase/layout';
+import { palettes } from '../showcase/palettes';
+export const Route = createFileRoute('/')({ head: () => ({ meta: [{ title: 'Refined Modern Tech — Design System' }, { name: 'description', content: 'A reusable design foundation with Outfit and Figtree typography, balanced shapes, and four swappable color palettes.' }, { property: 'og:title', content: 'Refined Modern Tech — Design System' }, { property: 'og:description', content: 'One recognizable design language across projects, with a color scheme for each.' }, { property: 'og:type', content: 'website' }, { name: 'twitter:card', content: 'summary' }] }), component: Index });
+function Index() { return <ShowcaseLayout>
+  <section className="grid items-end gap-12 border-b border-border pb-16 lg:grid-cols-[1.1fr_0.9fr] lg:gap-20 lg:pb-24">
+    <div><p className="mb-6 inline-flex items-center gap-2 text-xs font-semibold uppercase text-primary"><span className="size-1.5 rounded-full bg-primary" /> Design system / 01</p><h1 className="max-w-3xl font-display text-5xl font-semibold leading-[1.08] text-foreground sm:text-6xl lg:text-7xl">A familiar feeling. <span className="text-primary">A fresh palette.</span></h1><p className="mt-7 max-w-xl text-lg leading-relaxed text-muted-foreground">Refined Modern Tech gives every project the same considered typography, balanced geometry, and quietly confident details — with its own color identity.</p><div className="mt-9 flex flex-wrap gap-3"><Link to="/components"><Button>Explore components <ArrowRight className="size-4" /></Button></Link><Link to="/colors"><Button variant="outline">See color tokens</Button></Link></div></div>
+    <div className="relative lg:pl-6"><div className="absolute -top-5 left-6 text-xs font-semibold uppercase text-muted-foreground">In practice / Project workspace</div><Card size="lg" className="mt-4"><div className="flex items-center justify-between border-b border-border pb-5"><div className="flex items-center gap-3"><div className="flex size-10 items-center justify-center rounded-md bg-accent text-accent-foreground"><Layers3 className="size-5" /></div><div><div className="font-display font-semibold">Northstar Studio</div><p className="text-xs text-muted-foreground">Workspace overview</p></div></div><Badge variant="accent">Active</Badge></div><div className="grid grid-cols-2 gap-4 py-6"><div><p className="text-xs text-muted-foreground">Projects shipped</p><p className="mt-1 font-display text-3xl font-semibold">24</p></div><div><p className="text-xs text-muted-foreground">Team members</p><p className="mt-1 font-display text-3xl font-semibold">08</p></div></div><label htmlFor="overview-search" className="mb-2 block text-xs font-medium">Find a project</label><Input id="overview-search" placeholder="Search workspace…" /><div className="mt-5 flex justify-end"><Button size="sm">New project <ArrowRight className="size-3.5" /></Button></div></Card><p className="mt-3 text-right text-xs text-muted-foreground">Same building blocks. Every colorway.</p></div>
+  </section>
+  <section className="py-14 md:py-20"><div className="mb-9 flex flex-wrap items-end justify-between gap-4"><div><p className="text-xs font-semibold uppercase text-primary">The foundation</p><h2 className="mt-3 font-display text-3xl font-semibold">One system, many expressions.</h2></div><p className="max-w-md text-sm leading-relaxed text-muted-foreground">Switch the palette above to see how every piece adapts without losing its character.</p></div><div className="grid gap-px overflow-hidden rounded-lg border border-border bg-border sm:grid-cols-2 lg:grid-cols-4">{palettes.map(p => <div key={p.id} className="bg-card p-6"><div className="mb-8 flex gap-1.5"><span className="size-8 rounded-sm" style={{ background: `var(--palette-${p.id})` }} /><span className="size-8 rounded-sm bg-secondary" /><span className="size-8 rounded-sm border border-border bg-background" /></div><h3 className="font-display text-lg font-semibold">{p.name}</h3><p className="mt-1 text-sm text-muted-foreground">{p.description}</p></div>)}</div></section>
+  <section className="grid gap-px overflow-hidden rounded-lg border border-border bg-border md:grid-cols-3">{[{ icon: Palette, title: 'Color', text: 'Semantic roles that make changing a palette effortless.', to: '/colors' as const }, { icon: Type, title: 'Typography', text: 'Outfit and Figtree, working in a clear hierarchy.', to: '/typography' as const }, { icon: Box, title: 'Components', text: 'Thoughtful controls ready to compose into real work.', to: '/components' as const }].map(item => <Link key={item.title} to={item.to} className="group bg-card p-7 transition-colors hover:bg-muted"><item.icon className="size-5 text-primary" /><h3 className="mt-8 font-display text-xl font-semibold">{item.title}</h3><div className="mt-2 flex items-end justify-between gap-4"><p className="max-w-xs text-sm leading-relaxed text-muted-foreground">{item.text}</p><ArrowRight className="size-4 shrink-0 text-muted-foreground transition-transform group-hover:translate-x-1" /></div></Link>)}</section>
+</ShowcaseLayout>; }

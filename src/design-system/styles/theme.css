@@ -79,3 +79,4 @@
 .dark[data-palette="emerald"] { --primary: oklch(0.76 0.15 165); --primary-foreground: oklch(0.13 0.03 165); --accent: oklch(0.27 0.055 165); --accent-foreground: oklch(0.84 0.09 165); --ring: oklch(0.76 0.15 165); }
 .dark[data-palette="amber"] { --primary: oklch(0.78 0.14 75); --primary-foreground: oklch(0.17 0.025 75); --accent: oklch(0.3 0.05 75); --accent-foreground: oklch(0.87 0.09 75); --ring: oklch(0.78 0.14 75); }
 .dark[data-palette="violet"] { --primary: oklch(0.76 0.16 298); --primary-foreground: oklch(0.16 0.03 298); --accent: oklch(0.29 0.07 298); --accent-foreground: oklch(0.85 0.09 298); --ring: oklch(0.76 0.16 298); }
+:root { --palette-cobalt: oklch(0.55 0.22 259); --palette-emerald: oklch(0.51 0.14 165); --palette-amber: oklch(0.58 0.14 68); --palette-violet: oklch(0.57 0.21 298); }

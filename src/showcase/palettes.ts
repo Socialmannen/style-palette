@@ -1,3 +1,4 @@
+import themeCss from '../design-system/styles/theme.css?raw';
 export type Palette = 'cobalt' | 'emerald' | 'amber' | 'violet';
 export const palettes: { id: Palette; name: string; description: string }[] = [
   { id: 'cobalt', name: 'Tech Cobalt', description: 'Clear, confident, connected' },
@@ -13,11 +14,12 @@ export const colorTokens = [
   ['destructive-foreground', 'Text on critical'], ['border', 'Dividers'], ['input', 'Input border'], ['ring', 'Focus indicator'],
 ] as const;
 export const exportTokens = (palette: Palette) => {
-  const sheet = Array.from(document.styleSheets).flatMap((s) => { try { return Array.from(s.cssRules); } catch { return []; } });
-  const collect = (selector: string) => sheet.flatMap((r) => {
-    if ('selectorText' in r && (r as CSSStyleRule).selectorText?.split(',').map(x => x.trim()).includes(selector)) return [r as CSSStyleRule];
-    return [];
-  });
-  const extract = (selector: string) => collect(selector).map(rule => rule.cssText).join('\n');
-  return `/* Refined Modern Tech · ${palettes.find(p => p.id === palette)?.name} */\n/* Import the library theme.css for Tailwind mappings and shared surfaces. */\n${extract(':root')}\n${extract(`[data-palette="${palette}"]`)}\n${extract('.dark')}\n${extract(`.dark[data-palette="${palette}"]`)}`;
+  const block = (selector: string) => {
+    const escaped = selector.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    return themeCss.match(new RegExp(`(?:^|\\n)${escaped}\\s*\\{([^}]*)\\}`, 'm'))?.[1] ?? '';
+  };
+  const mapping = themeCss.match(/@theme inline\s*\{[^}]*\}/)?.[0] ?? '';
+  const paletteBlock = themeCss.match(new RegExp(`\\[data-palette="${palette}"\\]\\s*\\{([^}]*)\\}`))?.[1] ?? '';
+  const darkPalette = block(`.dark[data-palette="${palette}"]`);
+  return `/* Refined Modern Tech · ${palettes.find(p => p.id === palette)?.name} */\n${mapping}\n:root {${block(':root')}\n${paletteBlock}}\n.dark {${block('.dark')}\n${darkPalette}}`;
 };

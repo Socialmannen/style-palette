@@ -4,7 +4,7 @@ Build interfaces that are precise, calm, and useful. The visual identity is shar
 
 ## Foundation
 
-- Use Outfit for display text and headings, Figtree for all interface and body text. Load both families before rendering where possible.
+- Use Outfit for display text and headings, Figtree for all interface and body text. Both families are bundled with the canonical theme stylesheet.
 - Use the balanced corner scale from the theme: compact controls use `rounded-md`, framed surfaces use `rounded-lg`, and small labels use `rounded-sm`.
 - Use semantic color roles, not raw color values. `bg-primary text-primary-foreground` expresses an action; `bg-card text-card-foreground` expresses a raised surface. See the generated design-tokens reference for the full set.
 - Keep surfaces restrained: fine borders, quiet shadows, and generous breathing room. Avoid decorative gradients, glowing ornaments, or gratuitous blur.
@@ -12,7 +12,7 @@ Build interfaces that are precise, calm, and useful. The visual identity is shar
 
 ## Using the library
 
-Import the canonical `src/design-system/styles/theme.css` after Tailwind v4's CSS entry. This file contains both the semantic CSS variables and Tailwind `@theme inline` mappings, so consumers do not need to recreate mappings. Load fonts through document links, not a CSS network import. Import components from the attached library's barrel, or from its component paths.
+Import the canonical `src/design-system/styles/theme.css` after Tailwind v4's CSS entry. This file contains the fonts, semantic CSS variables, and Tailwind `@theme inline` mappings, so consumers do not need to recreate mappings. Import components from the attached library's barrel, or from its component paths.
 
 ```tsx
 import { Button, Card, Input } from '@/design-system/refined-modern-tech';

@@ -21,5 +21,5 @@ export const exportTokens = (palette: Palette) => {
   const mapping = themeCss.match(/@theme inline\s*\{[^}]*\}/)?.[0] ?? '';
   const paletteBlock = themeCss.match(new RegExp(`\\[data-palette="${palette}"\\]\\s*\\{([^}]*)\\}`))?.[1] ?? '';
   const darkPalette = block(`.dark[data-palette="${palette}"]`);
-  return `/* Refined Modern Tech · ${palettes.find(p => p.id === palette)?.name} */\n${mapping}\n:root {${block(':root')}\n${paletteBlock}}\n.dark {${block('.dark')}\n${darkPalette}}`;
+  return `/* Refined Modern Tech · ${palettes.find(p => p.id === palette)?.name} */\n/* Import the library theme.css first for fonts and shared tokens. */\n${mapping}\n:root {${block(':root')}\n${paletteBlock}}\n.dark {${block('.dark')}\n${darkPalette}}`;
 };

@@ -68,6 +68,7 @@ export function MenuComponents() {
   const [loadingValue, setLoadingValue] = useState<string[]>([]);
   const [all, setAll] = useState(true);
   const [some, setSome] = useState<'indeterminate' | true | false>('indeterminate');
+  const [confirmed, setConfirmed] = useState(false);
   const [density, setDensity] = useState<'comfortable' | 'compact'>('comfortable');
   const [scope, setScope] = useState('preferred');
   const [sortKey, setSortKey] = useState<SortKey>('views');
@@ -109,7 +110,7 @@ export function MenuComponents() {
         <Specimen label="indeterminate"><label className="flex items-center gap-2.5 text-sm"><Checkbox checked={some} onCheckedChange={value => setSome(value === true ? true : value === false ? false : 'indeterminate')} /> Selected groups</label></Specimen>
         <Specimen label="small"><label className="flex items-center gap-2.5 text-sm"><Checkbox size="sm" defaultChecked /> Compact option</label></Specimen>
         <Specimen label="disabled"><label className="flex items-center gap-2.5 text-sm text-muted-foreground"><Checkbox disabled defaultChecked /> Locked setting</label></Specimen>
-        <Specimen label="invalid"><div><label className="flex items-center gap-2.5 text-sm"><Checkbox invalid defaultChecked={false} /> Confirmation required</label><p className="mt-2 text-xs text-destructive">Tick this box to continue.</p></div></Specimen>
+        <Specimen label="invalid"><div><label htmlFor="confirmation-required" className="flex items-center gap-2.5 text-sm"><Checkbox id="confirmation-required" checked={confirmed} onCheckedChange={value => setConfirmed(value === true)} invalid={!confirmed} aria-describedby={!confirmed ? 'confirmation-required-error' : undefined} /> Confirmation required</label>{!confirmed && <p id="confirmation-required-error" className="mt-2 text-xs text-destructive">Tick this box to continue.</p>}</div></Specimen>
         <Specimen label="select-all row"><div className="flex w-full items-center justify-between gap-3"><span className="text-sm text-muted-foreground">3 of 4 rows selected</span><Checkbox checked="indeterminate" aria-label="Select all rows" /></div></Specimen>
       </div>
     </Section>

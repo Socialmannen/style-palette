@@ -6,3 +6,6 @@
 - Keep consumer primitives, shared helpers, and the canonical Tailwind v4 theme under `src/design-system/`; attach copies this self-contained source tree.
 - Keep preview-only routes and their data outside the consumer barrel; they demonstrate the library without shipping showcase chrome to attached projects.
 - Share Button's CVA styles with ButtonLink so navigation and actions retain identical variants across consumer projects.
+- Use the motion tokens and utilities from the canonical theme; never introduce local durations or easing curves in consumer components.
+- Keep `data-motion` and `data-motion-speed` independent so projects can choose movement level and consistent global speed.
+- Preserve Radix focus management, Escape handling, outside-click dismissal, and restored focus in Dialog and Sheet.

@@ -300,27 +300,77 @@
           "name": "loading",
           "type": "boolean"
         }
+      ],
+      "usage": "Use for an immediate action in the current view.",
+      "examples": [
+        {
+          "label": "Default",
+          "code": "<Button variant=\"primary\">Save changes</Button>"
+        }
+      ],
+      "antipatterns": [
+        "Do not use for navigation; use ButtonLink."
       ]
     },
     {
       "name": "ButtonLink",
       "file": "src/design-system/components/button-link",
-      "import_path": ""
+      "import_path": "",
+      "usage": "Use for navigation that needs button emphasis.",
+      "examples": [
+        {
+          "label": "Default",
+          "code": "<ButtonLink href=\"/projects\" variant=\"outline\">All projects</ButtonLink>"
+        }
+      ],
+      "antipatterns": [
+        "Do not use for form submission or actions without a destination."
+      ]
     },
     {
       "name": "DropdownMenu",
       "file": "src/design-system/components/dropdown-menu",
-      "import_path": ""
+      "import_path": "",
+      "usage": "Use for a compact set of contextual actions.",
+      "examples": [
+        {
+          "label": "Default",
+          "code": "<DropdownMenu><DropdownMenuTrigger asChild><Button>More</Button></DropdownMenuTrigger><DropdownMenuContent><DropdownMenuItem>Rename</DropdownMenuItem></DropdownMenuContent></DropdownMenu>"
+        }
+      ],
+      "antipatterns": [
+        "Do not use as primary navigation or a long selection form."
+      ]
     },
     {
       "name": "DropdownMenuTrigger",
       "file": "src/design-system/components/dropdown-menu",
-      "import_path": ""
+      "import_path": "",
+      "usage": "Use DropdownMenuTrigger as documented by its parent component pattern.",
+      "examples": [
+        {
+          "label": "Default",
+          "code": "<DropdownMenuTrigger />"
+        }
+      ],
+      "antipatterns": [
+        "Do not remove semantic behavior, keyboard access, or visible focus."
+      ]
     },
     {
       "name": "DropdownMenuContent",
       "file": "src/design-system/components/dropdown-menu",
-      "import_path": ""
+      "import_path": "",
+      "usage": "Use DropdownMenuContent as documented by its parent component pattern.",
+      "examples": [
+        {
+          "label": "Default",
+          "code": "<DropdownMenuContent />"
+        }
+      ],
+      "antipatterns": [
+        "Do not remove semantic behavior, keyboard access, or visible focus."
+      ]
     },
     {
       "name": "DropdownMenuItem",
@@ -332,37 +382,107 @@
           "type": "boolean",
           "default": "false"
         }
+      ],
+      "usage": "Use DropdownMenuItem as documented by its parent component pattern.",
+      "examples": [
+        {
+          "label": "Default",
+          "code": "<DropdownMenuItem />"
+        }
+      ],
+      "antipatterns": [
+        "Do not remove semantic behavior, keyboard access, or visible focus."
       ]
     },
     {
       "name": "DropdownMenuCheckboxItem",
       "file": "src/design-system/components/dropdown-menu",
-      "import_path": ""
+      "import_path": "",
+      "usage": "Use DropdownMenuCheckboxItem as documented by its parent component pattern.",
+      "examples": [
+        {
+          "label": "Default",
+          "code": "<DropdownMenuCheckboxItem />"
+        }
+      ],
+      "antipatterns": [
+        "Do not remove semantic behavior, keyboard access, or visible focus."
+      ]
     },
     {
       "name": "DropdownMenuLabel",
       "file": "src/design-system/components/dropdown-menu",
-      "import_path": ""
+      "import_path": "",
+      "usage": "Use DropdownMenuLabel as documented by its parent component pattern.",
+      "examples": [
+        {
+          "label": "Default",
+          "code": "<DropdownMenuLabel />"
+        }
+      ],
+      "antipatterns": [
+        "Do not remove semantic behavior, keyboard access, or visible focus."
+      ]
     },
     {
       "name": "DropdownMenuSeparator",
       "file": "src/design-system/components/dropdown-menu",
-      "import_path": ""
+      "import_path": "",
+      "usage": "Use DropdownMenuSeparator as documented by its parent component pattern.",
+      "examples": [
+        {
+          "label": "Default",
+          "code": "<DropdownMenuSeparator />"
+        }
+      ],
+      "antipatterns": [
+        "Do not remove semantic behavior, keyboard access, or visible focus."
+      ]
     },
     {
       "name": "DropdownMenuSub",
       "file": "src/design-system/components/dropdown-menu",
-      "import_path": ""
+      "import_path": "",
+      "usage": "Use DropdownMenuSub as documented by its parent component pattern.",
+      "examples": [
+        {
+          "label": "Default",
+          "code": "<DropdownMenuSub />"
+        }
+      ],
+      "antipatterns": [
+        "Do not remove semantic behavior, keyboard access, or visible focus."
+      ]
     },
     {
       "name": "DropdownMenuSubTrigger",
       "file": "src/design-system/components/dropdown-menu",
-      "import_path": ""
+      "import_path": "",
+      "usage": "Use DropdownMenuSubTrigger as documented by its parent component pattern.",
+      "examples": [
+        {
+          "label": "Default",
+          "code": "<DropdownMenuSubTrigger />"
+        }
+      ],
+      "antipatterns": [
+        "Do not remove semantic behavior, keyboard access, or visible focus."
+      ]
     },
     {
       "name": "DropdownMenuSubContent",
       "file": "src/design-system/components/dropdown-menu",
-      "import_path": ""
+      "import_path": "",
+      "usage": "Use DropdownMenuSubContent as documented by its parent component pattern.",
+      "examples": [
+        {
+          "label": "Default",
+          "code": "<DropdownMenuSubContent />"
+        }
+      ],
+      "antipatterns": [
+        "Do not remove semantic behavior, keyboard access, or visible focus."
+      ]
     },
     {
       "name": "Input",
@@ -373,6 +493,16 @@
           "name": "invalid",
           "type": "boolean"
         }
+      ],
+      "usage": "Use for labeled single-line text entry.",
+      "examples": [
+        {
+          "label": "Default",
+          "code": "<Input id=\"email\" type=\"email\" />"
+        }
+      ],
+      "antipatterns": [
+        "Do not use without an associated accessible label."
       ]
     },
     {
@@ -392,6 +522,16 @@
           ],
           "default": "primary"
         }
+      ],
+      "usage": "Use for compact status or category labels.",
+      "examples": [
+        {
+          "label": "Default",
+          "code": "<Badge variant=\"accent\">In review</Badge>"
+        }
+      ],
+      "antipatterns": [
+        "Do not use as an interactive control."
       ]
     },
     {
@@ -419,6 +559,16 @@
           ],
           "default": "md"
         }
+      ],
+      "usage": "Use to group related content on one framed surface.",
+      "examples": [
+        {
+          "label": "Default",
+          "code": "<Card size=\"md\">Project summary</Card>"
+        }
+      ],
+      "antipatterns": [
+        "Do not nest cards inside cards."
       ]
     },
     {
@@ -435,6 +585,16 @@
           ],
           "default": "md"
         }
+      ],
+      "usage": "Use for a binary setting that takes effect immediately.",
+      "examples": [
+        {
+          "label": "Default",
+          "code": "<Switch id=\"alerts\" defaultChecked />"
+        }
+      ],
+      "antipatterns": [
+        "Do not use for multi-option choices or submit actions."
       ]
     },
     {
@@ -446,6 +606,616 @@
           "name": "invalid",
           "type": "boolean"
         }
+      ],
+      "usage": "Use for labeled multi-line writing and notes.",
+      "examples": [
+        {
+          "label": "Default",
+          "code": "<Textarea id=\"brief\" placeholder=\"Project brief\" />"
+        }
+      ],
+      "antipatterns": [
+        "Do not use when a short single-line value fits Input."
+      ]
+    },
+    {
+      "name": "Accordion",
+      "file": "src/design-system/components/accordion",
+      "import_path": "",
+      "usage": "Use for grouped disclosures with visible headings.",
+      "examples": [
+        {
+          "label": "Default",
+          "code": "<Accordion type=\"single\" collapsible>...</Accordion>"
+        }
+      ],
+      "antipatterns": [
+        "Do not hide critical actions by default."
+      ]
+    },
+    {
+      "name": "AccordionItem",
+      "file": "src/design-system/components/accordion",
+      "import_path": "",
+      "usage": "Use for grouped disclosures with visible headings.",
+      "examples": [
+        {
+          "label": "Default",
+          "code": "<Accordion type=\"single\" collapsible>...</Accordion>"
+        }
+      ],
+      "antipatterns": [
+        "Do not hide critical actions by default."
+      ]
+    },
+    {
+      "name": "AccordionTrigger",
+      "file": "src/design-system/components/accordion",
+      "import_path": "",
+      "usage": "Use for grouped disclosures with visible headings.",
+      "examples": [
+        {
+          "label": "Default",
+          "code": "<Accordion type=\"single\" collapsible>...</Accordion>"
+        }
+      ],
+      "antipatterns": [
+        "Do not hide critical actions by default."
+      ]
+    },
+    {
+      "name": "AccordionContent",
+      "file": "src/design-system/components/accordion",
+      "import_path": "",
+      "usage": "Use for grouped disclosures with visible headings.",
+      "examples": [
+        {
+          "label": "Default",
+          "code": "<Accordion type=\"single\" collapsible>...</Accordion>"
+        }
+      ],
+      "antipatterns": [
+        "Do not hide critical actions by default."
+      ]
+    },
+    {
+      "name": "Collapsible",
+      "file": "src/design-system/components/collapsible",
+      "import_path": "",
+      "usage": "Use to reveal one related block inline.",
+      "examples": [
+        {
+          "label": "Default",
+          "code": "<Collapsible>...</Collapsible>"
+        }
+      ],
+      "antipatterns": [
+        "Do not use for unrelated page sections."
+      ]
+    },
+    {
+      "name": "CollapsibleTrigger",
+      "file": "src/design-system/components/collapsible",
+      "import_path": "",
+      "usage": "Use to reveal one related block inline.",
+      "examples": [
+        {
+          "label": "Default",
+          "code": "<Collapsible>...</Collapsible>"
+        }
+      ],
+      "antipatterns": [
+        "Do not use for unrelated page sections."
+      ]
+    },
+    {
+      "name": "CollapsibleContent",
+      "file": "src/design-system/components/collapsible",
+      "import_path": "",
+      "usage": "Use to reveal one related block inline.",
+      "examples": [
+        {
+          "label": "Default",
+          "code": "<Collapsible>...</Collapsible>"
+        }
+      ],
+      "antipatterns": [
+        "Do not use for unrelated page sections."
+      ]
+    },
+    {
+      "name": "Dialog",
+      "file": "src/design-system/components/dialog",
+      "import_path": "",
+      "usage": "Use for focused decisions or short modal forms.",
+      "examples": [
+        {
+          "label": "Default",
+          "code": "<Dialog><DialogContent><DialogTitle>Edit</DialogTitle></DialogContent></Dialog>"
+        }
+      ],
+      "antipatterns": [
+        "Do not use for long workflows or navigation."
+      ]
+    },
+    {
+      "name": "DialogTrigger",
+      "file": "src/design-system/components/dialog",
+      "import_path": "",
+      "usage": "Use for focused decisions or short modal forms.",
+      "examples": [
+        {
+          "label": "Default",
+          "code": "<Dialog><DialogContent><DialogTitle>Edit</DialogTitle></DialogContent></Dialog>"
+        }
+      ],
+      "antipatterns": [
+        "Do not use for long workflows or navigation."
+      ]
+    },
+    {
+      "name": "DialogClose",
+      "file": "src/design-system/components/dialog",
+      "import_path": "",
+      "usage": "Use for focused decisions or short modal forms.",
+      "examples": [
+        {
+          "label": "Default",
+          "code": "<Dialog><DialogContent><DialogTitle>Edit</DialogTitle></DialogContent></Dialog>"
+        }
+      ],
+      "antipatterns": [
+        "Do not use for long workflows or navigation."
+      ]
+    },
+    {
+      "name": "DialogOverlay",
+      "file": "src/design-system/components/dialog",
+      "import_path": "",
+      "usage": "Use for focused decisions or short modal forms.",
+      "examples": [
+        {
+          "label": "Default",
+          "code": "<Dialog><DialogContent><DialogTitle>Edit</DialogTitle></DialogContent></Dialog>"
+        }
+      ],
+      "antipatterns": [
+        "Do not use for long workflows or navigation."
+      ]
+    },
+    {
+      "name": "DialogContent",
+      "file": "src/design-system/components/dialog",
+      "import_path": "",
+      "usage": "Use for focused decisions or short modal forms.",
+      "examples": [
+        {
+          "label": "Default",
+          "code": "<Dialog><DialogContent><DialogTitle>Edit</DialogTitle></DialogContent></Dialog>"
+        }
+      ],
+      "antipatterns": [
+        "Do not use for long workflows or navigation."
+      ]
+    },
+    {
+      "name": "DialogHeader",
+      "file": "src/design-system/components/dialog",
+      "import_path": "",
+      "usage": "Use for focused decisions or short modal forms.",
+      "examples": [
+        {
+          "label": "Default",
+          "code": "<Dialog><DialogContent><DialogTitle>Edit</DialogTitle></DialogContent></Dialog>"
+        }
+      ],
+      "antipatterns": [
+        "Do not use for long workflows or navigation."
+      ]
+    },
+    {
+      "name": "DialogFooter",
+      "file": "src/design-system/components/dialog",
+      "import_path": "",
+      "usage": "Use for focused decisions or short modal forms.",
+      "examples": [
+        {
+          "label": "Default",
+          "code": "<Dialog><DialogContent><DialogTitle>Edit</DialogTitle></DialogContent></Dialog>"
+        }
+      ],
+      "antipatterns": [
+        "Do not use for long workflows or navigation."
+      ]
+    },
+    {
+      "name": "DialogTitle",
+      "file": "src/design-system/components/dialog",
+      "import_path": "",
+      "usage": "Use for focused decisions or short modal forms.",
+      "examples": [
+        {
+          "label": "Default",
+          "code": "<Dialog><DialogContent><DialogTitle>Edit</DialogTitle></DialogContent></Dialog>"
+        }
+      ],
+      "antipatterns": [
+        "Do not use for long workflows or navigation."
+      ]
+    },
+    {
+      "name": "DialogDescription",
+      "file": "src/design-system/components/dialog",
+      "import_path": "",
+      "usage": "Use for focused decisions or short modal forms.",
+      "examples": [
+        {
+          "label": "Default",
+          "code": "<Dialog><DialogContent><DialogTitle>Edit</DialogTitle></DialogContent></Dialog>"
+        }
+      ],
+      "antipatterns": [
+        "Do not use for long workflows or navigation."
+      ]
+    },
+    {
+      "name": "Popover",
+      "file": "src/design-system/components/popover",
+      "import_path": "",
+      "usage": "Use for compact interactive content tied to one trigger.",
+      "examples": [
+        {
+          "label": "Default",
+          "code": "<Popover><PopoverContent>Filters</PopoverContent></Popover>"
+        }
+      ],
+      "antipatterns": [
+        "Do not use for destructive confirmation."
+      ]
+    },
+    {
+      "name": "PopoverTrigger",
+      "file": "src/design-system/components/popover",
+      "import_path": "",
+      "usage": "Use for compact interactive content tied to one trigger.",
+      "examples": [
+        {
+          "label": "Default",
+          "code": "<Popover><PopoverContent>Filters</PopoverContent></Popover>"
+        }
+      ],
+      "antipatterns": [
+        "Do not use for destructive confirmation."
+      ]
+    },
+    {
+      "name": "PopoverAnchor",
+      "file": "src/design-system/components/popover",
+      "import_path": "",
+      "usage": "Use for compact interactive content tied to one trigger.",
+      "examples": [
+        {
+          "label": "Default",
+          "code": "<Popover><PopoverContent>Filters</PopoverContent></Popover>"
+        }
+      ],
+      "antipatterns": [
+        "Do not use for destructive confirmation."
+      ]
+    },
+    {
+      "name": "PopoverContent",
+      "file": "src/design-system/components/popover",
+      "import_path": "",
+      "usage": "Use for compact interactive content tied to one trigger.",
+      "examples": [
+        {
+          "label": "Default",
+          "code": "<Popover><PopoverContent>Filters</PopoverContent></Popover>"
+        }
+      ],
+      "antipatterns": [
+        "Do not use for destructive confirmation."
+      ]
+    },
+    {
+      "name": "Progress",
+      "file": "src/design-system/components/progress",
+      "import_path": "",
+      "usage": "Use for known completion or indeterminate activity.",
+      "examples": [
+        {
+          "label": "Default",
+          "code": "<Progress value={64} />"
+        }
+      ],
+      "antipatterns": [
+        "Do not use as decorative motion."
+      ]
+    },
+    {
+      "name": "Sheet",
+      "file": "src/design-system/components/sheet",
+      "import_path": "",
+      "usage": "Use for supporting work that slides from a page edge.",
+      "examples": [
+        {
+          "label": "Default",
+          "code": "<Sheet><SheetContent side=\"right\"><SheetTitle>Filters</SheetTitle></SheetContent></Sheet>"
+        }
+      ],
+      "antipatterns": [
+        "Do not use when content deserves its own page."
+      ]
+    },
+    {
+      "name": "SheetTrigger",
+      "file": "src/design-system/components/sheet",
+      "import_path": "",
+      "usage": "Use for supporting work that slides from a page edge.",
+      "examples": [
+        {
+          "label": "Default",
+          "code": "<Sheet><SheetContent side=\"right\"><SheetTitle>Filters</SheetTitle></SheetContent></Sheet>"
+        }
+      ],
+      "antipatterns": [
+        "Do not use when content deserves its own page."
+      ]
+    },
+    {
+      "name": "SheetClose",
+      "file": "src/design-system/components/sheet",
+      "import_path": "",
+      "usage": "Use for supporting work that slides from a page edge.",
+      "examples": [
+        {
+          "label": "Default",
+          "code": "<Sheet><SheetContent side=\"right\"><SheetTitle>Filters</SheetTitle></SheetContent></Sheet>"
+        }
+      ],
+      "antipatterns": [
+        "Do not use when content deserves its own page."
+      ]
+    },
+    {
+      "name": "SheetOverlay",
+      "file": "src/design-system/components/sheet",
+      "import_path": "",
+      "usage": "Use for supporting work that slides from a page edge.",
+      "examples": [
+        {
+          "label": "Default",
+          "code": "<Sheet><SheetContent side=\"right\"><SheetTitle>Filters</SheetTitle></SheetContent></Sheet>"
+        }
+      ],
+      "antipatterns": [
+        "Do not use when content deserves its own page."
+      ]
+    },
+    {
+      "name": "SheetContent",
+      "file": "src/design-system/components/sheet",
+      "import_path": "",
+      "usage": "Use for supporting work that slides from a page edge.",
+      "examples": [
+        {
+          "label": "Default",
+          "code": "<Sheet><SheetContent side=\"right\"><SheetTitle>Filters</SheetTitle></SheetContent></Sheet>"
+        }
+      ],
+      "antipatterns": [
+        "Do not use when content deserves its own page."
+      ]
+    },
+    {
+      "name": "SheetHeader",
+      "file": "src/design-system/components/sheet",
+      "import_path": "",
+      "usage": "Use for supporting work that slides from a page edge.",
+      "examples": [
+        {
+          "label": "Default",
+          "code": "<Sheet><SheetContent side=\"right\"><SheetTitle>Filters</SheetTitle></SheetContent></Sheet>"
+        }
+      ],
+      "antipatterns": [
+        "Do not use when content deserves its own page."
+      ]
+    },
+    {
+      "name": "SheetFooter",
+      "file": "src/design-system/components/sheet",
+      "import_path": "",
+      "usage": "Use for supporting work that slides from a page edge.",
+      "examples": [
+        {
+          "label": "Default",
+          "code": "<Sheet><SheetContent side=\"right\"><SheetTitle>Filters</SheetTitle></SheetContent></Sheet>"
+        }
+      ],
+      "antipatterns": [
+        "Do not use when content deserves its own page."
+      ]
+    },
+    {
+      "name": "SheetTitle",
+      "file": "src/design-system/components/sheet",
+      "import_path": "",
+      "usage": "Use for supporting work that slides from a page edge.",
+      "examples": [
+        {
+          "label": "Default",
+          "code": "<Sheet><SheetContent side=\"right\"><SheetTitle>Filters</SheetTitle></SheetContent></Sheet>"
+        }
+      ],
+      "antipatterns": [
+        "Do not use when content deserves its own page."
+      ]
+    },
+    {
+      "name": "SheetDescription",
+      "file": "src/design-system/components/sheet",
+      "import_path": "",
+      "usage": "Use for supporting work that slides from a page edge.",
+      "examples": [
+        {
+          "label": "Default",
+          "code": "<Sheet><SheetContent side=\"right\"><SheetTitle>Filters</SheetTitle></SheetContent></Sheet>"
+        }
+      ],
+      "antipatterns": [
+        "Do not use when content deserves its own page."
+      ]
+    },
+    {
+      "name": "Skeleton",
+      "file": "src/design-system/components/skeleton",
+      "import_path": "",
+      "usage": "Use as a temporary loading placeholder.",
+      "examples": [
+        {
+          "label": "Default",
+          "code": "<Skeleton className=\"h-4 w-32\" />"
+        }
+      ],
+      "antipatterns": [
+        "Do not use for errors or empty states."
+      ]
+    },
+    {
+      "name": "Tabs",
+      "file": "src/design-system/components/tabs",
+      "import_path": "",
+      "usage": "Use for sibling views at the same hierarchy.",
+      "examples": [
+        {
+          "label": "Default",
+          "code": "<Tabs defaultValue=\"overview\">...</Tabs>"
+        }
+      ],
+      "antipatterns": [
+        "Do not use as primary site navigation."
+      ]
+    },
+    {
+      "name": "TabsList",
+      "file": "src/design-system/components/tabs",
+      "import_path": "",
+      "usage": "Use for sibling views at the same hierarchy.",
+      "examples": [
+        {
+          "label": "Default",
+          "code": "<Tabs defaultValue=\"overview\">...</Tabs>"
+        }
+      ],
+      "antipatterns": [
+        "Do not use as primary site navigation."
+      ]
+    },
+    {
+      "name": "TabsTrigger",
+      "file": "src/design-system/components/tabs",
+      "import_path": "",
+      "usage": "Use for sibling views at the same hierarchy.",
+      "examples": [
+        {
+          "label": "Default",
+          "code": "<Tabs defaultValue=\"overview\">...</Tabs>"
+        }
+      ],
+      "antipatterns": [
+        "Do not use as primary site navigation."
+      ]
+    },
+    {
+      "name": "TabsContent",
+      "file": "src/design-system/components/tabs",
+      "import_path": "",
+      "usage": "Use for sibling views at the same hierarchy.",
+      "examples": [
+        {
+          "label": "Default",
+          "code": "<Tabs defaultValue=\"overview\">...</Tabs>"
+        }
+      ],
+      "antipatterns": [
+        "Do not use as primary site navigation."
+      ]
+    },
+    {
+      "name": "Toaster",
+      "file": "src/design-system/components/toast",
+      "import_path": "",
+      "usage": "Mount once for short non-blocking feedback.",
+      "examples": [
+        {
+          "label": "Default",
+          "code": "<Toaster />"
+        }
+      ],
+      "antipatterns": [
+        "Do not replace inline validation or critical confirmation."
+      ]
+    },
+    {
+      "name": "TooltipProvider",
+      "file": "src/design-system/components/tooltip",
+      "import_path": "",
+      "usage": "Use for short nonessential helper text.",
+      "examples": [
+        {
+          "label": "Default",
+          "code": "<TooltipProvider><Tooltip>...</Tooltip></TooltipProvider>"
+        }
+      ],
+      "antipatterns": [
+        "Do not put essential instructions only in a tooltip."
+      ]
+    },
+    {
+      "name": "Tooltip",
+      "file": "src/design-system/components/tooltip",
+      "import_path": "",
+      "usage": "Use for short nonessential helper text.",
+      "examples": [
+        {
+          "label": "Default",
+          "code": "<TooltipProvider><Tooltip>...</Tooltip></TooltipProvider>"
+        }
+      ],
+      "antipatterns": [
+        "Do not put essential instructions only in a tooltip."
+      ]
+    },
+    {
+      "name": "TooltipTrigger",
+      "file": "src/design-system/components/tooltip",
+      "import_path": "",
+      "usage": "Use for short nonessential helper text.",
+      "examples": [
+        {
+          "label": "Default",
+          "code": "<TooltipProvider><Tooltip>...</Tooltip></TooltipProvider>"
+        }
+      ],
+      "antipatterns": [
+        "Do not put essential instructions only in a tooltip."
+      ]
+    },
+    {
+      "name": "TooltipContent",
+      "file": "src/design-system/components/tooltip",
+      "import_path": "",
+      "usage": "Use for short nonessential helper text.",
+      "examples": [
+        {
+          "label": "Default",
+          "code": "<TooltipProvider><Tooltip>...</Tooltip></TooltipProvider>"
+        }
+      ],
+      "antipatterns": [
+        "Do not put essential instructions only in a tooltip."
       ]
     }
   ]

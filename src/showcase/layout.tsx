@@ -3,6 +3,8 @@ import { useEffect, useState, type ReactNode } from 'react';
 import { ArrowUpRight, Check, ChevronDown, Code2, Copy, Menu, Moon, Sun, X } from 'lucide-react';
 import { Button } from '../design-system/components/button';
 import { palettes, exportTokens, type Palette } from './palettes';
+type MotionLevel = 'subtle' | 'expressive' | 'none';
+type MotionSpeed = 'slow' | 'normal' | 'fast';
 const links = [['/', 'Overview'], ['/colors', 'Colors'], ['/typography', 'Typography'], ['/components', 'Components']] as const;
 export function ShowcaseLayout({ children }: { children: ReactNode }) {
   const pathname = useRouterState({ select: s => s.location.pathname });
@@ -11,7 +13,10 @@ export function ShowcaseLayout({ children }: { children: ReactNode }) {
   const [menu, setMenu] = useState(false);
   const [exportOpen, setExportOpen] = useState(false);
   const [copied, setCopied] = useState(false);
+  const [motion, setMotion] = useState<MotionLevel>('subtle');
+  const [motionSpeed, setMotionSpeed] = useState<MotionSpeed>('normal');
   useEffect(() => { document.documentElement.dataset['palette'] = palette; document.documentElement.classList.toggle('dark', dark); }, [palette, dark]);
+  useEffect(() => { document.documentElement.dataset['motion'] = motion; document.documentElement.dataset['motionSpeed'] = motionSpeed; }, [motion, motionSpeed]);
   useEffect(() => { setMenu(false); }, [pathname]);
   return <div className="min-h-screen bg-background text-foreground">
     <header className="sticky top-0 z-30 border-b border-border bg-background/95 backdrop-blur-xl">
@@ -21,12 +26,14 @@ export function ShowcaseLayout({ children }: { children: ReactNode }) {
         <nav className="hidden items-center gap-1 md:flex" aria-label="Main navigation">{links.map(([href, label]) => <Link key={href} to={href} className={`rounded-md px-3 py-2 text-sm font-medium transition-colors ${pathname === href ? 'bg-secondary text-foreground' : 'text-muted-foreground hover:text-foreground'}`}>{label}</Link>)}</nav>
         <div className="ml-auto flex items-center gap-2">
           <div className="relative"><select aria-label="Color palette" value={palette} onChange={e => setPalette(e.target.value as Palette)} className="h-9 appearance-none rounded-md border border-border bg-card pl-3 pr-8 text-xs font-medium text-foreground outline-none focus-visible:ring-2 focus-visible:ring-ring">{palettes.map(p => <option key={p.id} value={p.id}>{p.name}</option>)}</select><ChevronDown className="pointer-events-none absolute right-2 top-2.5 size-4 text-muted-foreground" /></div>
+          <div className="relative hidden lg:block"><select aria-label="Motion level" value={motion} onChange={e => setMotion(e.target.value as MotionLevel)} className="h-9 appearance-none rounded-md border border-border bg-card pl-3 pr-8 text-xs font-medium text-foreground outline-none focus-visible:ring-2 focus-visible:ring-ring"><option value="subtle">Subtle motion</option><option value="expressive">Expressive motion</option><option value="none">No motion</option></select><ChevronDown className="pointer-events-none absolute right-2 top-2.5 size-4 text-muted-foreground" /></div>
+          <div className="relative hidden xl:block"><select aria-label="Motion speed" value={motionSpeed} onChange={e => setMotionSpeed(e.target.value as MotionSpeed)} className="h-9 appearance-none rounded-md border border-border bg-card pl-3 pr-8 text-xs font-medium text-foreground outline-none focus-visible:ring-2 focus-visible:ring-ring"><option value="slow">Slow</option><option value="normal">Normal</option><option value="fast">Fast</option></select><ChevronDown className="pointer-events-none absolute right-2 top-2.5 size-4 text-muted-foreground" /></div>
           <Button variant="ghost" size="icon" aria-label={dark ? 'Switch to light mode' : 'Switch to dark mode'} title={dark ? 'Light mode' : 'Dark mode'} onClick={() => setDark(!dark)}>{dark ? <Sun className="size-4" /> : <Moon className="size-4" />}</Button>
           <Button variant="outline" size="sm" className="hidden sm:inline-flex" onClick={() => setExportOpen(true)}><Code2 className="size-4" /> Export CSS</Button>
           <Button variant="ghost" size="icon" className="md:hidden" aria-label="Open navigation" onClick={() => setMenu(!menu)}><Menu className="size-5" /></Button>
         </div>
       </div>
-      {menu && <nav aria-label="Mobile navigation" className="flex flex-wrap gap-1 border-t border-border p-3 md:hidden">{links.map(([href, label]) => <Link key={href} to={href} className="rounded-md px-3 py-2 text-sm text-foreground hover:bg-muted">{label}</Link>)}<Button variant="ghost" size="sm" onClick={() => { setExportOpen(true); setMenu(false); }}>Export CSS <ArrowUpRight className="size-4" /></Button></nav>}
+      {menu && <div className="border-t border-border p-3 md:hidden"><nav aria-label="Mobile navigation" className="flex flex-wrap gap-1">{links.map(([href, label]) => <Link key={href} to={href} className="rounded-md px-3 py-2 text-sm text-foreground hover:bg-muted">{label}</Link>)}<Button variant="ghost" size="sm" onClick={() => { setExportOpen(true); setMenu(false); }}>Export CSS <ArrowUpRight className="size-4" /></Button></nav><div className="mt-3 grid grid-cols-2 gap-2 border-t border-border pt-3"><select aria-label="Motion level" value={motion} onChange={e => setMotion(e.target.value as MotionLevel)} className="h-9 rounded-md border border-border bg-card px-2 text-xs text-foreground"><option value="subtle">Subtle motion</option><option value="expressive">Expressive motion</option><option value="none">No motion</option></select><select aria-label="Motion speed" value={motionSpeed} onChange={e => setMotionSpeed(e.target.value as MotionSpeed)} className="h-9 rounded-md border border-border bg-card px-2 text-xs text-foreground"><option value="slow">Slow</option><option value="normal">Normal</option><option value="fast">Fast</option></select></div></div>}
     </header>
     <main className="mx-auto max-w-[1440px] px-5 pb-24 pt-12 md:px-10 md:pt-16">{children}</main>
     <footer className="border-t border-border px-5 py-6 text-center text-xs text-muted-foreground">Refined Modern Tech · A shared foundation, your own color.</footer>

@@ -14,17 +14,17 @@ export const DropdownMenuTrigger = forwardRef<ComponentRef<typeof DropdownPrimit
 
 export interface DropdownMenuContentProps extends ComponentPropsWithoutRef<typeof DropdownPrimitive.Content> {}
 export const DropdownMenuContent = forwardRef<ComponentRef<typeof DropdownPrimitive.Content>, DropdownMenuContentProps>(function DropdownMenuContent({ className, sideOffset = 6, ...props }, ref) {
-  return <DropdownPrimitive.Portal><DropdownPrimitive.Content ref={ref} sideOffset={sideOffset} className={cn('z-50 min-w-44 rounded-md border border-border bg-card p-1 text-card-foreground shadow-soft outline-none data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0', className)} {...props} /></DropdownPrimitive.Portal>;
+  return <DropdownPrimitive.Portal><DropdownPrimitive.Content ref={ref} sideOffset={sideOffset} className={cn('motion-popover z-50 min-w-44 rounded-md border border-border bg-card p-1 text-card-foreground shadow-soft outline-none', className)} {...props} /></DropdownPrimitive.Portal>;
 });
 
 export interface DropdownMenuItemProps extends ComponentPropsWithoutRef<typeof DropdownPrimitive.Item> { destructive?: boolean }
 export const DropdownMenuItem = forwardRef<ComponentRef<typeof DropdownPrimitive.Item>, DropdownMenuItemProps>(function DropdownMenuItem({ className, destructive = false, ...props }, ref) {
-  return <DropdownPrimitive.Item ref={ref} className={cn('relative flex min-h-9 cursor-default select-none items-center gap-2 rounded-sm px-2.5 py-1.5 text-sm outline-none focus:bg-accent focus:text-accent-foreground data-[disabled]:pointer-events-none data-[disabled]:opacity-40', destructive && 'text-destructive focus:bg-destructive/10 focus:text-destructive', className)} {...props} />;
+  return <DropdownPrimitive.Item ref={ref} className={cn('motion-content relative flex min-h-9 cursor-default select-none items-center gap-2 rounded-sm px-2.5 py-1.5 text-sm outline-none focus:bg-accent focus:text-accent-foreground data-[disabled]:pointer-events-none data-[disabled]:opacity-40', destructive && 'text-destructive focus:bg-destructive/10 focus:text-destructive', className)} {...props} />;
 });
 
 export interface DropdownMenuCheckboxItemProps extends ComponentPropsWithoutRef<typeof DropdownPrimitive.CheckboxItem> {}
 export const DropdownMenuCheckboxItem = forwardRef<ComponentRef<typeof DropdownPrimitive.CheckboxItem>, DropdownMenuCheckboxItemProps>(function DropdownMenuCheckboxItem({ className, children, ...props }, ref) {
-  return <DropdownPrimitive.CheckboxItem ref={ref} className={cn('relative flex min-h-9 cursor-default select-none items-center rounded-sm py-1.5 pl-8 pr-2.5 text-sm outline-none focus:bg-accent focus:text-accent-foreground data-[disabled]:pointer-events-none data-[disabled]:opacity-40', className)} {...props}><span className="absolute left-2.5 flex size-4 items-center justify-center"><DropdownPrimitive.ItemIndicator><Check className="size-3.5" /></DropdownPrimitive.ItemIndicator></span>{children}</DropdownPrimitive.CheckboxItem>;
+  return <DropdownPrimitive.CheckboxItem ref={ref} className={cn('motion-content relative flex min-h-9 cursor-default select-none items-center rounded-sm py-1.5 pl-8 pr-2.5 text-sm outline-none focus:bg-accent focus:text-accent-foreground data-[disabled]:pointer-events-none data-[disabled]:opacity-40', className)} {...props}><span className="absolute left-2.5 flex size-4 items-center justify-center"><DropdownPrimitive.ItemIndicator><Check className="size-3.5" /></DropdownPrimitive.ItemIndicator></span>{children}</DropdownPrimitive.CheckboxItem>;
 });
 
 export interface DropdownMenuLabelProps extends ComponentPropsWithoutRef<typeof DropdownPrimitive.Label> {}
@@ -42,10 +42,10 @@ export function DropdownMenuSub(props: DropdownMenuSubProps) { return <DropdownP
 
 export interface DropdownMenuSubTriggerProps extends ComponentPropsWithoutRef<typeof DropdownPrimitive.SubTrigger> {}
 export const DropdownMenuSubTrigger = forwardRef<ComponentRef<typeof DropdownPrimitive.SubTrigger>, DropdownMenuSubTriggerProps>(function DropdownMenuSubTrigger({ className, children, ...props }, ref) {
-  return <DropdownPrimitive.SubTrigger ref={ref} className={cn('flex min-h-9 cursor-default select-none items-center gap-2 rounded-sm px-2.5 py-1.5 text-sm outline-none focus:bg-accent focus:text-accent-foreground data-[disabled]:pointer-events-none data-[disabled]:opacity-40', className)} {...props}>{children}<ChevronRight className="ml-auto size-4" /></DropdownPrimitive.SubTrigger>;
+  return <DropdownPrimitive.SubTrigger ref={ref} className={cn('motion-content flex min-h-9 cursor-default select-none items-center gap-2 rounded-sm px-2.5 py-1.5 text-sm outline-none focus:bg-accent focus:text-accent-foreground data-[disabled]:pointer-events-none data-[disabled]:opacity-40 [&[data-state=open]>svg]:translate-x-0.5', className)} {...props}>{children}<ChevronRight className="ml-auto size-4 transition-transform duration-motion-normal ease-motion-standard" /></DropdownPrimitive.SubTrigger>;
 });
 
 export interface DropdownMenuSubContentProps extends ComponentPropsWithoutRef<typeof DropdownPrimitive.SubContent> {}
 export const DropdownMenuSubContent = forwardRef<ComponentRef<typeof DropdownPrimitive.SubContent>, DropdownMenuSubContentProps>(function DropdownMenuSubContent({ className, sideOffset = 6, ...props }, ref) {
-  return <DropdownPrimitive.SubContent ref={ref} sideOffset={sideOffset} className={cn('z-50 min-w-44 rounded-md border border-border bg-card p-1 text-card-foreground shadow-soft outline-none', className)} {...props} />;
+  return <DropdownPrimitive.SubContent ref={ref} sideOffset={sideOffset} className={cn('motion-popover z-50 min-w-44 rounded-md border border-border bg-card p-1 text-card-foreground shadow-soft outline-none', className)} {...props} />;
 });

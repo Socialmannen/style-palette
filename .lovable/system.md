@@ -24,7 +24,15 @@ import { Button, Card, Input } from '@/design-system/refined-modern-tech';
 </Card>
 ```
 
-Maintain named component variants instead of styling one-off copies. Prefer the system Button for actions, Input or Textarea for entries, Switch for binary options, and Badge for status. Every interactive element must remain keyboard-reachable, have a visible focus indicator, and carry an accessible name. Associate input labels explicitly. Do not rely on color alone for meaning. Respect reduced-motion preferences for interface animation. Use native semantic elements and pass through their native properties.
+Maintain named component variants instead of styling one-off copies. Prefer the system Button for actions, Input or Textarea for entries, Switch for binary options, and Badge for status. Every interactive element must remain keyboard-reachable, have a visible focus indicator, and carry an accessible name. Associate input labels explicitly. Do not rely on color alone for meaning. Use native semantic elements and pass through their native properties.
+
+## Motion
+
+Motion is calm, functional, and consistent. Never introduce raw durations, one-off easing curves, spring effects, or decorative looping animation in component code. Use the motion tokens and utilities from the canonical theme: `motion-fast`, `motion-standard`, `motion-slow`, `motion-content`, `motion-press`, `motion-popover`, and the component-specific motion utilities.
+
+Set `data-motion="subtle"` on the root for the default restrained movement, `expressive` for slightly more distance, or `none` to remove nonessential movement. Set `data-motion-speed="slow"`, `normal`, or `fast` independently; `normal` is the default. The system-level `prefers-reduced-motion` rule always takes priority and reduces transitions to immediate state changes. Do not override it.
+
+Use Sheet for edge-based supporting work, Dialog for focused decisions, Accordion or Collapsible for disclosure, Popover for compact interactive content, Tooltip only for nonessential helper text, Tabs for sibling views, Toast for non-blocking feedback, Skeleton for loading placeholders, and Progress for task completion. Preserve focus trapping, Escape handling, outside-click dismissal, restored focus, and accessible titles supplied by the primitives.
 
 Use ButtonLink for navigation styled like a Button; its `variant` and `size` match Button. Do not nest a Button inside a link. Use DropdownMenu for contextual actions: pair DropdownMenuTrigger with `asChild` and a Button, then place labeled DropdownMenuItem, DropdownMenuCheckboxItem, separators, or nested submenus inside DropdownMenuContent. Do not use a menu item for navigation unless rendered as a semantic link through `asChild`.
 

@@ -1,3 +1,5 @@
+import '@testing-library/jest-dom/vitest';
+import type { ComponentProps } from "react";
 import { describe, expect, it, vi } from 'vitest';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
@@ -11,7 +13,7 @@ const options: ChoiceDialogOption[] = [
   { value: 'table', label: 'Table' },
 ];
 
-function setup(props: Partial<React.ComponentProps<typeof ChoiceDialog>> = {}) {
+function setup(props: Partial<ComponentProps<typeof ChoiceDialog>> = {}) {
   const onConfirm = vi.fn();
   const user = userEvent.setup();
   render(<ChoiceDialog title="Choose a view" options={options} defaultValue={['list']} onConfirm={onConfirm} trigger={<Button>Change view</Button>} {...props} />);

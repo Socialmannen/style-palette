@@ -4,12 +4,26 @@ import { ChevronDown, Copy, Filter, Layers, Search, Users } from 'lucide-react';
 import { Badge } from '../design-system/components/badge';
 import { Button } from '../design-system/components/button';
 import { ChoiceDialog } from '../design-system/components/choice-dialog';
+import { Lightbox, type LightboxImage } from '../design-system/components/lightbox';
 import { Checkbox } from '../design-system/components/checkbox';
 import { MultiSelect, type MultiSelectOption } from '../design-system/components/multi-select';
 import { NavItem, NavMenu } from '../design-system/components/nav-menu';
 import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectSeparator, SelectTrigger, SelectValue } from '../design-system/components/select';
 import { Table, TableBody, TableCaption, TableCell, TableEmptyState, TableHead, TableHeader, TableRow } from '../design-system/components/table';
 import { ToggleGroup, ToggleGroupItem } from '../design-system/components/toggle-group';
+
+const lightboxImages: LightboxImage[] = [
+  { src: 'https://picsum.photos/id/1018/1600/900', alt: 'Wide mountain landscape', caption: 'Landscape, 16:9' },
+  { src: 'https://picsum.photos/id/1027/800/1200', alt: 'Portrait of a person', caption: 'Portrait, 2:3' },
+  { src: 'https://picsum.photos/id/1025/1000/1000', alt: 'Dog in a blanket', caption: 'Square, 1:1' },
+  { src: 'https://picsum.photos/id/1043/2400/600', alt: 'Very wide panorama', caption: 'Panorama, 4:1', action: <a href="https://picsum.photos/id/1043/2400/600" target="_blank" rel="noreferrer" className="text-primary underline-offset-4 hover:underline">Open original</a> },
+  { src: 'https://picsum.photos/id/1039/600/1600', alt: 'Tall narrow image', caption: 'Tall, 3:8' },
+];
+function LightboxDemo() {
+  const [open, setOpen] = useState(false);
+  const [index, setIndex] = useState(0);
+  return <div className="grid grid-cols-3 gap-2 sm:grid-cols-5">{lightboxImages.map((img, i) => <button key={img.src} type="button" onClick={() => { setIndex(i); setOpen(true); }} className="motion-content aspect-square overflow-hidden rounded-md hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring" aria-label={`Open ${img.alt}`}><img src={img.src} alt="" className="size-full object-cover" /></button>)}<Lightbox images={lightboxImages} open={open} onOpenChange={setOpen} index={index} onIndexChange={setIndex} showThumbnails /></div>;
+}
 
 function Section({ name, description, children, code }: { name: string; description: string; children: React.ReactNode; code: string }) {
   const [copied, setCopied] = useState(false);
@@ -151,6 +165,9 @@ export function MenuComponents() {
     </Section>
     <Section name="Choice dialog" description="A focused dialog for choosing one or several options and confirming. All copy is passed in as props." code={`<ChoiceDialog\n  title="Choose a view"\n  options={[{ value: 'list', label: 'List' }, { value: 'board', label: 'Board' }]}\n  defaultValue={[view]}\n  onConfirm={([next]) => setView(next)}\n  trigger={<Button variant="outline">Change view</Button>}\n/>`}>
       <ChoiceDialogDemo />
+    </Section>
+    <Section name="Lightbox" description="Large image viewer with fixed controls that never move between image shapes. Arrow keys, swipe, Escape and background click all work." code={'<Lightbox images={images} open={open} onOpenChange={setOpen} index={index} onIndexChange={setIndex} showThumbnails />'}>
+      <LightboxDemo />
     </Section>
   </>;
 }

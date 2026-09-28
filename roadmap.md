@@ -4,3 +4,5 @@
 - [x] Add button-style links and accessible dropdown menu to library and showcase; verify interactions.
 - [x] Add live WCAG contrast ratios for text and components across every palette and mode.
 - [x] Add calm global motion tokens, speed controls, animated standard components, and verification.
+- [x] Add generic Select, MultiSelect, Checkbox, Table, ToggleGroup, and NavMenu primitives with showcase sections, exports, and verification.
+- [ ] Release a new design system version so attached projects receive the new controls.

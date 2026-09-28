@@ -380,7 +380,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "\u003cButton variant=\"primary\"\u003eSave changes\u003c/Button\u003e"
+          "code": "<Button variant=\"primary\">Save changes</Button>"
         }
       ],
       "antipatterns": [
@@ -395,7 +395,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "\u003cButtonLink href=\"/projects\" variant=\"outline\"\u003eAll projects\u003c/ButtonLink\u003e"
+          "code": "<ButtonLink href=\"/projects\" variant=\"outline\">All projects</ButtonLink>"
         }
       ],
       "antipatterns": [
@@ -416,7 +416,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "\u003cInput id=\"email\" type=\"email\" /\u003e"
+          "code": "<Input id=\"email\" type=\"email\" />"
         }
       ],
       "antipatterns": [
@@ -445,7 +445,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "\u003cBadge variant=\"accent\"\u003eIn review\u003c/Badge\u003e"
+          "code": "<Badge variant=\"accent\">In review</Badge>"
         }
       ],
       "antipatterns": [
@@ -483,7 +483,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "\u003cCard size=\"md\"\u003eProject summary\u003c/Card\u003e"
+          "code": "<Card size=\"md\">Project summary</Card>"
         }
       ],
       "antipatterns": [
@@ -509,7 +509,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "\u003cSwitch id=\"alerts\" defaultChecked /\u003e"
+          "code": "<Switch id=\"alerts\" defaultChecked />"
         }
       ],
       "antipatterns": [
@@ -530,7 +530,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "\u003cTextarea id=\"brief\" placeholder=\"Project brief\" /\u003e"
+          "code": "<Textarea id=\"brief\" placeholder=\"Project brief\" />"
         }
       ],
       "antipatterns": [
@@ -545,7 +545,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "\u003cAccordion type=\"single\" collapsible\u003e...\u003c/Accordion\u003e"
+          "code": "<Accordion type=\"single\" collapsible>...</Accordion>"
         }
       ],
       "antipatterns": [
@@ -560,7 +560,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "\u003cAccordion type=\"single\" collapsible\u003e...\u003c/Accordion\u003e"
+          "code": "<Accordion type=\"single\" collapsible>...</Accordion>"
         }
       ],
       "antipatterns": [
@@ -575,7 +575,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "\u003cAccordion type=\"single\" collapsible\u003e...\u003c/Accordion\u003e"
+          "code": "<Accordion type=\"single\" collapsible>...</Accordion>"
         }
       ],
       "antipatterns": [
@@ -590,7 +590,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "\u003cAccordion type=\"single\" collapsible\u003e...\u003c/Accordion\u003e"
+          "code": "<Accordion type=\"single\" collapsible>...</Accordion>"
         }
       ],
       "antipatterns": [
@@ -605,7 +605,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "\u003cCollapsible\u003e...\u003c/Collapsible\u003e"
+          "code": "<Collapsible>...</Collapsible>"
         }
       ],
       "antipatterns": [
@@ -620,7 +620,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "\u003cCollapsible\u003e...\u003c/Collapsible\u003e"
+          "code": "<Collapsible>...</Collapsible>"
         }
       ],
       "antipatterns": [
@@ -635,7 +635,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "\u003cCollapsible\u003e...\u003c/Collapsible\u003e"
+          "code": "<Collapsible>...</Collapsible>"
         }
       ],
       "antipatterns": [
@@ -650,7 +650,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "\u003cDialog\u003e\u003cDialogContent\u003e\u003cDialogTitle\u003eEdit\u003c/DialogTitle\u003e\u003c/DialogContent\u003e\u003c/Dialog\u003e"
+          "code": "<Dialog><DialogContent><DialogTitle>Edit</DialogTitle></DialogContent></Dialog>"
         }
       ],
       "antipatterns": [
@@ -665,7 +665,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "\u003cDialog\u003e\u003cDialogContent\u003e\u003cDialogTitle\u003eEdit\u003c/DialogTitle\u003e\u003c/DialogContent\u003e\u003c/Dialog\u003e"
+          "code": "<Dialog><DialogContent><DialogTitle>Edit</DialogTitle></DialogContent></Dialog>"
         }
       ],
       "antipatterns": [
@@ -680,7 +680,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "\u003cDialog\u003e\u003cDialogContent\u003e\u003cDialogTitle\u003eEdit\u003c/DialogTitle\u003e\u003c/DialogContent\u003e\u003c/Dialog\u003e"
+          "code": "<Dialog><DialogContent><DialogTitle>Edit</DialogTitle></DialogContent></Dialog>"
         }
       ],
       "antipatterns": [
@@ -695,7 +695,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "\u003cDialog\u003e\u003cDialogContent\u003e\u003cDialogTitle\u003eEdit\u003c/DialogTitle\u003e\u003c/DialogContent\u003e\u003c/Dialog\u003e"
+          "code": "<Dialog><DialogContent><DialogTitle>Edit</DialogTitle></DialogContent></Dialog>"
         }
       ],
       "antipatterns": [
@@ -717,7 +717,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "\u003cDialog\u003e\u003cDialogContent\u003e\u003cDialogTitle\u003eEdit\u003c/DialogTitle\u003e\u003c/DialogContent\u003e\u003c/Dialog\u003e"
+          "code": "<Dialog><DialogContent><DialogTitle>Edit</DialogTitle></DialogContent></Dialog>"
         }
       ],
       "antipatterns": [
@@ -732,7 +732,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "\u003cDialog\u003e\u003cDialogContent\u003e\u003cDialogTitle\u003eEdit\u003c/DialogTitle\u003e\u003c/DialogContent\u003e\u003c/Dialog\u003e"
+          "code": "<Dialog><DialogContent><DialogTitle>Edit</DialogTitle></DialogContent></Dialog>"
         }
       ],
       "antipatterns": [
@@ -747,7 +747,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "\u003cDialog\u003e\u003cDialogContent\u003e\u003cDialogTitle\u003eEdit\u003c/DialogTitle\u003e\u003c/DialogContent\u003e\u003c/Dialog\u003e"
+          "code": "<Dialog><DialogContent><DialogTitle>Edit</DialogTitle></DialogContent></Dialog>"
         }
       ],
       "antipatterns": [
@@ -762,7 +762,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "\u003cDialog\u003e\u003cDialogContent\u003e\u003cDialogTitle\u003eEdit\u003c/DialogTitle\u003e\u003c/DialogContent\u003e\u003c/Dialog\u003e"
+          "code": "<Dialog><DialogContent><DialogTitle>Edit</DialogTitle></DialogContent></Dialog>"
         }
       ],
       "antipatterns": [
@@ -777,7 +777,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "\u003cDialog\u003e\u003cDialogContent\u003e\u003cDialogTitle\u003eEdit\u003c/DialogTitle\u003e\u003c/DialogContent\u003e\u003c/Dialog\u003e"
+          "code": "<Dialog><DialogContent><DialogTitle>Edit</DialogTitle></DialogContent></Dialog>"
         }
       ],
       "antipatterns": [
@@ -792,7 +792,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "\u003cDropdownMenu\u003e\u003cDropdownMenuTrigger asChild\u003e\u003cButton\u003eMore\u003c/Button\u003e\u003c/DropdownMenuTrigger\u003e\u003cDropdownMenuContent\u003e\u003cDropdownMenuItem\u003eRename\u003c/DropdownMenuItem\u003e\u003c/DropdownMenuContent\u003e\u003c/DropdownMenu\u003e"
+          "code": "<DropdownMenu><DropdownMenuTrigger asChild><Button>More</Button></DropdownMenuTrigger><DropdownMenuContent><DropdownMenuItem>Rename</DropdownMenuItem></DropdownMenuContent></DropdownMenu>"
         }
       ],
       "antipatterns": [
@@ -807,7 +807,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "\u003cDropdownMenuTrigger /\u003e"
+          "code": "<DropdownMenuTrigger />"
         }
       ],
       "antipatterns": [
@@ -822,7 +822,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "\u003cDropdownMenuContent /\u003e"
+          "code": "<DropdownMenuContent />"
         }
       ],
       "antipatterns": [
@@ -844,7 +844,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "\u003cDropdownMenuItem /\u003e"
+          "code": "<DropdownMenuItem />"
         }
       ],
       "antipatterns": [
@@ -859,7 +859,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "\u003cDropdownMenuCheckboxItem /\u003e"
+          "code": "<DropdownMenuCheckboxItem />"
         }
       ],
       "antipatterns": [
@@ -874,7 +874,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "\u003cDropdownMenuLabel /\u003e"
+          "code": "<DropdownMenuLabel />"
         }
       ],
       "antipatterns": [
@@ -889,7 +889,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "\u003cDropdownMenuSeparator /\u003e"
+          "code": "<DropdownMenuSeparator />"
         }
       ],
       "antipatterns": [
@@ -904,7 +904,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "\u003cDropdownMenuSub /\u003e"
+          "code": "<DropdownMenuSub />"
         }
       ],
       "antipatterns": [
@@ -919,7 +919,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "\u003cDropdownMenuSubTrigger /\u003e"
+          "code": "<DropdownMenuSubTrigger />"
         }
       ],
       "antipatterns": [
@@ -934,7 +934,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "\u003cDropdownMenuSubContent /\u003e"
+          "code": "<DropdownMenuSubContent />"
         }
       ],
       "antipatterns": [
@@ -949,7 +949,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "\u003cPopover\u003e\u003cPopoverContent\u003eFilters\u003c/PopoverContent\u003e\u003c/Popover\u003e"
+          "code": "<Popover><PopoverContent>Filters</PopoverContent></Popover>"
         }
       ],
       "antipatterns": [
@@ -964,7 +964,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "\u003cPopover\u003e\u003cPopoverContent\u003eFilters\u003c/PopoverContent\u003e\u003c/Popover\u003e"
+          "code": "<Popover><PopoverContent>Filters</PopoverContent></Popover>"
         }
       ],
       "antipatterns": [
@@ -979,7 +979,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "\u003cPopover\u003e\u003cPopoverContent\u003eFilters\u003c/PopoverContent\u003e\u003c/Popover\u003e"
+          "code": "<Popover><PopoverContent>Filters</PopoverContent></Popover>"
         }
       ],
       "antipatterns": [
@@ -994,7 +994,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "\u003cPopover\u003e\u003cPopoverContent\u003eFilters\u003c/PopoverContent\u003e\u003c/Popover\u003e"
+          "code": "<Popover><PopoverContent>Filters</PopoverContent></Popover>"
         }
       ],
       "antipatterns": [
@@ -1016,7 +1016,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "\u003cProgress value={64} /\u003e"
+          "code": "<Progress value={64} />"
         }
       ],
       "antipatterns": [
@@ -1044,7 +1044,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "\u003cSheet\u003e\u003cSheetContent side=\"right\"\u003e\u003cSheetTitle\u003eFilters\u003c/SheetTitle\u003e\u003c/SheetContent\u003e\u003c/Sheet\u003e"
+          "code": "<Sheet><SheetContent side=\"right\"><SheetTitle>Filters</SheetTitle></SheetContent></Sheet>"
         }
       ],
       "antipatterns": [
@@ -1059,7 +1059,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "\u003cSheet\u003e\u003cSheetContent side=\"right\"\u003e\u003cSheetTitle\u003eFilters\u003c/SheetTitle\u003e\u003c/SheetContent\u003e\u003c/Sheet\u003e"
+          "code": "<Sheet><SheetContent side=\"right\"><SheetTitle>Filters</SheetTitle></SheetContent></Sheet>"
         }
       ],
       "antipatterns": [
@@ -1074,7 +1074,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "\u003cSheet\u003e\u003cSheetContent side=\"right\"\u003e\u003cSheetTitle\u003eFilters\u003c/SheetTitle\u003e\u003c/SheetContent\u003e\u003c/Sheet\u003e"
+          "code": "<Sheet><SheetContent side=\"right\"><SheetTitle>Filters</SheetTitle></SheetContent></Sheet>"
         }
       ],
       "antipatterns": [
@@ -1089,7 +1089,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "\u003cSheet\u003e\u003cSheetContent side=\"right\"\u003e\u003cSheetTitle\u003eFilters\u003c/SheetTitle\u003e\u003c/SheetContent\u003e\u003c/Sheet\u003e"
+          "code": "<Sheet><SheetContent side=\"right\"><SheetTitle>Filters</SheetTitle></SheetContent></Sheet>"
         }
       ],
       "antipatterns": [
@@ -1111,7 +1111,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "\u003cSheet\u003e\u003cSheetContent side=\"right\"\u003e\u003cSheetTitle\u003eFilters\u003c/SheetTitle\u003e\u003c/SheetContent\u003e\u003c/Sheet\u003e"
+          "code": "<Sheet><SheetContent side=\"right\"><SheetTitle>Filters</SheetTitle></SheetContent></Sheet>"
         }
       ],
       "antipatterns": [
@@ -1126,7 +1126,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "\u003cSheet\u003e\u003cSheetContent side=\"right\"\u003e\u003cSheetTitle\u003eFilters\u003c/SheetTitle\u003e\u003c/SheetContent\u003e\u003c/Sheet\u003e"
+          "code": "<Sheet><SheetContent side=\"right\"><SheetTitle>Filters</SheetTitle></SheetContent></Sheet>"
         }
       ],
       "antipatterns": [
@@ -1141,7 +1141,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "\u003cSheet\u003e\u003cSheetContent side=\"right\"\u003e\u003cSheetTitle\u003eFilters\u003c/SheetTitle\u003e\u003c/SheetContent\u003e\u003c/Sheet\u003e"
+          "code": "<Sheet><SheetContent side=\"right\"><SheetTitle>Filters</SheetTitle></SheetContent></Sheet>"
         }
       ],
       "antipatterns": [
@@ -1156,7 +1156,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "\u003cSheet\u003e\u003cSheetContent side=\"right\"\u003e\u003cSheetTitle\u003eFilters\u003c/SheetTitle\u003e\u003c/SheetContent\u003e\u003c/Sheet\u003e"
+          "code": "<Sheet><SheetContent side=\"right\"><SheetTitle>Filters</SheetTitle></SheetContent></Sheet>"
         }
       ],
       "antipatterns": [
@@ -1171,7 +1171,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "\u003cSheet\u003e\u003cSheetContent side=\"right\"\u003e\u003cSheetTitle\u003eFilters\u003c/SheetTitle\u003e\u003c/SheetContent\u003e\u003c/Sheet\u003e"
+          "code": "<Sheet><SheetContent side=\"right\"><SheetTitle>Filters</SheetTitle></SheetContent></Sheet>"
         }
       ],
       "antipatterns": [
@@ -1186,7 +1186,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "\u003cSkeleton className=\"h-4 w-32\" /\u003e"
+          "code": "<Skeleton className=\"h-4 w-32\" />"
         }
       ],
       "antipatterns": [
@@ -1201,7 +1201,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "\u003cTabs defaultValue=\"overview\"\u003e...\u003c/Tabs\u003e"
+          "code": "<Tabs defaultValue=\"overview\">...</Tabs>"
         }
       ],
       "antipatterns": [
@@ -1216,7 +1216,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "\u003cTabs defaultValue=\"overview\"\u003e...\u003c/Tabs\u003e"
+          "code": "<Tabs defaultValue=\"overview\">...</Tabs>"
         }
       ],
       "antipatterns": [
@@ -1231,7 +1231,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "\u003cTabs defaultValue=\"overview\"\u003e...\u003c/Tabs\u003e"
+          "code": "<Tabs defaultValue=\"overview\">...</Tabs>"
         }
       ],
       "antipatterns": [
@@ -1246,7 +1246,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "\u003cTabs defaultValue=\"overview\"\u003e...\u003c/Tabs\u003e"
+          "code": "<Tabs defaultValue=\"overview\">...</Tabs>"
         }
       ],
       "antipatterns": [
@@ -1261,7 +1261,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "\u003cToaster /\u003e"
+          "code": "<Toaster />"
         }
       ],
       "antipatterns": [
@@ -1276,7 +1276,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "\u003cTooltipProvider\u003e\u003cTooltip\u003e...\u003c/Tooltip\u003e\u003c/TooltipProvider\u003e"
+          "code": "<TooltipProvider><Tooltip>...</Tooltip></TooltipProvider>"
         }
       ],
       "antipatterns": [
@@ -1291,7 +1291,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "\u003cTooltipProvider\u003e\u003cTooltip\u003e...\u003c/Tooltip\u003e\u003c/TooltipProvider\u003e"
+          "code": "<TooltipProvider><Tooltip>...</Tooltip></TooltipProvider>"
         }
       ],
       "antipatterns": [
@@ -1306,7 +1306,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "\u003cTooltipProvider\u003e\u003cTooltip\u003e...\u003c/Tooltip\u003e\u003c/TooltipProvider\u003e"
+          "code": "<TooltipProvider><Tooltip>...</Tooltip></TooltipProvider>"
         }
       ],
       "antipatterns": [
@@ -1321,11 +1321,508 @@
       "examples": [
         {
           "label": "Default",
-          "code": "\u003cTooltipProvider\u003e\u003cTooltip\u003e...\u003c/Tooltip\u003e\u003c/TooltipProvider\u003e"
+          "code": "<TooltipProvider><Tooltip>...</Tooltip></TooltipProvider>"
         }
       ],
       "antipatterns": [
         "Do not put essential instructions only in a tooltip."
+      ]
+    },
+    {
+      "name": "Select",
+      "file": "src/design-system/components/select",
+      "import_path": "",
+      "props": [
+        {
+          "name": "value",
+          "type": "string"
+        },
+        {
+          "name": "defaultValue",
+          "type": "string"
+        },
+        {
+          "name": "onValueChange",
+          "type": "(value: string) => void"
+        },
+        {
+          "name": "disabled",
+          "type": "boolean"
+        },
+        {
+          "name": "name",
+          "type": "string"
+        }
+      ],
+      "usage": "Use for one value chosen out of a known list, such as a sort order or a theme setting.",
+      "examples": [
+        {
+          "label": "Sort menu",
+          "code": "<Select value={sort} onValueChange={setSort}>\n  <SelectTrigger aria-label=\"Sort by\">\n    <SelectValue placeholder=\"Choose sort order\" />\n  </SelectTrigger>\n  <SelectContent>\n    <SelectItem value=\"newest\">Newest first</SelectItem>\n    <SelectItem value=\"name\">Name</SelectItem>\n  </SelectContent>\n</Select>"
+        }
+      ],
+      "antipatterns": [
+        "Do not use when the list is searchable or long; use MultiSelect or a combobox pattern.",
+        "Do not leave the trigger without an accessible name; pass aria-label or a wired label."
+      ]
+    },
+    {
+      "name": "SelectTrigger",
+      "file": "src/design-system/components/select",
+      "import_path": "",
+      "props": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ],
+          "default": "md"
+        }
+      ],
+      "usage": "The button-like field that opens the choose-one menu. Give it an accessible name.",
+      "examples": [],
+      "antipatterns": [
+        "Do not use a SelectTrigger without a SelectValue so the chosen value is shown."
+      ]
+    },
+    {
+      "name": "SelectValue",
+      "file": "src/design-system/components/select",
+      "import_path": "",
+      "props": [
+        {
+          "name": "placeholder",
+          "type": "string"
+        }
+      ],
+      "usage": "Shows the current value inside the trigger and a placeholder while nothing is chosen.",
+      "examples": [],
+      "antipatterns": [
+        "Do not render placeholder text as a SelectItem; it would become a selectable option."
+      ]
+    },
+    {
+      "name": "SelectContent",
+      "file": "src/design-system/components/select",
+      "import_path": "",
+      "props": [
+        {
+          "name": "position",
+          "type": "enum",
+          "values": [
+            "popper",
+            "item-aligned"
+          ],
+          "default": "popper"
+        }
+      ],
+      "usage": "The panel that holds the options. It animates with the shared motion tokens.",
+      "examples": [],
+      "antipatterns": [
+        "Do not put forms or buttons inside it; keep it to options."
+      ]
+    },
+    {
+      "name": "SelectItem",
+      "file": "src/design-system/components/select",
+      "import_path": "",
+      "props": [
+        {
+          "name": "value",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "disabled",
+          "type": "boolean"
+        }
+      ],
+      "usage": "One option in a choose-one menu.",
+      "examples": [],
+      "antipatterns": [
+        "Do not use an empty string value; it is reserved for the cleared state."
+      ]
+    },
+    {
+      "name": "SelectGroup",
+      "file": "src/design-system/components/select",
+      "import_path": "",
+      "props": [],
+      "usage": "Groups related options together with a label.",
+      "examples": [],
+      "antipatterns": [
+        "Do not use a label on its own without a group."
+      ]
+    },
+    {
+      "name": "SelectLabel",
+      "file": "src/design-system/components/select",
+      "import_path": "",
+      "props": [],
+      "usage": "The heading above a group of options.",
+      "examples": [],
+      "antipatterns": []
+    },
+    {
+      "name": "SelectSeparator",
+      "file": "src/design-system/components/select",
+      "import_path": "",
+      "props": [],
+      "usage": "A thin line that separates option groups.",
+      "examples": [],
+      "antipatterns": [
+        "Do not add a separator between every option."
+      ]
+    },
+    {
+      "name": "MultiSelect",
+      "file": "src/design-system/components/multi-select",
+      "import_path": "",
+      "props": [
+        {
+          "name": "options",
+          "type": "{ value, label, hint?, disabled? }[]",
+          "required": true
+        },
+        {
+          "name": "value",
+          "type": "string[]",
+          "required": true
+        },
+        {
+          "name": "onValueChange",
+          "type": "(value: string[]) => void",
+          "required": true
+        },
+        {
+          "name": "placeholder",
+          "type": "string",
+          "default": "Select items"
+        },
+        {
+          "name": "searchPlaceholder",
+          "type": "string",
+          "default": "Search"
+        },
+        {
+          "name": "emptyMessage",
+          "type": "string",
+          "default": "No matches"
+        },
+        {
+          "name": "maxChips",
+          "type": "number",
+          "default": "3"
+        },
+        {
+          "name": "showCount",
+          "type": "boolean"
+        },
+        {
+          "name": "loading",
+          "type": "boolean"
+        },
+        {
+          "name": "disabled",
+          "type": "boolean"
+        },
+        {
+          "name": "formatOverflow",
+          "type": "(count: number) => string"
+        }
+      ],
+      "usage": "Use when several values must be picked from a long list and the list is not known, such as universities, areas or queues.",
+      "examples": [
+        {
+          "label": "Pick teams",
+          "code": "<MultiSelect\n  options={teams}\n  value={selected}\n  onValueChange={setSelected}\n  placeholder=\"Team members\"\n  searchPlaceholder=\"Search people\"\n/>"
+        }
+      ],
+      "antipatterns": [
+        "Do not use for one value out of a short list; use Select.",
+        "Do not hardcode visible strings; pass placeholder, searchPlaceholder, emptyMessage and formatOverflow so the project can translate them.",
+        "Do not fetch data inside the component; the project owns the options list."
+      ]
+    },
+    {
+      "name": "Checkbox",
+      "file": "src/design-system/components/checkbox",
+      "import_path": "",
+      "props": [
+        {
+          "name": "checked",
+          "type": "boolean | \"indeterminate\""
+        },
+        {
+          "name": "defaultChecked",
+          "type": "boolean"
+        },
+        {
+          "name": "onCheckedChange",
+          "type": "(checked: boolean | \"indeterminate\") => void"
+        },
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md"
+          ],
+          "default": "md"
+        },
+        {
+          "name": "invalid",
+          "type": "boolean"
+        },
+        {
+          "name": "disabled",
+          "type": "boolean"
+        }
+      ],
+      "usage": "Use to turn one option on or off, or to select rows in a list.",
+      "examples": [
+        {
+          "label": "Row selection",
+          "code": "<Checkbox checked={selected} onCheckedChange={toggle}\n  aria-label=\"Select row\" />"
+        }
+      ],
+      "antipatterns": [
+        "Do not use for a value with three or more meanings; use a choose-one menu.",
+        "Do not build a checkbox from a styled div; this is the real form control with the right ARIA."
+      ]
+    },
+    {
+      "name": "Table",
+      "file": "src/design-system/components/table",
+      "import_path": "",
+      "props": [
+        {
+          "name": "density",
+          "type": "enum",
+          "values": [
+            "compact",
+            "comfortable"
+          ],
+          "default": "comfortable"
+        },
+        {
+          "name": "hoverable",
+          "type": "boolean"
+        },
+        {
+          "name": "stickyHeader",
+          "type": "boolean"
+        }
+      ],
+      "usage": "Use for structured rows of comparable values, such as statistics or admin listings.",
+      "examples": [
+        {
+          "label": "Sortable table",
+          "code": "<Table hoverable stickyHeader>\n  <TableHeader>\n    <TableRow>\n      <TableHead sortable sortDirection=\"ascending\" onSort={toggleSort}>Name</TableHead>\n      <TableHead>Value</TableHead>\n    </TableRow>\n  </TableHeader>\n  <TableBody>{rows.map(...)}</TableBody>\n</Table>"
+        }
+      ],
+      "antipatterns": [
+        "Do not use a table for layout or for cards of unrelated content.",
+        "Do not put the sorting logic in the component; the project sorts and reports sortDirection."
+      ]
+    },
+    {
+      "name": "TableHead",
+      "file": "src/design-system/components/table",
+      "import_path": "",
+      "props": [
+        {
+          "name": "sortable",
+          "type": "boolean"
+        },
+        {
+          "name": "sortDirection",
+          "type": "enum",
+          "values": [
+            "none",
+            "ascending",
+            "descending"
+          ],
+          "default": "none"
+        },
+        {
+          "name": "onSort",
+          "type": "() => void"
+        }
+      ],
+      "usage": "A column header. When sortable it renders a button and sets aria-sort.",
+      "examples": [],
+      "antipatterns": [
+        "Do not make a column sortable without showing which direction is active."
+      ]
+    },
+    {
+      "name": "TableCell",
+      "file": "src/design-system/components/table",
+      "import_path": "",
+      "props": [
+        {
+          "name": "align",
+          "type": "enum",
+          "values": [
+            "start",
+            "center",
+            "end"
+          ],
+          "default": "start"
+        }
+      ],
+      "usage": "One value in a row. Use align end for numbers so they line up.",
+      "examples": [],
+      "antipatterns": []
+    },
+    {
+      "name": "TableEmptyState",
+      "file": "src/design-system/components/table",
+      "import_path": "",
+      "props": [
+        {
+          "name": "message",
+          "type": "string",
+          "required": true
+        }
+      ],
+      "usage": "Shown below the header when no rows match, so the header stays visible.",
+      "examples": [],
+      "antipatterns": [
+        "Do not replace the whole table with the empty state; keep the header so context is not lost."
+      ]
+    },
+    {
+      "name": "ToggleGroup",
+      "file": "src/design-system/components/toggle-group",
+      "import_path": "",
+      "props": [
+        {
+          "name": "type",
+          "type": "enum",
+          "values": [
+            "single",
+            "multiple"
+          ],
+          "default": "single"
+        },
+        {
+          "name": "variant",
+          "type": "enum",
+          "values": [
+            "default",
+            "outline"
+          ],
+          "default": "default"
+        },
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ],
+          "default": "md"
+        },
+        {
+          "name": "fullWidth",
+          "type": "boolean"
+        },
+        {
+          "name": "value",
+          "type": "string | string[]"
+        },
+        {
+          "name": "onValueChange",
+          "type": "(value: string | string[]) => void"
+        }
+      ],
+      "usage": "Use for two to five mutually exclusive options that should be compared at a glance, such as Off / Preferred / Required.",
+      "examples": [
+        {
+          "label": "Requirement level",
+          "code": "<ToggleGroup type=\"single\" value={mode} onValueChange={setMode} fullWidth aria-label=\"Requirement\">\n  <ToggleGroupItem value=\"off\">Off</ToggleGroupItem>\n  <ToggleGroupItem value=\"preferred\">Preferred</ToggleGroupItem>\n  <ToggleGroupItem value=\"required\">Required</ToggleGroupItem>\n</ToggleGroup>"
+        }
+      ],
+      "antipatterns": [
+        "Do not use for more than five options; use a choose-one menu.",
+        "Do not use type multiple when only one option may be active.",
+        "Do not build a segmented control from plain Buttons; use this component."
+      ]
+    },
+    {
+      "name": "ToggleGroupItem",
+      "file": "src/design-system/components/toggle-group",
+      "import_path": "",
+      "props": [
+        {
+          "name": "value",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "disabled",
+          "type": "boolean"
+        }
+      ],
+      "usage": "One segment in a toggle group.",
+      "examples": [],
+      "antipatterns": [
+        "Do not use a segment for navigation between pages."
+      ]
+    },
+    {
+      "name": "NavMenu",
+      "file": "src/design-system/components/nav-menu",
+      "import_path": "",
+      "props": [
+        {
+          "name": "aria-label",
+          "type": "string",
+          "required": true
+        }
+      ],
+      "usage": "The row of top-level links at the top of a page; it scrolls sideways on narrow screens.",
+      "examples": [
+        {
+          "label": "Top navigation",
+          "code": "<NavMenu aria-label=\"Main\">\n  <NavItem asChild active={isHome}><Link to=\"/\">Overview</Link></NavItem>\n  <NavItem asChild><Link to=\"/settings\">Settings</Link></NavItem>\n</NavMenu>"
+        }
+      ],
+      "antipatterns": [
+        "Do not nest actions or menus in it; use DropdownMenu for those.",
+        "Do not leave out aria-label; screen readers announce the region."
+      ]
+    },
+    {
+      "name": "NavItem",
+      "file": "src/design-system/components/nav-menu",
+      "import_path": "",
+      "props": [
+        {
+          "name": "active",
+          "type": "boolean"
+        },
+        {
+          "name": "asChild",
+          "type": "boolean"
+        }
+      ],
+      "usage": "A top-level link. Sets aria-current=\"page\" when active and shows a tinted background.",
+      "examples": [
+        {
+          "label": "Active link",
+          "code": "<NavItem asChild active={current === \"report\"}>\n  <Link to=\"/report\">Report</Link>\n</NavItem>"
+        }
+      ],
+      "antipatterns": [
+        "Do not use a nav item for a button that runs an action; use Button.",
+        "Do not signal the current page with a colour alone; the active state also carries aria-current."
       ]
     }
   ]

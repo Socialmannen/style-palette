@@ -1,4 +1,4 @@
-import { useMemo, useState, type ReactNode } from 'react';
+import { useMemo, useState } from 'react';
 import { Command, CommandEmpty, CommandGroup, CommandInput, CommandItem, CommandList } from 'cmdk';
 import { Check, ChevronDown, Search, X } from 'lucide-react';
 import { cn } from '../lib';
@@ -89,6 +89,3 @@ export function MultiSelect({ options, value, onValueChange, placeholder = 'Sele
   </Popover>;
 }
 
-export function MultiSelectLabel({ htmlFor, children, className }: { htmlFor?: string; children: ReactNode; className?: string }) {
-  return <label htmlFor={htmlFor} className={cn('mb-2 block text-sm font-medium text-foreground', className)}>{children}</label>;
-}

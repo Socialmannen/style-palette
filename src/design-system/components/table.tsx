@@ -21,7 +21,7 @@ export const TableHeader = forwardRef<HTMLTableSectionElement, TableHeaderProps>
 
 export interface TableBodyProps extends HTMLAttributes<HTMLTableSectionElement> {}
 export const TableBody = forwardRef<HTMLTableSectionElement, TableBodyProps>(function TableBody({ className, ...props }, ref) {
-  return <tbody ref={ref} className={cn('[&_tr:last-child_[role]]:border-0', className)} {...props} />;
+  return <tbody ref={ref} className={cn('[&_tr:last-child]:border-0', className)} {...props} />;
 });
 
 export interface TableFooterProps extends HTMLAttributes<HTMLTableSectionElement> {}

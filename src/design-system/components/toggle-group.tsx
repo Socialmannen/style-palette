@@ -20,5 +20,5 @@ export const ToggleGroup = forwardRef<ComponentRef<typeof ToggleGroupPrimitive.R
 
 export type ToggleGroupItemProps = ComponentPropsWithoutRef<typeof ToggleGroupPrimitive.Item> & Pick<VariantProps<typeof itemStyles>, 'size'> & { fullWidth?: boolean };
 export const ToggleGroupItem = forwardRef<ComponentRef<typeof ToggleGroupPrimitive.Item>, ToggleGroupItemProps>(function ToggleGroupItem({ className, size, fullWidth, ...props }, ref) {
-  return <ToggleGroupPrimitive.Item ref={ref} aria-pressed={undefined} className={cn(itemStyles({ size, fullWidth }), className)} {...props} />;
+  return <ToggleGroupPrimitive.Item ref={ref} className={cn(itemStyles({ size, fullWidth }), className)} {...props} />;
 });

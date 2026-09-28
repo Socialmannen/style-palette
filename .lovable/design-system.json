@@ -2,7 +2,7 @@
   "meta": {
     "name": "Style Palette",
     "package": "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1",
-    "version": "1.2.0",
+    "version": "1.3.0",
     "framework": "react",
     "css_framework": "tailwind",
     "starter_template": "custom_design_system",
@@ -11,10 +11,11 @@
     ],
     "source_type": "local",
     "source_manifest": {
-      "#enrichment": "ac6fed72d6ad149eef7d76e0f020553bdc37014c0905699c0d785fb97230ca41",
+      "#enrichment": "816e12a4a53cd607164b73f3cb1efc216add4e82722af754f143e2eb3dbf0319",
       ".dsignore": "2c7d76468c15bc0f1499420154f01ae3",
       ".gitignore": "6d9e901a692b46a83707c245fb03bc91",
       ".lovable/meta.yaml": "8794970d6049858cc148d2b86f7a2b22",
+      ".lovable/plan/generic-controls-choose-one-searchable-multi-choice-checkbox-2026-09-28.md": "e718351bd0746908dfb88907e3323077",
       ".lovable/plan/kontrastkontroll-för-färgpaletterna-2026-09-28.md": "b9ac0789846efc93ed57b48440359a33",
       ".lovable/plan/plan-rörelsesystem-och-animerade-standardkomponenter-2026-09-28.md": "3ddfda047dcbf530e98555e7947f4273",
       ".lovable/project.json": "51a90576cd97762828b128ea584e5780",
@@ -22,62 +23,16 @@
       ".lovable/system.md": "72d48c67880c18f805b2e03b93db472c",
       ".prettierignore": "7279a476f196a2da5f7edd18db568dc6",
       ".prettierrc": "185ef0234746ab738ac1ab6cec5e2bd9",
-      "AGENTS.md": "0151dffaf1e4664a4b2081e965a62638",
+      "AGENTS.md": "d42663c2377e1f778a08c8f802e06f40",
       "README.md": "9651f45364ac3524097a14081cd3a7bc",
       "bunfig.toml": "89115995d9de72fdfc894e16b1e75297",
       "components.json": "30d3d035361ce807021f5c54620962e9",
       "eslint.config.js": "345bdd57e188e0e4525edcd00e5003f5",
       "lovable.toml": "9636c1bf32f9901bfba4eabb92981217",
-      "package.json": "1206bda12fe74e21e3b67920ab4fe633",
+      "package.json": "895c92e7010a809698200f9fc0096f52",
       "public/favicon.ico": "9f504444f85a5af2eef9264b02ae40be",
       "public/robots.txt": "f9dff89adf98833e676de2205921996a",
-      "roadmap.md": "954dcde9bab43e8b28e79e516d7ff518",
-      "src/components/ui/accordion.tsx": "55f9dda62b4e3913c9b23e5015a86aef",
-      "src/components/ui/alert-dialog.tsx": "96350e949e9b7b674545430a410ab89c",
-      "src/components/ui/alert.tsx": "f993d7e96b1e25ce50e68ed97e11d2a8",
-      "src/components/ui/aspect-ratio.tsx": "c5c364545e1b25a94e9e752cd67ad048",
-      "src/components/ui/avatar.tsx": "72989cd32f72c4122802540ef32525a5",
-      "src/components/ui/badge.tsx": "81cade001fc4260f9943e18dcd79449b",
-      "src/components/ui/breadcrumb.tsx": "bb9ac254f12662b20d5d50b84308bf3a",
-      "src/components/ui/button.tsx": "7d07d520f486b12bd47373d694ecd2ee",
-      "src/components/ui/calendar.tsx": "d849cc610e2683271f3f1c47d093cf30",
-      "src/components/ui/card.tsx": "d6c48ea36221b9cdc3576d305d12d5d5",
-      "src/components/ui/carousel.tsx": "e324c68ae00cd5aed49317638abd429a",
-      "src/components/ui/chart.tsx": "6a3baf94f2e89f1f97d4d7a28f3622d2",
-      "src/components/ui/checkbox.tsx": "f78aac270ca482c8c2cb907ef6260462",
-      "src/components/ui/collapsible.tsx": "767631bbc344945c236f185f4078d71d",
-      "src/components/ui/command.tsx": "014782599cc838b021ec68b07ad4ea02",
-      "src/components/ui/context-menu.tsx": "3ba8244ea23df34a1dba92f3a1230dad",
-      "src/components/ui/dialog.tsx": "ef4fe8e7de8675730afe3d633b260e09",
-      "src/components/ui/drawer.tsx": "8be333e8fd8e42576b1b5f72f07f4337",
-      "src/components/ui/dropdown-menu.tsx": "28d6e98d3c7811fc0514bfa69416f087",
-      "src/components/ui/form.tsx": "1b0aa6302b9017ea2a1307c22a1d2983",
-      "src/components/ui/hover-card.tsx": "1442794c5ca2a78d69e4e613b315ed3d",
-      "src/components/ui/input-otp.tsx": "65625f2f1c4d731a760aeed7b54459d1",
-      "src/components/ui/input.tsx": "1d4cc52a4cd8afb3e18e45bda942bb8a",
-      "src/components/ui/label.tsx": "7e35df4ca8edd0835efd97ca7937ef92",
-      "src/components/ui/menubar.tsx": "3c4121a1e78d3f424a7295381a8997d3",
-      "src/components/ui/navigation-menu.tsx": "e85351147a02b29577ff83d188b63c24",
-      "src/components/ui/pagination.tsx": "fac6cdbb4bbf78b273d85cd36d6cbb49",
-      "src/components/ui/popover.tsx": "f18aa1da2144f25ee60795c539c51bcd",
-      "src/components/ui/progress.tsx": "55c462e5c9dd678dcf2c0c510b014ac4",
-      "src/components/ui/radio-group.tsx": "0e1ace237a5da3197e3eb1e6683faba9",
-      "src/components/ui/resizable.tsx": "d9fcb9203c749fcab4e125a99bb12a86",
-      "src/components/ui/scroll-area.tsx": "87b65d3eb26f2b02ff35a7acea585ba5",
-      "src/components/ui/select.tsx": "31ea1bbd6671833b010b2e852c8a55d0",
-      "src/components/ui/separator.tsx": "433d163c4ffa00b59398a0c293198b5e",
-      "src/components/ui/sheet.tsx": "0221fbf97b69611b47fcbc10bb27669a",
-      "src/components/ui/sidebar.tsx": "83c1623eb50ebc370d7b1b84a542e369",
-      "src/components/ui/skeleton.tsx": "41b182e6e2fc3805960d41e767d4a972",
-      "src/components/ui/slider.tsx": "4752f1bfa26426988d325599e01c335b",
-      "src/components/ui/sonner.tsx": "97f59f60be3413196d095fcbf7383216",
-      "src/components/ui/switch.tsx": "82f5d8b0c59bb7ff305caa9f502e79ff",
-      "src/components/ui/table.tsx": "7cc889989d53894b659903c73aded96e",
-      "src/components/ui/tabs.tsx": "56e725558c2ce72c18243bf51717f385",
-      "src/components/ui/textarea.tsx": "c7aad96fb9545210d53135a96c76ed6b",
-      "src/components/ui/toggle-group.tsx": "ac26383acf721d116ca8e3ab5c5355d5",
-      "src/components/ui/toggle.tsx": "ee8c5adac74e7242b85b544db1a8fbad",
-      "src/components/ui/tooltip.tsx": "67d71db5a1ab935695d1def497f5b8a6",
+      "roadmap.md": "996afb26c0182866a252a7a5064e6673",
       "src/design-system/assets/fonts/figtree-400.ttf": "6cd7caa972f68304833cd966b9a6e09e",
       "src/design-system/assets/fonts/figtree-500.ttf": "9ea5c3347152a5e77a47c2099174d340",
       "src/design-system/assets/fonts/figtree-600.ttf": "92a7ce5893918522b927b670dc368120",
@@ -90,23 +45,29 @@
       "src/design-system/components/button-link.tsx": "43a6e937b884c94dace6e2730bb4cbf3",
       "src/design-system/components/button.tsx": "5f0ccf53b51d9cb7070e7c3b8e077858",
       "src/design-system/components/card.tsx": "fe7e1baa2d9f11e9ff9c5c4adf125bb5",
+      "src/design-system/components/checkbox.tsx": "b52ba53f0c002dae06cfbc26cca9cdf1",
       "src/design-system/components/collapsible.tsx": "3044e7ea91d963490c34634914214f6f",
       "src/design-system/components/dialog.tsx": "c9f6cca9e22e281fb1dc1b3aafcdef6c",
       "src/design-system/components/dropdown-menu.tsx": "fdbd3e25adf68358ed62854eaa5e82be",
       "src/design-system/components/input.tsx": "f27ef4db19cb0d83964ac56f2fcac57a",
+      "src/design-system/components/multi-select.tsx": "ea793d915e7087dc49abc8e1037224ca",
+      "src/design-system/components/nav-menu.tsx": "183c54bbd9173d4e41e2cfa7bcf96f07",
       "src/design-system/components/popover.tsx": "dfbb4b262bf63d1cc5998cbabf78d024",
       "src/design-system/components/progress.tsx": "a35180316abe999fe513bcebfda5515f",
+      "src/design-system/components/select.tsx": "6a926d369a3aa491b23feeb684514f07",
       "src/design-system/components/sheet.tsx": "c5fb171d51980fd2197493fadf163d83",
       "src/design-system/components/skeleton.tsx": "6adc5949d9b8020fe5cc57a7177fddf5",
       "src/design-system/components/switch.tsx": "abc4409f50700102691a2261894ee36d",
+      "src/design-system/components/table.tsx": "6632bbe38304865e97303b4ddb7053e8",
       "src/design-system/components/tabs.tsx": "b1f34e86135be8d1ccd33f58fb574ead",
       "src/design-system/components/textarea.tsx": "7d5eb52b980e532a5e7e34a6c1dbcd95",
       "src/design-system/components/toast.tsx": "0c5ecd03147625db7e9fe914a35e5dfc",
+      "src/design-system/components/toggle-group.tsx": "1e1a69628bd420a2be36a6cae366ca31",
       "src/design-system/components/tooltip.tsx": "ad2603b70ad17eddb72bb8e5f3cb52b1",
       "src/design-system/lib.ts": "68b1b903329d1d880bf000551a84bc6f",
-      "src/design-system/styles/theme.css": "93d7e3682ab7bb061a90b12a781d59e5",
+      "src/design-system/styles/theme.css": "71fdf388be62641c26327bdc32aff3e7",
       "src/hooks/use-mobile.tsx": "c0a0bdd4638c391a1dd06ac82074e60b",
-      "src/index.ts": "72d5912d72db032f9f0c80e383094b05",
+      "src/index.ts": "a40661b9b4a1c9d0be47ed46e6caf927",
       "src/lib/error-capture.ts": "f630d9686a9a989170f22eff4de7b30d",
       "src/lib/error-page.ts": "8da0ddd7569bac2676b9a5c8edff8a36",
       "src/lib/lovable-error-reporting.ts": "0367e03b7d71917510e4dc1cdae172ec",
@@ -116,11 +77,12 @@
       "src/routes/README.md": "b3a2f259b66fd1a11f54b6d5ac83bf57",
       "src/routes/__root.tsx": "27cf61bb40cdfa238ba76ae653c04013",
       "src/routes/colors.tsx": "6bfc1fa840f56e136d5ab5a742059923",
-      "src/routes/components.tsx": "5ed332a2a08ec097eb19fd6914c32363",
+      "src/routes/components.tsx": "4e2816f723bb4f740efd82a52325de83",
       "src/routes/index.tsx": "33ac4142215d36c748a1ab1a230f5875",
       "src/routes/typography.tsx": "d4065f467dee05ab5c124d515787a8eb",
       "src/server.ts": "c7bbc49bb70e318af618d92775ee0f27",
       "src/showcase/layout.tsx": "0dbe4885d076191afdaea5a8811a9b77",
+      "src/showcase/menu-components.tsx": "44aca192d325a90345a2f402d2a3515c",
       "src/showcase/motion-components.tsx": "e9809b79847a0d8493b3cc029dd52c36",
       "src/showcase/palettes.ts": "a3965ebc78ce4336d26e54dfb3235a0b",
       "src/start.ts": "0502f82c58afce5012b4c102e6fe2437",
@@ -380,7 +342,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Button variant=\"primary\">Save changes</Button>"
+          "code": "\u003cButton variant=\"primary\"\u003eSave changes\u003c/Button\u003e"
         }
       ],
       "antipatterns": [
@@ -395,7 +357,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<ButtonLink href=\"/projects\" variant=\"outline\">All projects</ButtonLink>"
+          "code": "\u003cButtonLink href=\"/projects\" variant=\"outline\"\u003eAll projects\u003c/ButtonLink\u003e"
         }
       ],
       "antipatterns": [
@@ -416,7 +378,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Input id=\"email\" type=\"email\" />"
+          "code": "\u003cInput id=\"email\" type=\"email\" /\u003e"
         }
       ],
       "antipatterns": [
@@ -445,7 +407,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Badge variant=\"accent\">In review</Badge>"
+          "code": "\u003cBadge variant=\"accent\"\u003eIn review\u003c/Badge\u003e"
         }
       ],
       "antipatterns": [
@@ -483,7 +445,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Card size=\"md\">Project summary</Card>"
+          "code": "\u003cCard size=\"md\"\u003eProject summary\u003c/Card\u003e"
         }
       ],
       "antipatterns": [
@@ -509,7 +471,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Switch id=\"alerts\" defaultChecked />"
+          "code": "\u003cSwitch id=\"alerts\" defaultChecked /\u003e"
         }
       ],
       "antipatterns": [
@@ -530,7 +492,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Textarea id=\"brief\" placeholder=\"Project brief\" />"
+          "code": "\u003cTextarea id=\"brief\" placeholder=\"Project brief\" /\u003e"
         }
       ],
       "antipatterns": [
@@ -545,7 +507,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Accordion type=\"single\" collapsible>...</Accordion>"
+          "code": "\u003cAccordion type=\"single\" collapsible\u003e...\u003c/Accordion\u003e"
         }
       ],
       "antipatterns": [
@@ -560,7 +522,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Accordion type=\"single\" collapsible>...</Accordion>"
+          "code": "\u003cAccordion type=\"single\" collapsible\u003e...\u003c/Accordion\u003e"
         }
       ],
       "antipatterns": [
@@ -575,7 +537,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Accordion type=\"single\" collapsible>...</Accordion>"
+          "code": "\u003cAccordion type=\"single\" collapsible\u003e...\u003c/Accordion\u003e"
         }
       ],
       "antipatterns": [
@@ -590,7 +552,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Accordion type=\"single\" collapsible>...</Accordion>"
+          "code": "\u003cAccordion type=\"single\" collapsible\u003e...\u003c/Accordion\u003e"
         }
       ],
       "antipatterns": [
@@ -605,7 +567,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Collapsible>...</Collapsible>"
+          "code": "\u003cCollapsible\u003e...\u003c/Collapsible\u003e"
         }
       ],
       "antipatterns": [
@@ -620,7 +582,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Collapsible>...</Collapsible>"
+          "code": "\u003cCollapsible\u003e...\u003c/Collapsible\u003e"
         }
       ],
       "antipatterns": [
@@ -635,7 +597,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Collapsible>...</Collapsible>"
+          "code": "\u003cCollapsible\u003e...\u003c/Collapsible\u003e"
         }
       ],
       "antipatterns": [
@@ -650,7 +612,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Dialog><DialogContent><DialogTitle>Edit</DialogTitle></DialogContent></Dialog>"
+          "code": "\u003cDialog\u003e\u003cDialogContent\u003e\u003cDialogTitle\u003eEdit\u003c/DialogTitle\u003e\u003c/DialogContent\u003e\u003c/Dialog\u003e"
         }
       ],
       "antipatterns": [
@@ -665,7 +627,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Dialog><DialogContent><DialogTitle>Edit</DialogTitle></DialogContent></Dialog>"
+          "code": "\u003cDialog\u003e\u003cDialogContent\u003e\u003cDialogTitle\u003eEdit\u003c/DialogTitle\u003e\u003c/DialogContent\u003e\u003c/Dialog\u003e"
         }
       ],
       "antipatterns": [
@@ -680,7 +642,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Dialog><DialogContent><DialogTitle>Edit</DialogTitle></DialogContent></Dialog>"
+          "code": "\u003cDialog\u003e\u003cDialogContent\u003e\u003cDialogTitle\u003eEdit\u003c/DialogTitle\u003e\u003c/DialogContent\u003e\u003c/Dialog\u003e"
         }
       ],
       "antipatterns": [
@@ -695,7 +657,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Dialog><DialogContent><DialogTitle>Edit</DialogTitle></DialogContent></Dialog>"
+          "code": "\u003cDialog\u003e\u003cDialogContent\u003e\u003cDialogTitle\u003eEdit\u003c/DialogTitle\u003e\u003c/DialogContent\u003e\u003c/Dialog\u003e"
         }
       ],
       "antipatterns": [
@@ -717,7 +679,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Dialog><DialogContent><DialogTitle>Edit</DialogTitle></DialogContent></Dialog>"
+          "code": "\u003cDialog\u003e\u003cDialogContent\u003e\u003cDialogTitle\u003eEdit\u003c/DialogTitle\u003e\u003c/DialogContent\u003e\u003c/Dialog\u003e"
         }
       ],
       "antipatterns": [
@@ -732,7 +694,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Dialog><DialogContent><DialogTitle>Edit</DialogTitle></DialogContent></Dialog>"
+          "code": "\u003cDialog\u003e\u003cDialogContent\u003e\u003cDialogTitle\u003eEdit\u003c/DialogTitle\u003e\u003c/DialogContent\u003e\u003c/Dialog\u003e"
         }
       ],
       "antipatterns": [
@@ -747,7 +709,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Dialog><DialogContent><DialogTitle>Edit</DialogTitle></DialogContent></Dialog>"
+          "code": "\u003cDialog\u003e\u003cDialogContent\u003e\u003cDialogTitle\u003eEdit\u003c/DialogTitle\u003e\u003c/DialogContent\u003e\u003c/Dialog\u003e"
         }
       ],
       "antipatterns": [
@@ -762,7 +724,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Dialog><DialogContent><DialogTitle>Edit</DialogTitle></DialogContent></Dialog>"
+          "code": "\u003cDialog\u003e\u003cDialogContent\u003e\u003cDialogTitle\u003eEdit\u003c/DialogTitle\u003e\u003c/DialogContent\u003e\u003c/Dialog\u003e"
         }
       ],
       "antipatterns": [
@@ -777,7 +739,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Dialog><DialogContent><DialogTitle>Edit</DialogTitle></DialogContent></Dialog>"
+          "code": "\u003cDialog\u003e\u003cDialogContent\u003e\u003cDialogTitle\u003eEdit\u003c/DialogTitle\u003e\u003c/DialogContent\u003e\u003c/Dialog\u003e"
         }
       ],
       "antipatterns": [
@@ -792,7 +754,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<DropdownMenu><DropdownMenuTrigger asChild><Button>More</Button></DropdownMenuTrigger><DropdownMenuContent><DropdownMenuItem>Rename</DropdownMenuItem></DropdownMenuContent></DropdownMenu>"
+          "code": "\u003cDropdownMenu\u003e\u003cDropdownMenuTrigger asChild\u003e\u003cButton\u003eMore\u003c/Button\u003e\u003c/DropdownMenuTrigger\u003e\u003cDropdownMenuContent\u003e\u003cDropdownMenuItem\u003eRename\u003c/DropdownMenuItem\u003e\u003c/DropdownMenuContent\u003e\u003c/DropdownMenu\u003e"
         }
       ],
       "antipatterns": [
@@ -807,7 +769,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<DropdownMenuTrigger />"
+          "code": "\u003cDropdownMenuTrigger /\u003e"
         }
       ],
       "antipatterns": [
@@ -822,7 +784,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<DropdownMenuContent />"
+          "code": "\u003cDropdownMenuContent /\u003e"
         }
       ],
       "antipatterns": [
@@ -844,7 +806,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<DropdownMenuItem />"
+          "code": "\u003cDropdownMenuItem /\u003e"
         }
       ],
       "antipatterns": [
@@ -859,7 +821,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<DropdownMenuCheckboxItem />"
+          "code": "\u003cDropdownMenuCheckboxItem /\u003e"
         }
       ],
       "antipatterns": [
@@ -874,7 +836,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<DropdownMenuLabel />"
+          "code": "\u003cDropdownMenuLabel /\u003e"
         }
       ],
       "antipatterns": [
@@ -889,7 +851,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<DropdownMenuSeparator />"
+          "code": "\u003cDropdownMenuSeparator /\u003e"
         }
       ],
       "antipatterns": [
@@ -904,7 +866,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<DropdownMenuSub />"
+          "code": "\u003cDropdownMenuSub /\u003e"
         }
       ],
       "antipatterns": [
@@ -919,7 +881,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<DropdownMenuSubTrigger />"
+          "code": "\u003cDropdownMenuSubTrigger /\u003e"
         }
       ],
       "antipatterns": [
@@ -934,7 +896,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<DropdownMenuSubContent />"
+          "code": "\u003cDropdownMenuSubContent /\u003e"
         }
       ],
       "antipatterns": [
@@ -949,7 +911,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Popover><PopoverContent>Filters</PopoverContent></Popover>"
+          "code": "\u003cPopover\u003e\u003cPopoverContent\u003eFilters\u003c/PopoverContent\u003e\u003c/Popover\u003e"
         }
       ],
       "antipatterns": [
@@ -964,7 +926,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Popover><PopoverContent>Filters</PopoverContent></Popover>"
+          "code": "\u003cPopover\u003e\u003cPopoverContent\u003eFilters\u003c/PopoverContent\u003e\u003c/Popover\u003e"
         }
       ],
       "antipatterns": [
@@ -979,7 +941,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Popover><PopoverContent>Filters</PopoverContent></Popover>"
+          "code": "\u003cPopover\u003e\u003cPopoverContent\u003eFilters\u003c/PopoverContent\u003e\u003c/Popover\u003e"
         }
       ],
       "antipatterns": [
@@ -994,7 +956,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Popover><PopoverContent>Filters</PopoverContent></Popover>"
+          "code": "\u003cPopover\u003e\u003cPopoverContent\u003eFilters\u003c/PopoverContent\u003e\u003c/Popover\u003e"
         }
       ],
       "antipatterns": [
@@ -1016,7 +978,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Progress value={64} />"
+          "code": "\u003cProgress value={64} /\u003e"
         }
       ],
       "antipatterns": [
@@ -1044,7 +1006,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Sheet><SheetContent side=\"right\"><SheetTitle>Filters</SheetTitle></SheetContent></Sheet>"
+          "code": "\u003cSheet\u003e\u003cSheetContent side=\"right\"\u003e\u003cSheetTitle\u003eFilters\u003c/SheetTitle\u003e\u003c/SheetContent\u003e\u003c/Sheet\u003e"
         }
       ],
       "antipatterns": [
@@ -1059,7 +1021,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Sheet><SheetContent side=\"right\"><SheetTitle>Filters</SheetTitle></SheetContent></Sheet>"
+          "code": "\u003cSheet\u003e\u003cSheetContent side=\"right\"\u003e\u003cSheetTitle\u003eFilters\u003c/SheetTitle\u003e\u003c/SheetContent\u003e\u003c/Sheet\u003e"
         }
       ],
       "antipatterns": [
@@ -1074,7 +1036,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Sheet><SheetContent side=\"right\"><SheetTitle>Filters</SheetTitle></SheetContent></Sheet>"
+          "code": "\u003cSheet\u003e\u003cSheetContent side=\"right\"\u003e\u003cSheetTitle\u003eFilters\u003c/SheetTitle\u003e\u003c/SheetContent\u003e\u003c/Sheet\u003e"
         }
       ],
       "antipatterns": [
@@ -1089,7 +1051,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Sheet><SheetContent side=\"right\"><SheetTitle>Filters</SheetTitle></SheetContent></Sheet>"
+          "code": "\u003cSheet\u003e\u003cSheetContent side=\"right\"\u003e\u003cSheetTitle\u003eFilters\u003c/SheetTitle\u003e\u003c/SheetContent\u003e\u003c/Sheet\u003e"
         }
       ],
       "antipatterns": [
@@ -1111,7 +1073,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Sheet><SheetContent side=\"right\"><SheetTitle>Filters</SheetTitle></SheetContent></Sheet>"
+          "code": "\u003cSheet\u003e\u003cSheetContent side=\"right\"\u003e\u003cSheetTitle\u003eFilters\u003c/SheetTitle\u003e\u003c/SheetContent\u003e\u003c/Sheet\u003e"
         }
       ],
       "antipatterns": [
@@ -1126,7 +1088,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Sheet><SheetContent side=\"right\"><SheetTitle>Filters</SheetTitle></SheetContent></Sheet>"
+          "code": "\u003cSheet\u003e\u003cSheetContent side=\"right\"\u003e\u003cSheetTitle\u003eFilters\u003c/SheetTitle\u003e\u003c/SheetContent\u003e\u003c/Sheet\u003e"
         }
       ],
       "antipatterns": [
@@ -1141,7 +1103,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Sheet><SheetContent side=\"right\"><SheetTitle>Filters</SheetTitle></SheetContent></Sheet>"
+          "code": "\u003cSheet\u003e\u003cSheetContent side=\"right\"\u003e\u003cSheetTitle\u003eFilters\u003c/SheetTitle\u003e\u003c/SheetContent\u003e\u003c/Sheet\u003e"
         }
       ],
       "antipatterns": [
@@ -1156,7 +1118,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Sheet><SheetContent side=\"right\"><SheetTitle>Filters</SheetTitle></SheetContent></Sheet>"
+          "code": "\u003cSheet\u003e\u003cSheetContent side=\"right\"\u003e\u003cSheetTitle\u003eFilters\u003c/SheetTitle\u003e\u003c/SheetContent\u003e\u003c/Sheet\u003e"
         }
       ],
       "antipatterns": [
@@ -1171,7 +1133,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Sheet><SheetContent side=\"right\"><SheetTitle>Filters</SheetTitle></SheetContent></Sheet>"
+          "code": "\u003cSheet\u003e\u003cSheetContent side=\"right\"\u003e\u003cSheetTitle\u003eFilters\u003c/SheetTitle\u003e\u003c/SheetContent\u003e\u003c/Sheet\u003e"
         }
       ],
       "antipatterns": [
@@ -1186,7 +1148,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Skeleton className=\"h-4 w-32\" />"
+          "code": "\u003cSkeleton className=\"h-4 w-32\" /\u003e"
         }
       ],
       "antipatterns": [
@@ -1201,7 +1163,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Tabs defaultValue=\"overview\">...</Tabs>"
+          "code": "\u003cTabs defaultValue=\"overview\"\u003e...\u003c/Tabs\u003e"
         }
       ],
       "antipatterns": [
@@ -1216,7 +1178,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Tabs defaultValue=\"overview\">...</Tabs>"
+          "code": "\u003cTabs defaultValue=\"overview\"\u003e...\u003c/Tabs\u003e"
         }
       ],
       "antipatterns": [
@@ -1231,7 +1193,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Tabs defaultValue=\"overview\">...</Tabs>"
+          "code": "\u003cTabs defaultValue=\"overview\"\u003e...\u003c/Tabs\u003e"
         }
       ],
       "antipatterns": [
@@ -1246,7 +1208,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Tabs defaultValue=\"overview\">...</Tabs>"
+          "code": "\u003cTabs defaultValue=\"overview\"\u003e...\u003c/Tabs\u003e"
         }
       ],
       "antipatterns": [
@@ -1261,7 +1223,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Toaster />"
+          "code": "\u003cToaster /\u003e"
         }
       ],
       "antipatterns": [
@@ -1276,7 +1238,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<TooltipProvider><Tooltip>...</Tooltip></TooltipProvider>"
+          "code": "\u003cTooltipProvider\u003e\u003cTooltip\u003e...\u003c/Tooltip\u003e\u003c/TooltipProvider\u003e"
         }
       ],
       "antipatterns": [
@@ -1291,7 +1253,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<TooltipProvider><Tooltip>...</Tooltip></TooltipProvider>"
+          "code": "\u003cTooltipProvider\u003e\u003cTooltip\u003e...\u003c/Tooltip\u003e\u003c/TooltipProvider\u003e"
         }
       ],
       "antipatterns": [
@@ -1306,7 +1268,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<TooltipProvider><Tooltip>...</Tooltip></TooltipProvider>"
+          "code": "\u003cTooltipProvider\u003e\u003cTooltip\u003e...\u003c/Tooltip\u003e\u003c/TooltipProvider\u003e"
         }
       ],
       "antipatterns": [
@@ -1321,7 +1283,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<TooltipProvider><Tooltip>...</Tooltip></TooltipProvider>"
+          "code": "\u003cTooltipProvider\u003e\u003cTooltip\u003e...\u003c/Tooltip\u003e\u003c/TooltipProvider\u003e"
         }
       ],
       "antipatterns": [
@@ -1330,44 +1292,6 @@
     },
     {
       "name": "Select",
-      "file": "src/design-system/components/select",
-      "import_path": "",
-      "props": [
-        {
-          "name": "value",
-          "type": "string"
-        },
-        {
-          "name": "defaultValue",
-          "type": "string"
-        },
-        {
-          "name": "onValueChange",
-          "type": "(value: string) => void"
-        },
-        {
-          "name": "disabled",
-          "type": "boolean"
-        },
-        {
-          "name": "name",
-          "type": "string"
-        }
-      ],
-      "usage": "Use for one value chosen out of a known list, such as a sort order or a theme setting.",
-      "examples": [
-        {
-          "label": "Sort menu",
-          "code": "<Select value={sort} onValueChange={setSort}>\n  <SelectTrigger aria-label=\"Sort by\">\n    <SelectValue placeholder=\"Choose sort order\" />\n  </SelectTrigger>\n  <SelectContent>\n    <SelectItem value=\"newest\">Newest first</SelectItem>\n    <SelectItem value=\"name\">Name</SelectItem>\n  </SelectContent>\n</Select>"
-        }
-      ],
-      "antipatterns": [
-        "Do not use when the list is searchable or long; use MultiSelect or a combobox pattern.",
-        "Do not leave the trigger without an accessible name; pass aria-label or a wired label."
-      ]
-    },
-    {
-      "name": "SelectTrigger",
       "file": "src/design-system/components/select",
       "import_path": "",
       "props": [
@@ -1382,8 +1306,23 @@
           "default": "md"
         }
       ],
+      "usage": "Use for one value chosen out of a known list, such as a sort order or a theme setting.",
+      "examples": [
+        {
+          "label": "Sort menu",
+          "code": "\u003cSelect value={sort} onValueChange={setSort}\u003e\n  \u003cSelectTrigger aria-label=\"Sort by\"\u003e\n    \u003cSelectValue placeholder=\"Choose sort order\" /\u003e\n  \u003c/SelectTrigger\u003e\n  \u003cSelectContent\u003e\n    \u003cSelectItem value=\"newest\"\u003eNewest first\u003c/SelectItem\u003e\n    \u003cSelectItem value=\"name\"\u003eName\u003c/SelectItem\u003e\n  \u003c/SelectContent\u003e\n\u003c/Select\u003e"
+        }
+      ],
+      "antipatterns": [
+        "Do not use when the list is searchable or long; use MultiSelect or a combobox pattern.",
+        "Do not leave the trigger without an accessible name; pass aria-label or a wired label."
+      ]
+    },
+    {
+      "name": "SelectTrigger",
+      "file": "src/design-system/components/select",
+      "import_path": "",
       "usage": "The button-like field that opens the choose-one menu. Give it an accessible name.",
-      "examples": [],
       "antipatterns": [
         "Do not use a SelectTrigger without a SelectValue so the chosen value is shown."
       ]
@@ -1392,14 +1331,7 @@
       "name": "SelectValue",
       "file": "src/design-system/components/select",
       "import_path": "",
-      "props": [
-        {
-          "name": "placeholder",
-          "type": "string"
-        }
-      ],
       "usage": "Shows the current value inside the trigger and a placeholder while nothing is chosen.",
-      "examples": [],
       "antipatterns": [
         "Do not render placeholder text as a SelectItem; it would become a selectable option."
       ]
@@ -1408,51 +1340,16 @@
       "name": "SelectContent",
       "file": "src/design-system/components/select",
       "import_path": "",
-      "props": [
-        {
-          "name": "position",
-          "type": "enum",
-          "values": [
-            "popper",
-            "item-aligned"
-          ],
-          "default": "popper"
-        }
-      ],
       "usage": "The panel that holds the options. It animates with the shared motion tokens.",
-      "examples": [],
       "antipatterns": [
         "Do not put forms or buttons inside it; keep it to options."
-      ]
-    },
-    {
-      "name": "SelectItem",
-      "file": "src/design-system/components/select",
-      "import_path": "",
-      "props": [
-        {
-          "name": "value",
-          "type": "string",
-          "required": true
-        },
-        {
-          "name": "disabled",
-          "type": "boolean"
-        }
-      ],
-      "usage": "One option in a choose-one menu.",
-      "examples": [],
-      "antipatterns": [
-        "Do not use an empty string value; it is reserved for the cleared state."
       ]
     },
     {
       "name": "SelectGroup",
       "file": "src/design-system/components/select",
       "import_path": "",
-      "props": [],
       "usage": "Groups related options together with a label.",
-      "examples": [],
       "antipatterns": [
         "Do not use a label on its own without a group."
       ]
@@ -1461,18 +1358,22 @@
       "name": "SelectLabel",
       "file": "src/design-system/components/select",
       "import_path": "",
-      "props": [],
-      "usage": "The heading above a group of options.",
-      "examples": [],
-      "antipatterns": []
+      "usage": "The heading above a group of options."
+    },
+    {
+      "name": "SelectItem",
+      "file": "src/design-system/components/select",
+      "import_path": "",
+      "usage": "One option in a choose-one menu.",
+      "antipatterns": [
+        "Do not use an empty string value; it is reserved for the cleared state."
+      ]
     },
     {
       "name": "SelectSeparator",
       "file": "src/design-system/components/select",
       "import_path": "",
-      "props": [],
       "usage": "A thin line that separates option groups.",
-      "examples": [],
       "antipatterns": [
         "Do not add a separator between every option."
       ]
@@ -1484,17 +1385,17 @@
       "props": [
         {
           "name": "options",
-          "type": "{ value, label, hint?, disabled? }[]",
+          "type": "any",
           "required": true
         },
         {
           "name": "value",
-          "type": "string[]",
+          "type": "any",
           "required": true
         },
         {
           "name": "onValueChange",
-          "type": "(value: string[]) => void",
+          "type": "function",
           "required": true
         },
         {
@@ -1513,12 +1414,31 @@
           "default": "No matches"
         },
         {
+          "name": "selectAllLabel",
+          "type": "string",
+          "default": "Select all"
+        },
+        {
+          "name": "clearLabel",
+          "type": "string",
+          "default": "Clear"
+        },
+        {
+          "name": "formatOverflow",
+          "type": "function"
+        },
+        {
           "name": "maxChips",
           "type": "number",
           "default": "3"
         },
         {
           "name": "showCount",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "disabled",
           "type": "boolean"
         },
         {
@@ -1526,19 +1446,20 @@
           "type": "boolean"
         },
         {
-          "name": "disabled",
-          "type": "boolean"
+          "name": "id",
+          "type": "string"
         },
         {
-          "name": "formatOverflow",
-          "type": "(count: number) => string"
+          "name": "className",
+          "type": "string",
+          "default": "flex flex-wrap items-center gap-1.5 py-1.5 pl-3 pr-9"
         }
       ],
       "usage": "Use when several values must be picked from a long list and the list is not known, such as universities, areas or queues.",
       "examples": [
         {
           "label": "Pick teams",
-          "code": "<MultiSelect\n  options={teams}\n  value={selected}\n  onValueChange={setSelected}\n  placeholder=\"Team members\"\n  searchPlaceholder=\"Search people\"\n/>"
+          "code": "\u003cMultiSelect\n  options={teams}\n  value={selected}\n  onValueChange={setSelected}\n  placeholder=\"Team members\"\n  searchPlaceholder=\"Search people\"\n/\u003e"
         }
       ],
       "antipatterns": [
@@ -1553,18 +1474,6 @@
       "import_path": "",
       "props": [
         {
-          "name": "checked",
-          "type": "boolean | \"indeterminate\""
-        },
-        {
-          "name": "defaultChecked",
-          "type": "boolean"
-        },
-        {
-          "name": "onCheckedChange",
-          "type": "(checked: boolean | \"indeterminate\") => void"
-        },
-        {
           "name": "size",
           "type": "enum",
           "values": [
@@ -1576,17 +1485,13 @@
         {
           "name": "invalid",
           "type": "boolean"
-        },
-        {
-          "name": "disabled",
-          "type": "boolean"
         }
       ],
       "usage": "Use to turn one option on or off, or to select rows in a list.",
       "examples": [
         {
           "label": "Row selection",
-          "code": "<Checkbox checked={selected} onCheckedChange={toggle}\n  aria-label=\"Select row\" />"
+          "code": "\u003cCheckbox checked={selected} onCheckedChange={toggle}\n  aria-label=\"Select row\" /\u003e"
         }
       ],
       "antipatterns": [
@@ -1610,24 +1515,46 @@
         },
         {
           "name": "hoverable",
-          "type": "boolean"
+          "type": "boolean",
+          "default": "true"
         },
         {
           "name": "stickyHeader",
-          "type": "boolean"
+          "type": "boolean",
+          "default": "false"
         }
       ],
       "usage": "Use for structured rows of comparable values, such as statistics or admin listings.",
       "examples": [
         {
           "label": "Sortable table",
-          "code": "<Table hoverable stickyHeader>\n  <TableHeader>\n    <TableRow>\n      <TableHead sortable sortDirection=\"ascending\" onSort={toggleSort}>Name</TableHead>\n      <TableHead>Value</TableHead>\n    </TableRow>\n  </TableHeader>\n  <TableBody>{rows.map(...)}</TableBody>\n</Table>"
+          "code": "\u003cTable hoverable stickyHeader\u003e\n  \u003cTableHeader\u003e\n    \u003cTableRow\u003e\n      \u003cTableHead sortable sortDirection=\"ascending\" onSort={toggleSort}\u003eName\u003c/TableHead\u003e\n      \u003cTableHead\u003eValue\u003c/TableHead\u003e\n    \u003c/TableRow\u003e\n  \u003c/TableHeader\u003e\n  \u003cTableBody\u003e{rows.map(...)}\u003c/TableBody\u003e\n\u003c/Table\u003e"
         }
       ],
       "antipatterns": [
         "Do not use a table for layout or for cards of unrelated content.",
         "Do not put the sorting logic in the component; the project sorts and reports sortDirection."
       ]
+    },
+    {
+      "name": "TableHeader",
+      "file": "src/design-system/components/table",
+      "import_path": ""
+    },
+    {
+      "name": "TableBody",
+      "file": "src/design-system/components/table",
+      "import_path": ""
+    },
+    {
+      "name": "TableFooter",
+      "file": "src/design-system/components/table",
+      "import_path": ""
+    },
+    {
+      "name": "TableRow",
+      "file": "src/design-system/components/table",
+      "import_path": ""
     },
     {
       "name": "TableHead",
@@ -1642,19 +1569,18 @@
           "name": "sortDirection",
           "type": "enum",
           "values": [
-            "none",
-            "ascending",
-            "descending"
+            "asc",
+            "desc",
+            "none"
           ],
           "default": "none"
         },
         {
           "name": "onSort",
-          "type": "() => void"
+          "type": "function"
         }
       ],
       "usage": "A column header. When sortable it renders a button and sets aria-sort.",
-      "examples": [],
       "antipatterns": [
         "Do not make a column sortable without showing which direction is active."
       ]
@@ -1663,35 +1589,18 @@
       "name": "TableCell",
       "file": "src/design-system/components/table",
       "import_path": "",
-      "props": [
-        {
-          "name": "align",
-          "type": "enum",
-          "values": [
-            "start",
-            "center",
-            "end"
-          ],
-          "default": "start"
-        }
-      ],
-      "usage": "One value in a row. Use align end for numbers so they line up.",
-      "examples": [],
-      "antipatterns": []
+      "usage": "One value in a row. Use align end for numbers so they line up."
+    },
+    {
+      "name": "TableCaption",
+      "file": "src/design-system/components/table",
+      "import_path": ""
     },
     {
       "name": "TableEmptyState",
       "file": "src/design-system/components/table",
       "import_path": "",
-      "props": [
-        {
-          "name": "message",
-          "type": "string",
-          "required": true
-        }
-      ],
       "usage": "Shown below the header when no rows match, so the header stays visible.",
-      "examples": [],
       "antipatterns": [
         "Do not replace the whole table with the empty state; keep the header so context is not lost."
       ]
@@ -1702,51 +1611,15 @@
       "import_path": "",
       "props": [
         {
-          "name": "type",
-          "type": "enum",
-          "values": [
-            "single",
-            "multiple"
-          ],
-          "default": "single"
-        },
-        {
-          "name": "variant",
-          "type": "enum",
-          "values": [
-            "default",
-            "outline"
-          ],
-          "default": "default"
-        },
-        {
-          "name": "size",
-          "type": "enum",
-          "values": [
-            "sm",
-            "md",
-            "lg"
-          ],
-          "default": "md"
-        },
-        {
           "name": "fullWidth",
           "type": "boolean"
-        },
-        {
-          "name": "value",
-          "type": "string | string[]"
-        },
-        {
-          "name": "onValueChange",
-          "type": "(value: string | string[]) => void"
         }
       ],
       "usage": "Use for two to five mutually exclusive options that should be compared at a glance, such as Off / Preferred / Required.",
       "examples": [
         {
           "label": "Requirement level",
-          "code": "<ToggleGroup type=\"single\" value={mode} onValueChange={setMode} fullWidth aria-label=\"Requirement\">\n  <ToggleGroupItem value=\"off\">Off</ToggleGroupItem>\n  <ToggleGroupItem value=\"preferred\">Preferred</ToggleGroupItem>\n  <ToggleGroupItem value=\"required\">Required</ToggleGroupItem>\n</ToggleGroup>"
+          "code": "\u003cToggleGroup type=\"single\" value={mode} onValueChange={setMode} fullWidth aria-label=\"Requirement\"\u003e\n  \u003cToggleGroupItem value=\"off\"\u003eOff\u003c/ToggleGroupItem\u003e\n  \u003cToggleGroupItem value=\"preferred\"\u003ePreferred\u003c/ToggleGroupItem\u003e\n  \u003cToggleGroupItem value=\"required\"\u003eRequired\u003c/ToggleGroupItem\u003e\n\u003c/ToggleGroup\u003e"
         }
       ],
       "antipatterns": [
@@ -1761,17 +1634,11 @@
       "import_path": "",
       "props": [
         {
-          "name": "value",
-          "type": "string",
-          "required": true
-        },
-        {
-          "name": "disabled",
+          "name": "fullWidth",
           "type": "boolean"
         }
       ],
       "usage": "One segment in a toggle group.",
-      "examples": [],
       "antipatterns": [
         "Do not use a segment for navigation between pages."
       ]
@@ -1782,16 +1649,29 @@
       "import_path": "",
       "props": [
         {
-          "name": "aria-label",
-          "type": "string",
-          "required": true
+          "name": "active",
+          "type": "enum",
+          "values": [
+            "true",
+            "false"
+          ],
+          "default": "false"
+        },
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md"
+          ],
+          "default": "md"
         }
       ],
       "usage": "The row of top-level links at the top of a page; it scrolls sideways on narrow screens.",
       "examples": [
         {
           "label": "Top navigation",
-          "code": "<NavMenu aria-label=\"Main\">\n  <NavItem asChild active={isHome}><Link to=\"/\">Overview</Link></NavItem>\n  <NavItem asChild><Link to=\"/settings\">Settings</Link></NavItem>\n</NavMenu>"
+          "code": "\u003cNavMenu aria-label=\"Main\"\u003e\n  \u003cNavItem asChild active={isHome}\u003e\u003cLink to=\"/\"\u003eOverview\u003c/Link\u003e\u003c/NavItem\u003e\n  \u003cNavItem asChild\u003e\u003cLink to=\"/settings\"\u003eSettings\u003c/Link\u003e\u003c/NavItem\u003e\n\u003c/NavMenu\u003e"
         }
       ],
       "antipatterns": [
@@ -1811,13 +1691,21 @@
         {
           "name": "asChild",
           "type": "boolean"
+        },
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md"
+          ]
         }
       ],
       "usage": "A top-level link. Sets aria-current=\"page\" when active and shows a tinted background.",
       "examples": [
         {
           "label": "Active link",
-          "code": "<NavItem asChild active={current === \"report\"}>\n  <Link to=\"/report\">Report</Link>\n</NavItem>"
+          "code": "\u003cNavItem asChild active={current === \"report\"}\u003e\n  \u003cLink to=\"/report\"\u003eReport\u003c/Link\u003e\n\u003c/NavItem\u003e"
         }
       ],
       "antipatterns": [

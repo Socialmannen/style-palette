@@ -175,6 +175,34 @@ _Default_
 
 - Do not nest cards inside cards.
 
+### Checkbox
+
+```ts
+import { Checkbox } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+```
+
+Use to turn one option on or off, or to select rows in a list.
+
+**Props:**
+
+| Prop | Type | Default |
+|---|---|---|
+| `size` | sm · md | `md` |
+| `invalid` | boolean | `—` |
+
+**Examples:**
+
+_Row selection_
+```tsx
+<Checkbox checked={selected} onCheckedChange={toggle}
+  aria-label="Select row" />
+```
+
+**Avoid:**
+
+- Do not use for a value with three or more meanings; use a choose-one menu.
+- Do not build a checkbox from a styled div; this is the real form control with the right ARIA.
+
 ### Collapsible
 
 ```ts
@@ -630,6 +658,113 @@ _Default_
 
 - Do not use without an associated accessible label.
 
+### MultiSelect
+
+```ts
+import { MultiSelect } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+```
+
+Use when several values must be picked from a long list and the list is not known, such as universities, areas or queues.
+
+**Props:**
+
+| Prop | Type | Default |
+|---|---|---|
+| `options` | any | `—` |
+| `value` | any | `—` |
+| `onValueChange` | function | `—` |
+| `placeholder` | string | `Select items` |
+| `searchPlaceholder` | string | `Search` |
+| `emptyMessage` | string | `No matches` |
+| `selectAllLabel` | string | `Select all` |
+| `clearLabel` | string | `Clear` |
+| `formatOverflow` | function | `—` |
+| `maxChips` | number | `3` |
+| `showCount` | boolean | `false` |
+| `disabled` | boolean | `—` |
+| `loading` | boolean | `—` |
+| `id` | string | `—` |
+| `className` | string | `flex flex-wrap items-center gap-1.5 py-1.5 pl-3 pr-9` |
+
+**Examples:**
+
+_Pick teams_
+```tsx
+<MultiSelect
+  options={teams}
+  value={selected}
+  onValueChange={setSelected}
+  placeholder="Team members"
+  searchPlaceholder="Search people"
+/>
+```
+
+**Avoid:**
+
+- Do not use for one value out of a short list; use Select.
+- Do not hardcode visible strings; pass placeholder, searchPlaceholder, emptyMessage and formatOverflow so the project can translate them.
+- Do not fetch data inside the component; the project owns the options list.
+
+### NavItem
+
+```ts
+import { NavItem } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+```
+
+A top-level link. Sets aria-current="page" when active and shows a tinted background.
+
+**Props:**
+
+| Prop | Type | Default |
+|---|---|---|
+| `active` | boolean | `—` |
+| `asChild` | boolean | `—` |
+| `size` | sm · md | `—` |
+
+**Examples:**
+
+_Active link_
+```tsx
+<NavItem asChild active={current === "report"}>
+  <Link to="/report">Report</Link>
+</NavItem>
+```
+
+**Avoid:**
+
+- Do not use a nav item for a button that runs an action; use Button.
+- Do not signal the current page with a colour alone; the active state also carries aria-current.
+
+### NavMenu
+
+```ts
+import { NavMenu } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+```
+
+The row of top-level links at the top of a page; it scrolls sideways on narrow screens.
+
+**Props:**
+
+| Prop | Type | Default |
+|---|---|---|
+| `active` | true · false | `false` |
+| `size` | sm · md | `md` |
+
+**Examples:**
+
+_Top navigation_
+```tsx
+<NavMenu aria-label="Main">
+  <NavItem asChild active={isHome}><Link to="/">Overview</Link></NavItem>
+  <NavItem asChild><Link to="/settings">Settings</Link></NavItem>
+</NavMenu>
+```
+
+**Avoid:**
+
+- Do not nest actions or menus in it; use DropdownMenu for those.
+- Do not leave out aria-label; screen readers announce the region.
+
 ### Popover
 
 ```ts
@@ -730,6 +865,120 @@ _Default_
 **Avoid:**
 
 - Do not use as decorative motion.
+
+### Select
+
+```ts
+import { Select } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+```
+
+Use for one value chosen out of a known list, such as a sort order or a theme setting.
+
+**Props:**
+
+| Prop | Type | Default |
+|---|---|---|
+| `size` | sm · md · lg | `md` |
+
+**Examples:**
+
+_Sort menu_
+```tsx
+<Select value={sort} onValueChange={setSort}>
+  <SelectTrigger aria-label="Sort by">
+    <SelectValue placeholder="Choose sort order" />
+  </SelectTrigger>
+  <SelectContent>
+    <SelectItem value="newest">Newest first</SelectItem>
+    <SelectItem value="name">Name</SelectItem>
+  </SelectContent>
+</Select>
+```
+
+**Avoid:**
+
+- Do not use when the list is searchable or long; use MultiSelect or a combobox pattern.
+- Do not leave the trigger without an accessible name; pass aria-label or a wired label.
+
+### SelectContent
+
+```ts
+import { SelectContent } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+```
+
+The panel that holds the options. It animates with the shared motion tokens.
+
+**Avoid:**
+
+- Do not put forms or buttons inside it; keep it to options.
+
+### SelectGroup
+
+```ts
+import { SelectGroup } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+```
+
+Groups related options together with a label.
+
+**Avoid:**
+
+- Do not use a label on its own without a group.
+
+### SelectItem
+
+```ts
+import { SelectItem } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+```
+
+One option in a choose-one menu.
+
+**Avoid:**
+
+- Do not use an empty string value; it is reserved for the cleared state.
+
+### SelectLabel
+
+```ts
+import { SelectLabel } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+```
+
+The heading above a group of options.
+
+### SelectSeparator
+
+```ts
+import { SelectSeparator } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+```
+
+A thin line that separates option groups.
+
+**Avoid:**
+
+- Do not add a separator between every option.
+
+### SelectTrigger
+
+```ts
+import { SelectTrigger } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+```
+
+The button-like field that opens the choose-one menu. Give it an accessible name.
+
+**Avoid:**
+
+- Do not use a SelectTrigger without a SelectValue so the chosen value is shown.
+
+### SelectValue
+
+```ts
+import { SelectValue } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+```
+
+Shows the current value inside the trigger and a placeholder while nothing is chosen.
+
+**Avoid:**
+
+- Do not render placeholder text as a SelectItem; it would become a selectable option.
 
 ### Sheet
 
@@ -958,6 +1207,112 @@ _Default_
 
 - Do not use for multi-option choices or submit actions.
 
+### Table
+
+```ts
+import { Table } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+```
+
+Use for structured rows of comparable values, such as statistics or admin listings.
+
+**Props:**
+
+| Prop | Type | Default |
+|---|---|---|
+| `density` | compact · comfortable | `comfortable` |
+| `hoverable` | boolean | `true` |
+| `stickyHeader` | boolean | `false` |
+
+**Examples:**
+
+_Sortable table_
+```tsx
+<Table hoverable stickyHeader>
+  <TableHeader>
+    <TableRow>
+      <TableHead sortable sortDirection="ascending" onSort={toggleSort}>Name</TableHead>
+      <TableHead>Value</TableHead>
+    </TableRow>
+  </TableHeader>
+  <TableBody>{rows.map(...)}</TableBody>
+</Table>
+```
+
+**Avoid:**
+
+- Do not use a table for layout or for cards of unrelated content.
+- Do not put the sorting logic in the component; the project sorts and reports sortDirection.
+
+### TableBody
+
+```ts
+import { TableBody } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+```
+
+### TableCaption
+
+```ts
+import { TableCaption } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+```
+
+### TableCell
+
+```ts
+import { TableCell } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+```
+
+One value in a row. Use align end for numbers so they line up.
+
+### TableEmptyState
+
+```ts
+import { TableEmptyState } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+```
+
+Shown below the header when no rows match, so the header stays visible.
+
+**Avoid:**
+
+- Do not replace the whole table with the empty state; keep the header so context is not lost.
+
+### TableFooter
+
+```ts
+import { TableFooter } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+```
+
+### TableHead
+
+```ts
+import { TableHead } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+```
+
+A column header. When sortable it renders a button and sets aria-sort.
+
+**Props:**
+
+| Prop | Type | Default |
+|---|---|---|
+| `sortable` | boolean | `—` |
+| `sortDirection` | asc · desc · none | `none` |
+| `onSort` | function | `—` |
+
+**Avoid:**
+
+- Do not make a column sortable without showing which direction is active.
+
+### TableHeader
+
+```ts
+import { TableHeader } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+```
+
+### TableRow
+
+```ts
+import { TableRow } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+```
+
 ### Tabs
 
 ```ts
@@ -1077,6 +1432,55 @@ _Default_
 **Avoid:**
 
 - Do not replace inline validation or critical confirmation.
+
+### ToggleGroup
+
+```ts
+import { ToggleGroup } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+```
+
+Use for two to five mutually exclusive options that should be compared at a glance, such as Off / Preferred / Required.
+
+**Props:**
+
+| Prop | Type | Default |
+|---|---|---|
+| `fullWidth` | boolean | `—` |
+
+**Examples:**
+
+_Requirement level_
+```tsx
+<ToggleGroup type="single" value={mode} onValueChange={setMode} fullWidth aria-label="Requirement">
+  <ToggleGroupItem value="off">Off</ToggleGroupItem>
+  <ToggleGroupItem value="preferred">Preferred</ToggleGroupItem>
+  <ToggleGroupItem value="required">Required</ToggleGroupItem>
+</ToggleGroup>
+```
+
+**Avoid:**
+
+- Do not use for more than five options; use a choose-one menu.
+- Do not use type multiple when only one option may be active.
+- Do not build a segmented control from plain Buttons; use this component.
+
+### ToggleGroupItem
+
+```ts
+import { ToggleGroupItem } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+```
+
+One segment in a toggle group.
+
+**Props:**
+
+| Prop | Type | Default |
+|---|---|---|
+| `fullWidth` | boolean | `—` |
+
+**Avoid:**
+
+- Do not use a segment for navigation between pages.
 
 ### Tooltip
 

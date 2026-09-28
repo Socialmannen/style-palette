@@ -4,7 +4,7 @@ import { ChevronDown } from 'lucide-react';
 import { cn } from '../lib';
 
 /** Use for grouped content where headings should remain visible and details can expand. Example: <Accordion type="single" collapsible><AccordionItem value="a"><AccordionTrigger>Details</AccordionTrigger><AccordionContent>...</AccordionContent></AccordionItem></Accordion>. Do not hide critical actions inside an accordion by default. */
-export interface AccordionProps extends ComponentPropsWithoutRef<typeof AccordionPrimitive.Root> {}
+export type AccordionProps = ComponentPropsWithoutRef<typeof AccordionPrimitive.Root>;
 export const Accordion = AccordionPrimitive.Root as typeof AccordionPrimitive.Root;
 
 export interface AccordionItemProps extends ComponentPropsWithoutRef<typeof AccordionPrimitive.Item> {}

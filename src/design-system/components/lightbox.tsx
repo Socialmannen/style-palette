@@ -63,7 +63,7 @@ export const Lightbox = forwardRef<HTMLDivElement, LightboxProps>(function Light
 
   useEffect(() => { if (index === undefined && inner > total - 1) setInner(Math.max(total - 1, 0)); }, [index, inner, total]);
 
-  return <DialogPrimitive.Root open={open} defaultOpen={defaultOpen} onOpenChange={onOpenChange}>
+  return <DialogPrimitive.Root {...(open !== undefined && { open })} {...(defaultOpen !== undefined && { defaultOpen })} {...(onOpenChange && { onOpenChange })}>
     {trigger && <DialogPrimitive.Trigger asChild>{trigger}</DialogPrimitive.Trigger>}
     <DialogPrimitive.Portal>
       <DialogPrimitive.Overlay className="motion-overlay fixed inset-0 z-50 bg-background/90" />

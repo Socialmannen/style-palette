@@ -2,7 +2,7 @@
   "meta": {
     "name": "Style Palette",
     "package": "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "framework": "react",
     "css_framework": "tailwind",
     "starter_template": "custom_design_system",
@@ -11,16 +11,16 @@
     ],
     "source_type": "local",
     "source_manifest": {
-      "#enrichment": "7435adf403e82912a344df501c200d32dff65db85b60d10d9977f9928df6d2e9",
+      "#enrichment": "7be52d9768f40383f1bfed47e522fe5cdb5ceee768cffde2c11fa6ec1327f070",
       ".dsignore": "2c7d76468c15bc0f1499420154f01ae3",
       ".gitignore": "6d9e901a692b46a83707c245fb03bc91",
-      ".lovable/meta.yaml": "8ec7245def9c0ef39976dd2bc212ff0a",
+      ".lovable/meta.yaml": "8794970d6049858cc148d2b86f7a2b22",
       ".lovable/project.json": "51a90576cd97762828b128ea584e5780",
       ".lovable/sources.yaml": "1b62005cb01c2413aacc02b0f9500c65",
-      ".lovable/system.md": "431b42f3492f83c48f739144a7290121",
+      ".lovable/system.md": "32c52d6751f3052918e1f796fe6d7ed2",
       ".prettierignore": "7279a476f196a2da5f7edd18db568dc6",
       ".prettierrc": "185ef0234746ab738ac1ab6cec5e2bd9",
-      "AGENTS.md": "710fe48e09a7b5b2c3898bd294bec0c7",
+      "AGENTS.md": "59800c55b525cb9661d2534ccc37f111",
       "README.md": "9651f45364ac3524097a14081cd3a7bc",
       "bunfig.toml": "89115995d9de72fdfc894e16b1e75297",
       "components.json": "30d3d035361ce807021f5c54620962e9",
@@ -29,7 +29,7 @@
       "package.json": "1206bda12fe74e21e3b67920ab4fe633",
       "public/favicon.ico": "9f504444f85a5af2eef9264b02ae40be",
       "public/robots.txt": "f9dff89adf98833e676de2205921996a",
-      "roadmap.md": "c2e9b347035ccea79e09255417ff8af3",
+      "roadmap.md": "3f5000b7c48e65e848ae1a5032db5310",
       "src/components/ui/accordion.tsx": "55f9dda62b4e3913c9b23e5015a86aef",
       "src/components/ui/alert-dialog.tsx": "96350e949e9b7b674545430a410ab89c",
       "src/components/ui/alert.tsx": "f993d7e96b1e25ce50e68ed97e11d2a8",
@@ -84,15 +84,17 @@
       "src/design-system/assets/fonts/outfit-600.ttf": "5d10e86057713398adb241ac22568b12",
       "src/design-system/assets/fonts/outfit-700.ttf": "4fa2a7180a009d0a93eaa11d736aed50",
       "src/design-system/components/badge.tsx": "27e7dd75fdf8853854889f55d4f2ad83",
-      "src/design-system/components/button.tsx": "5e74146e387587644ad8c1e1a6645f29",
+      "src/design-system/components/button-link.tsx": "d79253f9a30fcc546a5f5286ab6f3eb8",
+      "src/design-system/components/button.tsx": "5ddf35e23076b01c2e2f83237b09d3a3",
       "src/design-system/components/card.tsx": "2baa8800641e5fb89260e39f46d72665",
+      "src/design-system/components/dropdown-menu.tsx": "458cc560b84143c9f86f27aea9cc49d5",
       "src/design-system/components/input.tsx": "0bbdd69e0752c1b0c7f1b40731852a05",
       "src/design-system/components/switch.tsx": "64ea51487a5d0f653ef96116569d60d7",
       "src/design-system/components/textarea.tsx": "3d00e91264ea63173f6a616255233f02",
       "src/design-system/lib.ts": "68b1b903329d1d880bf000551a84bc6f",
-      "src/design-system/styles/theme.css": "309ada67d5f9af8efdafcbb28c7e8fdd",
+      "src/design-system/styles/theme.css": "3faa104ea8ae4d8a408f68a2eeeb43e2",
       "src/hooks/use-mobile.tsx": "c0a0bdd4638c391a1dd06ac82074e60b",
-      "src/index.ts": "881f662e4b29cbf76df985f799284e54",
+      "src/index.ts": "b4a5028adf07338a167b1eeb5c491b9f",
       "src/lib/error-capture.ts": "f630d9686a9a989170f22eff4de7b30d",
       "src/lib/error-page.ts": "8da0ddd7569bac2676b9a5c8edff8a36",
       "src/lib/lovable-error-reporting.ts": "0367e03b7d71917510e4dc1cdae172ec",
@@ -102,7 +104,7 @@
       "src/routes/README.md": "b3a2f259b66fd1a11f54b6d5ac83bf57",
       "src/routes/__root.tsx": "27cf61bb40cdfa238ba76ae653c04013",
       "src/routes/colors.tsx": "48792f4542f6dce4d8a85bc44d2deef7",
-      "src/routes/components.tsx": "68b661c99f5cb0420da2fea4d6379a72",
+      "src/routes/components.tsx": "2919f59200b04614bab530282aeb28d6",
       "src/routes/index.tsx": "33ac4142215d36c748a1ab1a230f5875",
       "src/routes/typography.tsx": "d4065f467dee05ab5c124d515787a8eb",
       "src/server.ts": "c7bbc49bb70e318af618d92775ee0f27",
@@ -119,7 +121,7 @@
     "color": [
       {
         "name": "--primary",
-        "raw": "oklch(0.55 0.22 259)",
+        "raw": "oklch(0.54 0.16 259)",
         "source": "src/design-system/styles/theme.css"
       },
       {
@@ -129,17 +131,17 @@
       },
       {
         "name": "--accent",
-        "raw": "oklch(0.93 0.035 257)",
+        "raw": "oklch(0.93 0.03 257)",
         "source": "src/design-system/styles/theme.css"
       },
       {
         "name": "--accent-foreground",
-        "raw": "oklch(0.37 0.14 259)",
+        "raw": "oklch(0.37 0.11 259)",
         "source": "src/design-system/styles/theme.css"
       },
       {
         "name": "--ring",
-        "raw": "oklch(0.55 0.22 259)",
+        "raw": "oklch(0.54 0.16 259)",
         "source": "src/design-system/styles/theme.css"
       },
       {
@@ -204,22 +206,22 @@
       },
       {
         "name": "--palette-cobalt",
-        "raw": "oklch(0.55 0.22 259)",
+        "raw": "oklch(0.54 0.16 259)",
         "source": "src/design-system/styles/theme.css"
       },
       {
         "name": "--palette-emerald",
-        "raw": "oklch(0.51 0.14 165)",
+        "raw": "oklch(0.46 0.10 150)",
         "source": "src/design-system/styles/theme.css"
       },
       {
         "name": "--palette-amber",
-        "raw": "oklch(0.58 0.14 68)",
+        "raw": "oklch(0.58 0.10 70)",
         "source": "src/design-system/styles/theme.css"
       },
       {
         "name": "--palette-violet",
-        "raw": "oklch(0.57 0.21 298)",
+        "raw": "oklch(0.56 0.15 298)",
         "source": "src/design-system/styles/theme.css"
       }
     ],
@@ -299,6 +301,68 @@
           "type": "boolean"
         }
       ]
+    },
+    {
+      "name": "ButtonLink",
+      "file": "src/design-system/components/button-link",
+      "import_path": ""
+    },
+    {
+      "name": "DropdownMenu",
+      "file": "src/design-system/components/dropdown-menu",
+      "import_path": ""
+    },
+    {
+      "name": "DropdownMenuTrigger",
+      "file": "src/design-system/components/dropdown-menu",
+      "import_path": ""
+    },
+    {
+      "name": "DropdownMenuContent",
+      "file": "src/design-system/components/dropdown-menu",
+      "import_path": ""
+    },
+    {
+      "name": "DropdownMenuItem",
+      "file": "src/design-system/components/dropdown-menu",
+      "import_path": "",
+      "props": [
+        {
+          "name": "destructive",
+          "type": "boolean",
+          "default": "false"
+        }
+      ]
+    },
+    {
+      "name": "DropdownMenuCheckboxItem",
+      "file": "src/design-system/components/dropdown-menu",
+      "import_path": ""
+    },
+    {
+      "name": "DropdownMenuLabel",
+      "file": "src/design-system/components/dropdown-menu",
+      "import_path": ""
+    },
+    {
+      "name": "DropdownMenuSeparator",
+      "file": "src/design-system/components/dropdown-menu",
+      "import_path": ""
+    },
+    {
+      "name": "DropdownMenuSub",
+      "file": "src/design-system/components/dropdown-menu",
+      "import_path": ""
+    },
+    {
+      "name": "DropdownMenuSubTrigger",
+      "file": "src/design-system/components/dropdown-menu",
+      "import_path": ""
+    },
+    {
+      "name": "DropdownMenuSubContent",
+      "file": "src/design-system/components/dropdown-menu",
+      "import_path": ""
     },
     {
       "name": "Input",

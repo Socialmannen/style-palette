@@ -4,7 +4,7 @@
 
 The design system exports these components — import them from `@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1` and compose them before building anything from scratch:
 
-`Badge`, `Button`, `Card`, `Input`, `Switch`, `Textarea`
+`Badge`, `ButtonLink`, `Button`, `Card`, `DropdownMenuCheckboxItem`, `DropdownMenuContent`, `DropdownMenuItem`, `DropdownMenuLabel`, `DropdownMenuSeparator`, `DropdownMenuSubContent`, `DropdownMenuSubTrigger`, `DropdownMenuSub`, `DropdownMenuTrigger`, `DropdownMenu`, `Input`, `Switch`, `Textarea`
 
 Per-component details (import stanzas, props, variants, examples) live in `.lovable/rules/libraries/{slug}/components.md` — on disk, not auto-loaded. Read that file or the component source when the name alone isn't enough.
 

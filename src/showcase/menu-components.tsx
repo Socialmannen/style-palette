@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { ChevronDown, Copy, Filter, Layers, Search, Users } from 'lucide-react';
 import { Badge } from '../design-system/components/badge';
 import { Button } from '../design-system/components/button';
+import { ChoiceDialog } from '../design-system/components/choice-dialog';
 import { Checkbox } from '../design-system/components/checkbox';
 import { MultiSelect, type MultiSelectOption } from '../design-system/components/multi-select';
 import { NavItem, NavMenu } from '../design-system/components/nav-menu';
@@ -47,6 +48,16 @@ const rows = [
 ];
 
 type SortKey = 'name' | 'views' | 'change';
+
+
+function ChoiceDialogDemo() {
+  const [layout, setLayout] = useState(['board']);
+  const [channels, setChannels] = useState(['email']);
+  return <div className="grid gap-4 md:grid-cols-2">
+    <Specimen label="single choice, grid layout"><div className="flex flex-wrap items-center gap-3"><ChoiceDialog title="Choose a view" description="Pick how items are shown for everyone on this page." layout="grid" defaultValue={layout} onConfirm={setLayout} options={[{ value: 'list', label: 'List', description: 'Dense rows for scanning', icon: <Layers className="size-4" /> }, { value: 'board', label: 'Board', description: 'Columns grouped by status', icon: <Filter className="size-4" /> }, { value: 'team', label: 'By owner', description: 'Grouped by assignee', icon: <Users className="size-4" /> }, { value: 'archive', label: 'Archive', description: 'Available on paid plans', disabled: true }]} trigger={<Button variant="outline">Change view</Button>} /><span className="text-sm text-muted-foreground">Current: {layout.join(', ')}</span></div></Specimen>
+    <Specimen label="multiple choice, at least one"><div className="flex flex-wrap items-center gap-3"><ChoiceDialog type="multiple" title="Notification channels" description="Select where updates are delivered." defaultValue={channels} onConfirm={setChannels} confirmLabel="Save channels" options={[{ value: 'email', label: 'Email' }, { value: 'push', label: 'Push notifications' }, { value: 'sms', label: 'Text message', description: 'Standard rates may apply' }]} trigger={<Button variant="outline">Edit channels</Button>} /><span className="text-sm text-muted-foreground">{channels.length} selected</span></div></Specimen>
+  </div>;
+}
 
 export function MenuComponents() {
   const pathname = useRouterState({ select: state => state.location.pathname });
@@ -136,6 +147,9 @@ export function MenuComponents() {
         <Specimen label="scrolls when space is tight"><div className="w-full max-w-56"><NavMenu aria-label="Scrolling demo">{['Overview', 'Activity', 'Members', 'Settings', 'Billing', 'History'].map((label, index) => <NavItem key={label} size="sm" active={index === 0} href="#">{label}</NavItem>)}</NavMenu></div></Specimen>
         <Specimen label="search field beside the menu"><div className="flex w-full items-center gap-3"><NavMenu aria-label="Pages demo"><NavItem size="sm" active href="#">Pages</NavItem><NavItem size="sm" href="#">Files</NavItem></NavMenu><div className="relative ml-auto min-w-0 flex-1"><Search className="pointer-events-none absolute left-2.5 top-2 size-3.5 text-muted-foreground" aria-hidden="true" /><input aria-label="Find in project" placeholder="Find" className="motion-content h-8 w-full rounded-md border border-input bg-card pl-8 pr-3 text-xs outline-none focus-visible:ring-2 focus-visible:ring-ring" /></div></div></Specimen>
       </div>
+    </Section>
+    <Section name="Choice dialog" description="A focused dialog for choosing one or several options and confirming. All copy is passed in as props." code={`<ChoiceDialog\n  title="Choose a view"\n  options={[{ value: 'list', label: 'List' }, { value: 'board', label: 'Board' }]}\n  defaultValue={[view]}\n  onConfirm={([next]) => setView(next)}\n  trigger={<Button variant="outline">Change view</Button>}\n/>`}>
+      <ChoiceDialogDemo />
     </Section>
   </>;
 }

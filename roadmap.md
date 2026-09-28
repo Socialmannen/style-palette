@@ -6,3 +6,4 @@
 - [x] Add calm global motion tokens, speed controls, animated standard components, and verification.
 - [x] Add generic Select, MultiSelect, Checkbox, Table, ToggleGroup, and NavMenu primitives with showcase sections, exports, and verification.
 - [ ] Release a new design system version so attached projects receive the new controls.
+- [x] ChoiceDialog: generic single/multiple choice dialog

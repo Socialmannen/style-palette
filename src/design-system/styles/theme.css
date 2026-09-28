@@ -78,6 +78,7 @@
   --motion-duration-normal: 220ms;
   --motion-duration-slow: 340ms;
   --motion-duration-spinner: 780ms;
+  --motion-duration-progress: 1200ms;
   --motion-ease-standard: cubic-bezier(0.2, 0, 0, 1);
   --motion-ease-enter: cubic-bezier(0, 0, 0.2, 1);
   --motion-ease-exit: cubic-bezier(0.4, 0, 1, 1);
@@ -87,10 +88,10 @@
   --motion-press-scale: 0.99;
   --motion-overlay-blur: 2px;
 }
-[data-motion-speed="fast"] { --motion-duration-fast: 90ms; --motion-duration-normal: 150ms; --motion-duration-slow: 240ms; --motion-duration-spinner: 620ms; }
-[data-motion-speed="slow"] { --motion-duration-fast: 190ms; --motion-duration-normal: 300ms; --motion-duration-slow: 460ms; --motion-duration-spinner: 980ms; }
+[data-motion-speed="fast"] { --motion-duration-fast: 90ms; --motion-duration-normal: 150ms; --motion-duration-slow: 240ms; --motion-duration-spinner: 620ms; --motion-duration-progress: 900ms; }
+[data-motion-speed="slow"] { --motion-duration-fast: 190ms; --motion-duration-normal: 300ms; --motion-duration-slow: 460ms; --motion-duration-spinner: 980ms; --motion-duration-progress: 1600ms; }
 [data-motion="expressive"] { --motion-distance: 0.75rem; --motion-scale-start: 0.94; --motion-press-y: 2px; --motion-press-scale: 0.985; }
-[data-motion="none"] { --motion-duration-fast: 1ms; --motion-duration-normal: 1ms; --motion-duration-slow: 1ms; --motion-duration-spinner: 1ms; --motion-distance: 0rem; --motion-scale-start: 1; --motion-press-y: 0px; --motion-press-scale: 1; --motion-overlay-blur: 0px; }
+[data-motion="none"] { --motion-duration-fast: 1ms; --motion-duration-normal: 1ms; --motion-duration-slow: 1ms; --motion-duration-spinner: 1ms; --motion-duration-progress: 1ms; --motion-distance: 0rem; --motion-scale-start: 1; --motion-press-y: 0px; --motion-press-scale: 1; --motion-overlay-blur: 0px; }
 .dark {
   --background: oklch(0.155 0.018 255);
   --foreground: oklch(0.95 0.007 255);
@@ -184,7 +185,7 @@
   &[data-state="open"] { animation: ds-collapsible-down var(--motion-duration-normal) var(--motion-ease-enter) both; }
   &[data-state="closed"] { animation: ds-collapsible-up var(--motion-duration-fast) var(--motion-ease-exit) both; }
 }
-@utility motion-progress-indeterminate { animation: ds-progress-indeterminate var(--motion-duration-slow) var(--motion-ease-standard) infinite; }
+@utility motion-progress-indeterminate { animation: ds-progress-indeterminate var(--motion-duration-progress) var(--motion-ease-standard) infinite; }
 @utility motion-skeleton { animation: ds-skeleton var(--motion-duration-slow) var(--motion-ease-standard) infinite; }
 @utility motion-check { animation: ds-check var(--motion-duration-fast) var(--motion-ease-enter) both; }
 

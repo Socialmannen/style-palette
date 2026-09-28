@@ -68,7 +68,7 @@ export function MultiSelect({ options, value, onValueChange, placeholder = 'Sele
     </div>
     <PopoverContent align="start" className="w-[min(20rem,calc(100vw-2rem))] p-0">
       <Command shouldFilter={query.trim().length > 0}>
-        <CommandInput placeholder={searchPlaceholder} value={query} onValueChange={setQuery} className="outline-none focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-ring" />
+        <CommandInput placeholder={searchPlaceholder} value={query} onValueChange={setQuery} className="outline-none focus-visible:outline-none focus-visible:inset-ring-2 focus-visible:inset-ring-ring/60" />
         <CommandList>
           <CommandEmpty>{loading ? '' : emptyMessage}</CommandEmpty>
           {loading && <div className="space-y-2 p-3">{[0, 1, 2].map(row => <Skeleton key={row} className="h-6 w-full" />)}</div>}

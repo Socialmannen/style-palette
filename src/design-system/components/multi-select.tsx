@@ -67,16 +67,19 @@ export function MultiSelect({ options, value, onValueChange, placeholder = 'Sele
       </PopoverTrigger>
     </div>
     <PopoverContent align="start" className="w-[min(20rem,calc(100vw-2rem))] p-0">
-      <Command shouldFilter={query.trim().length > 0}>
-        <CommandInput placeholder={searchPlaceholder} value={query} onValueChange={setQuery} className="outline-none focus-visible:outline-none focus-visible:inset-ring-2 focus-visible:inset-ring-ring/60" />
-        <CommandList>
-          <CommandEmpty>{loading ? '' : emptyMessage}</CommandEmpty>
-          {loading && <div className="space-y-2 p-3">{[0, 1, 2].map(row => <Skeleton key={row} className="h-6 w-full" />)}</div>}
+      <Command shouldFilter={query.trim().length > 0} className="flex max-h-[min(24rem,calc(100vh-8rem))] flex-col overflow-hidden text-sm">
+        <div className="relative flex items-center border-b border-border">
+          <Search className="pointer-events-none absolute left-3 size-3.5 text-muted-foreground" aria-hidden="true" />
+          <CommandInput placeholder={searchPlaceholder} value={query} onValueChange={setQuery} className="motion-fast h-9 w-full bg-transparent pl-9 pr-3 text-sm outline-none focus-visible:outline-none focus-visible:inset-ring-2 focus-visible:inset-ring-ring/60" />
+        </div>
+        <CommandList className="min-h-0 flex-1 overflow-y-auto p-1">
+          <CommandEmpty className="py-6 text-center text-sm text-muted-foreground">{loading ? '' : emptyMessage}</CommandEmpty>
+          {loading && <div className="space-y-2 p-2">{[0, 1, 2].map(row => <Skeleton key={row} className="h-6 w-full" />)}</div>}
           <CommandGroup>
-            {options.map(option => <CommandItem key={option.value} value={option.value} keywords={[option.label]} disabled={Boolean(option.disabled)} onSelect={() => toggle(option)} className="flex items-center gap-2">
-              <span className="flex size-4 shrink-0 items-center justify-center rounded-sm border border-input" aria-hidden="true">{value.includes(option.value) && <Check className="size-3 text-primary" />}</span>
+            {options.map(option => <CommandItem key={option.value} value={option.value} keywords={[option.label]} disabled={Boolean(option.disabled)} onSelect={() => toggle(option)} className="flex cursor-pointer select-none items-center gap-2 rounded-sm px-2 py-1.5 outline-none data-[disabled]:pointer-events-none data-[disabled]:opacity-50 data-[selected]:bg-accent data-[selected]:text-accent-foreground">
+              <span className={cn('flex size-4 shrink-0 items-center justify-center rounded-sm border border-input', value.includes(option.value) && 'border-primary bg-primary text-primary-foreground')} aria-hidden="true">{value.includes(option.value) && <Check className="motion-check size-3" />}</span>
               <span className="min-w-0 flex-1 truncate">{option.label}</span>
-              {option.hint && <span className="shrink-0 text-xs text-muted-foreground">{option.hint}</span>}
+              {option.hint && <span className="shrink-0 text-xs tabular-nums text-muted-foreground">{option.hint}</span>}
             </CommandItem>)}
           </CommandGroup>
         </CommandList>

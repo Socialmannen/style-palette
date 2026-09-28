@@ -10,8 +10,8 @@ import { Progress } from '../design-system/components/progress';
 import { Sheet, SheetClose, SheetContent, SheetDescription, SheetFooter, SheetHeader, SheetTitle, SheetTrigger } from '../design-system/components/sheet';
 import { Skeleton } from '../design-system/components/skeleton';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../design-system/components/tabs';
-import { Toaster, toast } from '../design-system/components/toast';
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '../design-system/components/tooltip';
+import { toast } from '../design-system/components/toast';
+import { Tooltip, TooltipContent, TooltipTrigger } from '../design-system/components/tooltip';
 
 function MotionSection({ name, description, children }: { name: string; description: string; children: React.ReactNode }) {
   return <section id={name.toLowerCase().replaceAll(' ', '-')} className="scroll-mt-28 border-t border-border py-10"><div className="mb-7"><p className="text-xs font-medium text-primary">@refined/{name.toLowerCase().replaceAll(' ', '-')}</p><h2 className="mt-2 font-display text-2xl font-semibold">{name}</h2><p className="mt-2 max-w-2xl text-sm text-muted-foreground">{description}</p></div>{children}</section>;
@@ -47,7 +47,7 @@ export function MotionComponents() {
     </MotionSection>
 
     <MotionSection name="Tooltip" description="Short supporting labels for compact controls, with a deliberate delay.">
-      <TooltipProvider><div className="flex gap-3"><Tooltip><TooltipTrigger asChild><Button variant="outline" size="icon" aria-label="Copy project link"><Copy className="size-4" /></Button></TooltipTrigger><TooltipContent>Copy project link</TooltipContent></Tooltip><Tooltip><TooltipTrigger asChild><Button variant="ghost" size="icon" aria-label="About this workspace"><Info className="size-4" /></Button></TooltipTrigger><TooltipContent side="right">About this workspace</TooltipContent></Tooltip></div></TooltipProvider>
+      <div className="flex gap-3"><Tooltip><TooltipTrigger asChild><Button variant="outline" size="icon" aria-label="Copy project link"><Copy className="size-4" /></Button></TooltipTrigger><TooltipContent>Copy project link</TooltipContent></Tooltip><Tooltip><TooltipTrigger asChild><Button variant="ghost" size="icon" aria-label="About this workspace"><Info className="size-4" /></Button></TooltipTrigger><TooltipContent side="right">About this workspace</TooltipContent></Tooltip></div>
     </MotionSection>
 
     <MotionSection name="Tabs" description="Keyboard-friendly switching between related views at the same level.">
@@ -55,7 +55,7 @@ export function MotionComponents() {
     </MotionSection>
 
     <MotionSection name="Toast" description="Non-blocking feedback that enters and leaves without interrupting the task.">
-      <div className="flex flex-wrap gap-3"><Button onClick={() => toast.success('Changes saved')}>Success toast</Button><Button variant="outline" onClick={() => toast('Export started', { description: 'Your file will be ready shortly.' })}>Informational toast</Button><Button variant="destructive" onClick={() => toast.error('Could not archive project')}>Error toast</Button></div><Toaster />
+      <div className="flex flex-wrap gap-3"><Button onClick={() => toast.success('Changes saved')}>Success toast</Button><Button variant="outline" onClick={() => toast('Export started', { description: 'Your file will be ready shortly.' })}>Informational toast</Button><Button variant="destructive" onClick={() => toast.error('Could not archive project')}>Error toast</Button></div>
     </MotionSection>
 
     <MotionSection name="Skeleton" description="Reduced-motion-aware loading placeholders that mirror the incoming content.">

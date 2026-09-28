@@ -25,3 +25,4 @@ export { Checkbox, type CheckboxProps } from './design-system/components/checkbo
 export { Table, TableHeader, TableBody, TableFooter, TableRow, TableHead, TableCell, TableCaption, TableEmptyState, type TableProps, type TableHeaderProps, type TableBodyProps, type TableFooterProps, type TableRowProps, type TableHeadProps, type TableCellProps, type TableCaptionProps, type TableEmptyStateProps, type TableDensity } from './design-system/components/table';
 export { ToggleGroup, ToggleGroupItem, type ToggleGroupProps, type ToggleGroupItemProps } from './design-system/components/toggle-group';
 export { NavMenu, NavItem, navItemStyles, type NavMenuProps, type NavItemProps } from './design-system/components/nav-menu';
+export { ChoiceDialog, type ChoiceDialogProps, type ChoiceDialogOption } from './design-system/components/choice-dialog';

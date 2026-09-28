@@ -1,8 +1,8 @@
 {
   "meta": {
     "name": "Style Palette",
-    "package": "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1",
-    "version": "1.3.0",
+    "package": "@ws-0c85c6ec0d681ca902ae/808b6dd1-c31e-4eb1-acb2-ee755afb07f1",
+    "version": "1.4.0",
     "framework": "react",
     "css_framework": "tailwind",
     "starter_template": "custom_design_system",
@@ -11,7 +11,7 @@
     ],
     "source_type": "local",
     "source_manifest": {
-      "#enrichment": "816e12a4a53cd607164b73f3cb1efc216add4e82722af754f143e2eb3dbf0319",
+      "#enrichment": "13477b36a0dbb7095d2405f42ef0af95dfda2ab6064584680dcd2d8eaece20c6",
       ".dsignore": "2c7d76468c15bc0f1499420154f01ae3",
       ".gitignore": "6d9e901a692b46a83707c245fb03bc91",
       ".lovable/meta.yaml": "8794970d6049858cc148d2b86f7a2b22",
@@ -23,16 +23,16 @@
       ".lovable/system.md": "72d48c67880c18f805b2e03b93db472c",
       ".prettierignore": "7279a476f196a2da5f7edd18db568dc6",
       ".prettierrc": "185ef0234746ab738ac1ab6cec5e2bd9",
-      "AGENTS.md": "d42663c2377e1f778a08c8f802e06f40",
+      "AGENTS.md": "a0683817e1d0e4dd61553768dec59187",
       "README.md": "9651f45364ac3524097a14081cd3a7bc",
       "bunfig.toml": "89115995d9de72fdfc894e16b1e75297",
       "components.json": "30d3d035361ce807021f5c54620962e9",
       "eslint.config.js": "345bdd57e188e0e4525edcd00e5003f5",
       "lovable.toml": "9636c1bf32f9901bfba4eabb92981217",
-      "package.json": "895c92e7010a809698200f9fc0096f52",
+      "package.json": "4424be5ff0a8cca58747d9c0fede3cce",
       "public/favicon.ico": "9f504444f85a5af2eef9264b02ae40be",
       "public/robots.txt": "f9dff89adf98833e676de2205921996a",
-      "roadmap.md": "996afb26c0182866a252a7a5064e6673",
+      "roadmap.md": "2df9d347f5579cc02be1a5372e27a6c5",
       "src/design-system/assets/fonts/figtree-400.ttf": "6cd7caa972f68304833cd966b9a6e09e",
       "src/design-system/assets/fonts/figtree-500.ttf": "9ea5c3347152a5e77a47c2099174d340",
       "src/design-system/assets/fonts/figtree-600.ttf": "92a7ce5893918522b927b670dc368120",
@@ -46,8 +46,9 @@
       "src/design-system/components/button.tsx": "5f0ccf53b51d9cb7070e7c3b8e077858",
       "src/design-system/components/card.tsx": "fe7e1baa2d9f11e9ff9c5c4adf125bb5",
       "src/design-system/components/checkbox.tsx": "b52ba53f0c002dae06cfbc26cca9cdf1",
+      "src/design-system/components/choice-dialog.tsx": "ebc1aac714ad5d00d179e7049aa6066a",
       "src/design-system/components/collapsible.tsx": "3044e7ea91d963490c34634914214f6f",
-      "src/design-system/components/dialog.tsx": "c9f6cca9e22e281fb1dc1b3aafcdef6c",
+      "src/design-system/components/dialog.tsx": "b09afada7e15bf56e663fda01f985caa",
       "src/design-system/components/dropdown-menu.tsx": "fdbd3e25adf68358ed62854eaa5e82be",
       "src/design-system/components/input.tsx": "f27ef4db19cb0d83964ac56f2fcac57a",
       "src/design-system/components/multi-select.tsx": "ea793d915e7087dc49abc8e1037224ca",
@@ -65,9 +66,9 @@
       "src/design-system/components/toggle-group.tsx": "1e1a69628bd420a2be36a6cae366ca31",
       "src/design-system/components/tooltip.tsx": "ad2603b70ad17eddb72bb8e5f3cb52b1",
       "src/design-system/lib.ts": "68b1b903329d1d880bf000551a84bc6f",
-      "src/design-system/styles/theme.css": "71fdf388be62641c26327bdc32aff3e7",
+      "src/design-system/styles/theme.css": "e808020c082457f5084bfad1727b0784",
       "src/hooks/use-mobile.tsx": "c0a0bdd4638c391a1dd06ac82074e60b",
-      "src/index.ts": "a40661b9b4a1c9d0be47ed46e6caf927",
+      "src/index.ts": "8ed417064fef7acb969aecdfeff609dd",
       "src/lib/error-capture.ts": "f630d9686a9a989170f22eff4de7b30d",
       "src/lib/error-page.ts": "8da0ddd7569bac2676b9a5c8edff8a36",
       "src/lib/lovable-error-reporting.ts": "0367e03b7d71917510e4dc1cdae172ec",
@@ -75,15 +76,15 @@
       "src/routeTree.gen.ts": "2dc5e557d4680374df7a86d2e2bb05a7",
       "src/router.tsx": "8f905e713b0eba7fa8148b7995a708c9",
       "src/routes/README.md": "b3a2f259b66fd1a11f54b6d5ac83bf57",
-      "src/routes/__root.tsx": "27cf61bb40cdfa238ba76ae653c04013",
+      "src/routes/__root.tsx": "185221750d8f1f40d7d142d1ccacfd34",
       "src/routes/colors.tsx": "6bfc1fa840f56e136d5ab5a742059923",
-      "src/routes/components.tsx": "4e2816f723bb4f740efd82a52325de83",
+      "src/routes/components.tsx": "3c366b69e7b3d9eaa8d467fee1b2db99",
       "src/routes/index.tsx": "33ac4142215d36c748a1ab1a230f5875",
       "src/routes/typography.tsx": "d4065f467dee05ab5c124d515787a8eb",
       "src/server.ts": "c7bbc49bb70e318af618d92775ee0f27",
       "src/showcase/layout.tsx": "0dbe4885d076191afdaea5a8811a9b77",
-      "src/showcase/menu-components.tsx": "44aca192d325a90345a2f402d2a3515c",
-      "src/showcase/motion-components.tsx": "e9809b79847a0d8493b3cc029dd52c36",
+      "src/showcase/menu-components.tsx": "32419b0e47303d469b15007db42e88cc",
+      "src/showcase/motion-components.tsx": "f4c5993ecab755942aca117624fbd781",
       "src/showcase/palettes.ts": "a3965ebc78ce4336d26e54dfb3235a0b",
       "src/start.ts": "0502f82c58afce5012b4c102e6fe2437",
       "src/styles.css": "a36a36b6e13d9681c3f3e9915f212e69",
@@ -260,6 +261,11 @@
       {
         "name": "--motion-duration-spinner",
         "raw": "780ms",
+        "source": "src/design-system/styles/theme.css"
+      },
+      {
+        "name": "--motion-duration-progress",
+        "raw": "1200ms",
         "source": "src/design-system/styles/theme.css"
       },
       {
@@ -1711,6 +1717,86 @@
       "antipatterns": [
         "Do not use a nav item for a button that runs an action; use Button.",
         "Do not signal the current page with a colour alone; the active state also carries aria-current."
+      ]
+    },
+    {
+      "name": "ChoiceDialog",
+      "file": "src/design-system/components/choice-dialog",
+      "import_path": "",
+      "props": [
+        {
+          "name": "trigger",
+          "type": "any"
+        },
+        {
+          "name": "open",
+          "type": "boolean"
+        },
+        {
+          "name": "onOpenChange",
+          "type": "function"
+        },
+        {
+          "name": "title",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "description",
+          "type": "string"
+        },
+        {
+          "name": "options",
+          "type": "any",
+          "required": true
+        },
+        {
+          "name": "type",
+          "type": "enum",
+          "values": [
+            "single",
+            "multiple"
+          ],
+          "default": "single"
+        },
+        {
+          "name": "defaultValue",
+          "type": "any"
+        },
+        {
+          "name": "onConfirm",
+          "type": "function",
+          "required": true
+        },
+        {
+          "name": "minSelected",
+          "type": "number",
+          "default": "1"
+        },
+        {
+          "name": "confirmLabel",
+          "type": "string",
+          "default": "Confirm"
+        },
+        {
+          "name": "cancelLabel",
+          "type": "string",
+          "default": "Cancel"
+        },
+        {
+          "name": "layout",
+          "type": "enum",
+          "values": [
+            "list",
+            "grid"
+          ],
+          "default": "list"
+        },
+        {
+          "name": "className",
+          "type": "string",
+          "default": "grid gap-5"
+        }
       ]
     }
   ]

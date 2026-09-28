@@ -68,6 +68,7 @@ Reference via `var(--name)` in inline styles or CSS.
 | `--motion-duration-normal` |
 | `--motion-duration-slow` |
 | `--motion-duration-spinner` |
+| `--motion-duration-progress` |
 | `--motion-ease-standard` |
 | `--motion-ease-enter` |
 | `--motion-ease-exit` |

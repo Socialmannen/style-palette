@@ -1,11 +1,11 @@
 # Components
 
-Component catalog for **Style Palette**. Import all components from `@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1`.
+Component catalog for **Style Palette**. Import all components from `@ws-0c85c6ec0d681ca902ae/808b6dd1-c31e-4eb1-acb2-ee755afb07f1`.
 
 ### Accordion
 
 ```ts
-import { Accordion } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+import { Accordion } from "@ws-0c85c6ec0d681ca902ae/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
 ```
 
 Use for grouped disclosures with visible headings.
@@ -24,7 +24,7 @@ _Default_
 ### AccordionContent
 
 ```ts
-import { AccordionContent } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+import { AccordionContent } from "@ws-0c85c6ec0d681ca902ae/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
 ```
 
 Use for grouped disclosures with visible headings.
@@ -43,7 +43,7 @@ _Default_
 ### AccordionItem
 
 ```ts
-import { AccordionItem } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+import { AccordionItem } from "@ws-0c85c6ec0d681ca902ae/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
 ```
 
 Use for grouped disclosures with visible headings.
@@ -62,7 +62,7 @@ _Default_
 ### AccordionTrigger
 
 ```ts
-import { AccordionTrigger } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+import { AccordionTrigger } from "@ws-0c85c6ec0d681ca902ae/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
 ```
 
 Use for grouped disclosures with visible headings.
@@ -81,7 +81,7 @@ _Default_
 ### Badge
 
 ```ts
-import { Badge } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+import { Badge } from "@ws-0c85c6ec0d681ca902ae/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
 ```
 
 Use for compact status or category labels.
@@ -106,7 +106,7 @@ _Default_
 ### Button
 
 ```ts
-import { Button } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+import { Button } from "@ws-0c85c6ec0d681ca902ae/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
 ```
 
 Use for an immediate action in the current view.
@@ -133,7 +133,7 @@ _Default_
 ### ButtonLink
 
 ```ts
-import { ButtonLink } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+import { ButtonLink } from "@ws-0c85c6ec0d681ca902ae/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
 ```
 
 Use for navigation that needs button emphasis.
@@ -152,7 +152,7 @@ _Default_
 ### Card
 
 ```ts
-import { Card } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+import { Card } from "@ws-0c85c6ec0d681ca902ae/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
 ```
 
 Use to group related content on one framed surface.
@@ -178,7 +178,7 @@ _Default_
 ### Checkbox
 
 ```ts
-import { Checkbox } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+import { Checkbox } from "@ws-0c85c6ec0d681ca902ae/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
 ```
 
 Use to turn one option on or off, or to select rows in a list.
@@ -203,10 +203,35 @@ _Row selection_
 - Do not use for a value with three or more meanings; use a choose-one menu.
 - Do not build a checkbox from a styled div; this is the real form control with the right ARIA.
 
+### ChoiceDialog
+
+```ts
+import { ChoiceDialog } from "@ws-0c85c6ec0d681ca902ae/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+```
+
+**Props:**
+
+| Prop | Type | Default |
+|---|---|---|
+| `trigger` | any | `—` |
+| `open` | boolean | `—` |
+| `onOpenChange` | function | `—` |
+| `title` | string | `—` |
+| `description` | string | `—` |
+| `options` | any | `—` |
+| `type` | single · multiple | `single` |
+| `defaultValue` | any | `—` |
+| `onConfirm` | function | `—` |
+| `minSelected` | number | `1` |
+| `confirmLabel` | string | `Confirm` |
+| `cancelLabel` | string | `Cancel` |
+| `layout` | list · grid | `list` |
+| `className` | string | `grid gap-5` |
+
 ### Collapsible
 
 ```ts
-import { Collapsible } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+import { Collapsible } from "@ws-0c85c6ec0d681ca902ae/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
 ```
 
 Use to reveal one related block inline.
@@ -225,7 +250,7 @@ _Default_
 ### CollapsibleContent
 
 ```ts
-import { CollapsibleContent } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+import { CollapsibleContent } from "@ws-0c85c6ec0d681ca902ae/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
 ```
 
 Use to reveal one related block inline.
@@ -244,7 +269,7 @@ _Default_
 ### CollapsibleTrigger
 
 ```ts
-import { CollapsibleTrigger } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+import { CollapsibleTrigger } from "@ws-0c85c6ec0d681ca902ae/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
 ```
 
 Use to reveal one related block inline.
@@ -263,7 +288,7 @@ _Default_
 ### Dialog
 
 ```ts
-import { Dialog } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+import { Dialog } from "@ws-0c85c6ec0d681ca902ae/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
 ```
 
 Use for focused decisions or short modal forms.
@@ -282,7 +307,7 @@ _Default_
 ### DialogClose
 
 ```ts
-import { DialogClose } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+import { DialogClose } from "@ws-0c85c6ec0d681ca902ae/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
 ```
 
 Use for focused decisions or short modal forms.
@@ -301,7 +326,7 @@ _Default_
 ### DialogContent
 
 ```ts
-import { DialogContent } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+import { DialogContent } from "@ws-0c85c6ec0d681ca902ae/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
 ```
 
 Use for focused decisions or short modal forms.
@@ -326,7 +351,7 @@ _Default_
 ### DialogDescription
 
 ```ts
-import { DialogDescription } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+import { DialogDescription } from "@ws-0c85c6ec0d681ca902ae/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
 ```
 
 Use for focused decisions or short modal forms.
@@ -345,7 +370,7 @@ _Default_
 ### DialogFooter
 
 ```ts
-import { DialogFooter } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+import { DialogFooter } from "@ws-0c85c6ec0d681ca902ae/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
 ```
 
 Use for focused decisions or short modal forms.
@@ -364,7 +389,7 @@ _Default_
 ### DialogHeader
 
 ```ts
-import { DialogHeader } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+import { DialogHeader } from "@ws-0c85c6ec0d681ca902ae/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
 ```
 
 Use for focused decisions or short modal forms.
@@ -383,7 +408,7 @@ _Default_
 ### DialogOverlay
 
 ```ts
-import { DialogOverlay } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+import { DialogOverlay } from "@ws-0c85c6ec0d681ca902ae/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
 ```
 
 Use for focused decisions or short modal forms.
@@ -402,7 +427,7 @@ _Default_
 ### DialogTitle
 
 ```ts
-import { DialogTitle } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+import { DialogTitle } from "@ws-0c85c6ec0d681ca902ae/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
 ```
 
 Use for focused decisions or short modal forms.
@@ -421,7 +446,7 @@ _Default_
 ### DialogTrigger
 
 ```ts
-import { DialogTrigger } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+import { DialogTrigger } from "@ws-0c85c6ec0d681ca902ae/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
 ```
 
 Use for focused decisions or short modal forms.
@@ -440,7 +465,7 @@ _Default_
 ### DropdownMenu
 
 ```ts
-import { DropdownMenu } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+import { DropdownMenu } from "@ws-0c85c6ec0d681ca902ae/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
 ```
 
 Use for a compact set of contextual actions.
@@ -459,7 +484,7 @@ _Default_
 ### DropdownMenuCheckboxItem
 
 ```ts
-import { DropdownMenuCheckboxItem } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+import { DropdownMenuCheckboxItem } from "@ws-0c85c6ec0d681ca902ae/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
 ```
 
 Use DropdownMenuCheckboxItem as documented by its parent component pattern.
@@ -478,7 +503,7 @@ _Default_
 ### DropdownMenuContent
 
 ```ts
-import { DropdownMenuContent } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+import { DropdownMenuContent } from "@ws-0c85c6ec0d681ca902ae/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
 ```
 
 Use DropdownMenuContent as documented by its parent component pattern.
@@ -497,7 +522,7 @@ _Default_
 ### DropdownMenuItem
 
 ```ts
-import { DropdownMenuItem } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+import { DropdownMenuItem } from "@ws-0c85c6ec0d681ca902ae/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
 ```
 
 Use DropdownMenuItem as documented by its parent component pattern.
@@ -522,7 +547,7 @@ _Default_
 ### DropdownMenuLabel
 
 ```ts
-import { DropdownMenuLabel } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+import { DropdownMenuLabel } from "@ws-0c85c6ec0d681ca902ae/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
 ```
 
 Use DropdownMenuLabel as documented by its parent component pattern.
@@ -541,7 +566,7 @@ _Default_
 ### DropdownMenuSeparator
 
 ```ts
-import { DropdownMenuSeparator } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+import { DropdownMenuSeparator } from "@ws-0c85c6ec0d681ca902ae/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
 ```
 
 Use DropdownMenuSeparator as documented by its parent component pattern.
@@ -560,7 +585,7 @@ _Default_
 ### DropdownMenuSub
 
 ```ts
-import { DropdownMenuSub } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+import { DropdownMenuSub } from "@ws-0c85c6ec0d681ca902ae/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
 ```
 
 Use DropdownMenuSub as documented by its parent component pattern.
@@ -579,7 +604,7 @@ _Default_
 ### DropdownMenuSubContent
 
 ```ts
-import { DropdownMenuSubContent } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+import { DropdownMenuSubContent } from "@ws-0c85c6ec0d681ca902ae/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
 ```
 
 Use DropdownMenuSubContent as documented by its parent component pattern.
@@ -598,7 +623,7 @@ _Default_
 ### DropdownMenuSubTrigger
 
 ```ts
-import { DropdownMenuSubTrigger } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+import { DropdownMenuSubTrigger } from "@ws-0c85c6ec0d681ca902ae/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
 ```
 
 Use DropdownMenuSubTrigger as documented by its parent component pattern.
@@ -617,7 +642,7 @@ _Default_
 ### DropdownMenuTrigger
 
 ```ts
-import { DropdownMenuTrigger } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+import { DropdownMenuTrigger } from "@ws-0c85c6ec0d681ca902ae/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
 ```
 
 Use DropdownMenuTrigger as documented by its parent component pattern.
@@ -636,7 +661,7 @@ _Default_
 ### Input
 
 ```ts
-import { Input } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+import { Input } from "@ws-0c85c6ec0d681ca902ae/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
 ```
 
 Use for labeled single-line text entry.
@@ -661,7 +686,7 @@ _Default_
 ### MultiSelect
 
 ```ts
-import { MultiSelect } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+import { MultiSelect } from "@ws-0c85c6ec0d681ca902ae/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
 ```
 
 Use when several values must be picked from a long list and the list is not known, such as universities, areas or queues.
@@ -708,7 +733,7 @@ _Pick teams_
 ### NavItem
 
 ```ts
-import { NavItem } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+import { NavItem } from "@ws-0c85c6ec0d681ca902ae/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
 ```
 
 A top-level link. Sets aria-current="page" when active and shows a tinted background.
@@ -738,7 +763,7 @@ _Active link_
 ### NavMenu
 
 ```ts
-import { NavMenu } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+import { NavMenu } from "@ws-0c85c6ec0d681ca902ae/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
 ```
 
 The row of top-level links at the top of a page; it scrolls sideways on narrow screens.
@@ -768,7 +793,7 @@ _Top navigation_
 ### Popover
 
 ```ts
-import { Popover } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+import { Popover } from "@ws-0c85c6ec0d681ca902ae/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
 ```
 
 Use for compact interactive content tied to one trigger.
@@ -787,7 +812,7 @@ _Default_
 ### PopoverAnchor
 
 ```ts
-import { PopoverAnchor } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+import { PopoverAnchor } from "@ws-0c85c6ec0d681ca902ae/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
 ```
 
 Use for compact interactive content tied to one trigger.
@@ -806,7 +831,7 @@ _Default_
 ### PopoverContent
 
 ```ts
-import { PopoverContent } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+import { PopoverContent } from "@ws-0c85c6ec0d681ca902ae/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
 ```
 
 Use for compact interactive content tied to one trigger.
@@ -825,7 +850,7 @@ _Default_
 ### PopoverTrigger
 
 ```ts
-import { PopoverTrigger } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+import { PopoverTrigger } from "@ws-0c85c6ec0d681ca902ae/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
 ```
 
 Use for compact interactive content tied to one trigger.
@@ -844,7 +869,7 @@ _Default_
 ### Progress
 
 ```ts
-import { Progress } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+import { Progress } from "@ws-0c85c6ec0d681ca902ae/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
 ```
 
 Use for known completion or indeterminate activity.
@@ -869,7 +894,7 @@ _Default_
 ### Select
 
 ```ts
-import { Select } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+import { Select } from "@ws-0c85c6ec0d681ca902ae/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
 ```
 
 Use for one value chosen out of a known list, such as a sort order or a theme setting.
@@ -903,7 +928,7 @@ _Sort menu_
 ### SelectContent
 
 ```ts
-import { SelectContent } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+import { SelectContent } from "@ws-0c85c6ec0d681ca902ae/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
 ```
 
 The panel that holds the options. It animates with the shared motion tokens.
@@ -915,7 +940,7 @@ The panel that holds the options. It animates with the shared motion tokens.
 ### SelectGroup
 
 ```ts
-import { SelectGroup } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+import { SelectGroup } from "@ws-0c85c6ec0d681ca902ae/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
 ```
 
 Groups related options together with a label.
@@ -927,7 +952,7 @@ Groups related options together with a label.
 ### SelectItem
 
 ```ts
-import { SelectItem } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+import { SelectItem } from "@ws-0c85c6ec0d681ca902ae/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
 ```
 
 One option in a choose-one menu.
@@ -939,7 +964,7 @@ One option in a choose-one menu.
 ### SelectLabel
 
 ```ts
-import { SelectLabel } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+import { SelectLabel } from "@ws-0c85c6ec0d681ca902ae/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
 ```
 
 The heading above a group of options.
@@ -947,7 +972,7 @@ The heading above a group of options.
 ### SelectSeparator
 
 ```ts
-import { SelectSeparator } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+import { SelectSeparator } from "@ws-0c85c6ec0d681ca902ae/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
 ```
 
 A thin line that separates option groups.
@@ -959,7 +984,7 @@ A thin line that separates option groups.
 ### SelectTrigger
 
 ```ts
-import { SelectTrigger } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+import { SelectTrigger } from "@ws-0c85c6ec0d681ca902ae/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
 ```
 
 The button-like field that opens the choose-one menu. Give it an accessible name.
@@ -971,7 +996,7 @@ The button-like field that opens the choose-one menu. Give it an accessible name
 ### SelectValue
 
 ```ts
-import { SelectValue } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+import { SelectValue } from "@ws-0c85c6ec0d681ca902ae/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
 ```
 
 Shows the current value inside the trigger and a placeholder while nothing is chosen.
@@ -983,7 +1008,7 @@ Shows the current value inside the trigger and a placeholder while nothing is ch
 ### Sheet
 
 ```ts
-import { Sheet } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+import { Sheet } from "@ws-0c85c6ec0d681ca902ae/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
 ```
 
 Use for supporting work that slides from a page edge.
@@ -1008,7 +1033,7 @@ _Default_
 ### SheetClose
 
 ```ts
-import { SheetClose } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+import { SheetClose } from "@ws-0c85c6ec0d681ca902ae/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
 ```
 
 Use for supporting work that slides from a page edge.
@@ -1027,7 +1052,7 @@ _Default_
 ### SheetContent
 
 ```ts
-import { SheetContent } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+import { SheetContent } from "@ws-0c85c6ec0d681ca902ae/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
 ```
 
 Use for supporting work that slides from a page edge.
@@ -1052,7 +1077,7 @@ _Default_
 ### SheetDescription
 
 ```ts
-import { SheetDescription } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+import { SheetDescription } from "@ws-0c85c6ec0d681ca902ae/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
 ```
 
 Use for supporting work that slides from a page edge.
@@ -1071,7 +1096,7 @@ _Default_
 ### SheetFooter
 
 ```ts
-import { SheetFooter } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+import { SheetFooter } from "@ws-0c85c6ec0d681ca902ae/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
 ```
 
 Use for supporting work that slides from a page edge.
@@ -1090,7 +1115,7 @@ _Default_
 ### SheetHeader
 
 ```ts
-import { SheetHeader } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+import { SheetHeader } from "@ws-0c85c6ec0d681ca902ae/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
 ```
 
 Use for supporting work that slides from a page edge.
@@ -1109,7 +1134,7 @@ _Default_
 ### SheetOverlay
 
 ```ts
-import { SheetOverlay } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+import { SheetOverlay } from "@ws-0c85c6ec0d681ca902ae/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
 ```
 
 Use for supporting work that slides from a page edge.
@@ -1128,7 +1153,7 @@ _Default_
 ### SheetTitle
 
 ```ts
-import { SheetTitle } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+import { SheetTitle } from "@ws-0c85c6ec0d681ca902ae/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
 ```
 
 Use for supporting work that slides from a page edge.
@@ -1147,7 +1172,7 @@ _Default_
 ### SheetTrigger
 
 ```ts
-import { SheetTrigger } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+import { SheetTrigger } from "@ws-0c85c6ec0d681ca902ae/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
 ```
 
 Use for supporting work that slides from a page edge.
@@ -1166,7 +1191,7 @@ _Default_
 ### Skeleton
 
 ```ts
-import { Skeleton } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+import { Skeleton } from "@ws-0c85c6ec0d681ca902ae/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
 ```
 
 Use as a temporary loading placeholder.
@@ -1185,7 +1210,7 @@ _Default_
 ### Switch
 
 ```ts
-import { Switch } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+import { Switch } from "@ws-0c85c6ec0d681ca902ae/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
 ```
 
 Use for a binary setting that takes effect immediately.
@@ -1210,7 +1235,7 @@ _Default_
 ### Table
 
 ```ts
-import { Table } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+import { Table } from "@ws-0c85c6ec0d681ca902ae/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
 ```
 
 Use for structured rows of comparable values, such as statistics or admin listings.
@@ -1246,19 +1271,19 @@ _Sortable table_
 ### TableBody
 
 ```ts
-import { TableBody } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+import { TableBody } from "@ws-0c85c6ec0d681ca902ae/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
 ```
 
 ### TableCaption
 
 ```ts
-import { TableCaption } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+import { TableCaption } from "@ws-0c85c6ec0d681ca902ae/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
 ```
 
 ### TableCell
 
 ```ts
-import { TableCell } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+import { TableCell } from "@ws-0c85c6ec0d681ca902ae/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
 ```
 
 One value in a row. Use align end for numbers so they line up.
@@ -1266,7 +1291,7 @@ One value in a row. Use align end for numbers so they line up.
 ### TableEmptyState
 
 ```ts
-import { TableEmptyState } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+import { TableEmptyState } from "@ws-0c85c6ec0d681ca902ae/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
 ```
 
 Shown below the header when no rows match, so the header stays visible.
@@ -1278,13 +1303,13 @@ Shown below the header when no rows match, so the header stays visible.
 ### TableFooter
 
 ```ts
-import { TableFooter } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+import { TableFooter } from "@ws-0c85c6ec0d681ca902ae/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
 ```
 
 ### TableHead
 
 ```ts
-import { TableHead } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+import { TableHead } from "@ws-0c85c6ec0d681ca902ae/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
 ```
 
 A column header. When sortable it renders a button and sets aria-sort.
@@ -1304,19 +1329,19 @@ A column header. When sortable it renders a button and sets aria-sort.
 ### TableHeader
 
 ```ts
-import { TableHeader } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+import { TableHeader } from "@ws-0c85c6ec0d681ca902ae/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
 ```
 
 ### TableRow
 
 ```ts
-import { TableRow } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+import { TableRow } from "@ws-0c85c6ec0d681ca902ae/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
 ```
 
 ### Tabs
 
 ```ts
-import { Tabs } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+import { Tabs } from "@ws-0c85c6ec0d681ca902ae/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
 ```
 
 Use for sibling views at the same hierarchy.
@@ -1335,7 +1360,7 @@ _Default_
 ### TabsContent
 
 ```ts
-import { TabsContent } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+import { TabsContent } from "@ws-0c85c6ec0d681ca902ae/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
 ```
 
 Use for sibling views at the same hierarchy.
@@ -1354,7 +1379,7 @@ _Default_
 ### TabsList
 
 ```ts
-import { TabsList } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+import { TabsList } from "@ws-0c85c6ec0d681ca902ae/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
 ```
 
 Use for sibling views at the same hierarchy.
@@ -1373,7 +1398,7 @@ _Default_
 ### TabsTrigger
 
 ```ts
-import { TabsTrigger } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+import { TabsTrigger } from "@ws-0c85c6ec0d681ca902ae/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
 ```
 
 Use for sibling views at the same hierarchy.
@@ -1392,7 +1417,7 @@ _Default_
 ### Textarea
 
 ```ts
-import { Textarea } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+import { Textarea } from "@ws-0c85c6ec0d681ca902ae/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
 ```
 
 Use for labeled multi-line writing and notes.
@@ -1417,7 +1442,7 @@ _Default_
 ### Toaster
 
 ```ts
-import { Toaster } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+import { Toaster } from "@ws-0c85c6ec0d681ca902ae/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
 ```
 
 Mount once for short non-blocking feedback.
@@ -1436,7 +1461,7 @@ _Default_
 ### ToggleGroup
 
 ```ts
-import { ToggleGroup } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+import { ToggleGroup } from "@ws-0c85c6ec0d681ca902ae/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
 ```
 
 Use for two to five mutually exclusive options that should be compared at a glance, such as Off / Preferred / Required.
@@ -1467,7 +1492,7 @@ _Requirement level_
 ### ToggleGroupItem
 
 ```ts
-import { ToggleGroupItem } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+import { ToggleGroupItem } from "@ws-0c85c6ec0d681ca902ae/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
 ```
 
 One segment in a toggle group.
@@ -1485,7 +1510,7 @@ One segment in a toggle group.
 ### Tooltip
 
 ```ts
-import { Tooltip } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+import { Tooltip } from "@ws-0c85c6ec0d681ca902ae/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
 ```
 
 Use for short nonessential helper text.
@@ -1504,7 +1529,7 @@ _Default_
 ### TooltipContent
 
 ```ts
-import { TooltipContent } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+import { TooltipContent } from "@ws-0c85c6ec0d681ca902ae/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
 ```
 
 Use for short nonessential helper text.
@@ -1523,7 +1548,7 @@ _Default_
 ### TooltipProvider
 
 ```ts
-import { TooltipProvider } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+import { TooltipProvider } from "@ws-0c85c6ec0d681ca902ae/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
 ```
 
 Use for short nonessential helper text.
@@ -1542,7 +1567,7 @@ _Default_
 ### TooltipTrigger
 
 ```ts
-import { TooltipTrigger } from "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
+import { TooltipTrigger } from "@ws-0c85c6ec0d681ca902ae/808b6dd1-c31e-4eb1-acb2-ee755afb07f1"
 ```
 
 Use for short nonessential helper text.

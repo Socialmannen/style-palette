@@ -4,7 +4,7 @@
 
 The design system exports these components — import them from `@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1` and compose them before building anything from scratch:
 
-`Badge`, `ButtonLink`, `Button`, `Card`, `DropdownMenuCheckboxItem`, `DropdownMenuContent`, `DropdownMenuItem`, `DropdownMenuLabel`, `DropdownMenuSeparator`, `DropdownMenuSubContent`, `DropdownMenuSubTrigger`, `DropdownMenuSub`, `DropdownMenuTrigger`, `DropdownMenu`, `Input`, `Switch`, `Textarea`
+`AccordionContent`, `AccordionItem`, `AccordionTrigger`, `Accordion`, `Badge`, `ButtonLink`, `Button`, `Card`, `CollapsibleContent`, `CollapsibleTrigger`, `Collapsible`, `DialogClose`, `DialogContent`, `DialogDescription`, `DialogFooter`, `DialogHeader`, `DialogOverlay`, `DialogTitle`, `DialogTrigger`, `Dialog`, `DropdownMenuCheckboxItem`, `DropdownMenuContent`, `DropdownMenuItem`, `DropdownMenuLabel`, `DropdownMenuSeparator`, `DropdownMenuSubContent`, `DropdownMenuSubTrigger`, `DropdownMenuSub`, `DropdownMenuTrigger`, `DropdownMenu`, `Input`, `PopoverAnchor`, `PopoverContent`, `PopoverTrigger`, `Popover`, `Progress`, `SheetClose`, `SheetContent`, `SheetDescription`, `SheetFooter`, `SheetHeader`, `SheetOverlay`, `SheetTitle`, `SheetTrigger`, `Sheet`, `Skeleton`, `Switch`, `TabsContent`, `TabsList`, `TabsTrigger`, `Tabs`, `Textarea`, `Toaster`, `TooltipContent`, `TooltipProvider`, `TooltipTrigger`, `Tooltip`
 
 Per-component details (import stanzas, props, variants, examples) live in `.lovable/rules/libraries/{slug}/components.md` — on disk, not auto-loaded. Read that file or the component source when the name alone isn't enough.
 

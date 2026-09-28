@@ -58,3 +58,22 @@ Box-shadow classes:
 |---|---|
 | — | `--surface-shadow` |
 
+## Other
+
+Reference via `var(--name)` in inline styles or CSS.
+
+| CSS variable |
+|---|
+| `--motion-duration-fast` |
+| `--motion-duration-normal` |
+| `--motion-duration-slow` |
+| `--motion-duration-spinner` |
+| `--motion-ease-standard` |
+| `--motion-ease-enter` |
+| `--motion-ease-exit` |
+| `--motion-distance` |
+| `--motion-scale-start` |
+| `--motion-press-y` |
+| `--motion-press-scale` |
+| `--motion-overlay-blur` |
+

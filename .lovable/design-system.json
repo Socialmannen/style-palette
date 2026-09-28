@@ -2,7 +2,7 @@
   "meta": {
     "name": "Style Palette",
     "package": "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "framework": "react",
     "css_framework": "tailwind",
     "starter_template": "custom_design_system",
@@ -11,16 +11,18 @@
     ],
     "source_type": "local",
     "source_manifest": {
-      "#enrichment": "7be52d9768f40383f1bfed47e522fe5cdb5ceee768cffde2c11fa6ec1327f070",
+      "#enrichment": "ac6fed72d6ad149eef7d76e0f020553bdc37014c0905699c0d785fb97230ca41",
       ".dsignore": "2c7d76468c15bc0f1499420154f01ae3",
       ".gitignore": "6d9e901a692b46a83707c245fb03bc91",
       ".lovable/meta.yaml": "8794970d6049858cc148d2b86f7a2b22",
+      ".lovable/plan/kontrastkontroll-för-färgpaletterna-2026-09-28.md": "b9ac0789846efc93ed57b48440359a33",
+      ".lovable/plan/plan-rörelsesystem-och-animerade-standardkomponenter-2026-09-28.md": "3ddfda047dcbf530e98555e7947f4273",
       ".lovable/project.json": "51a90576cd97762828b128ea584e5780",
       ".lovable/sources.yaml": "1b62005cb01c2413aacc02b0f9500c65",
-      ".lovable/system.md": "32c52d6751f3052918e1f796fe6d7ed2",
+      ".lovable/system.md": "72d48c67880c18f805b2e03b93db472c",
       ".prettierignore": "7279a476f196a2da5f7edd18db568dc6",
       ".prettierrc": "185ef0234746ab738ac1ab6cec5e2bd9",
-      "AGENTS.md": "59800c55b525cb9661d2534ccc37f111",
+      "AGENTS.md": "0151dffaf1e4664a4b2081e965a62638",
       "README.md": "9651f45364ac3524097a14081cd3a7bc",
       "bunfig.toml": "89115995d9de72fdfc894e16b1e75297",
       "components.json": "30d3d035361ce807021f5c54620962e9",
@@ -29,7 +31,7 @@
       "package.json": "1206bda12fe74e21e3b67920ab4fe633",
       "public/favicon.ico": "9f504444f85a5af2eef9264b02ae40be",
       "public/robots.txt": "f9dff89adf98833e676de2205921996a",
-      "roadmap.md": "3f5000b7c48e65e848ae1a5032db5310",
+      "roadmap.md": "954dcde9bab43e8b28e79e516d7ff518",
       "src/components/ui/accordion.tsx": "55f9dda62b4e3913c9b23e5015a86aef",
       "src/components/ui/alert-dialog.tsx": "96350e949e9b7b674545430a410ab89c",
       "src/components/ui/alert.tsx": "f993d7e96b1e25ce50e68ed97e11d2a8",
@@ -83,18 +85,28 @@
       "src/design-system/assets/fonts/outfit-500.ttf": "9c99161d82f75444c9ce0928e94b539f",
       "src/design-system/assets/fonts/outfit-600.ttf": "5d10e86057713398adb241ac22568b12",
       "src/design-system/assets/fonts/outfit-700.ttf": "4fa2a7180a009d0a93eaa11d736aed50",
+      "src/design-system/components/accordion.tsx": "6d28df0b36c068056893a9ce17819b55",
       "src/design-system/components/badge.tsx": "27e7dd75fdf8853854889f55d4f2ad83",
-      "src/design-system/components/button-link.tsx": "d79253f9a30fcc546a5f5286ab6f3eb8",
-      "src/design-system/components/button.tsx": "5ddf35e23076b01c2e2f83237b09d3a3",
-      "src/design-system/components/card.tsx": "2baa8800641e5fb89260e39f46d72665",
-      "src/design-system/components/dropdown-menu.tsx": "458cc560b84143c9f86f27aea9cc49d5",
-      "src/design-system/components/input.tsx": "0bbdd69e0752c1b0c7f1b40731852a05",
-      "src/design-system/components/switch.tsx": "64ea51487a5d0f653ef96116569d60d7",
-      "src/design-system/components/textarea.tsx": "3d00e91264ea63173f6a616255233f02",
+      "src/design-system/components/button-link.tsx": "43a6e937b884c94dace6e2730bb4cbf3",
+      "src/design-system/components/button.tsx": "5f0ccf53b51d9cb7070e7c3b8e077858",
+      "src/design-system/components/card.tsx": "fe7e1baa2d9f11e9ff9c5c4adf125bb5",
+      "src/design-system/components/collapsible.tsx": "3044e7ea91d963490c34634914214f6f",
+      "src/design-system/components/dialog.tsx": "c9f6cca9e22e281fb1dc1b3aafcdef6c",
+      "src/design-system/components/dropdown-menu.tsx": "fdbd3e25adf68358ed62854eaa5e82be",
+      "src/design-system/components/input.tsx": "f27ef4db19cb0d83964ac56f2fcac57a",
+      "src/design-system/components/popover.tsx": "dfbb4b262bf63d1cc5998cbabf78d024",
+      "src/design-system/components/progress.tsx": "a35180316abe999fe513bcebfda5515f",
+      "src/design-system/components/sheet.tsx": "c5fb171d51980fd2197493fadf163d83",
+      "src/design-system/components/skeleton.tsx": "6adc5949d9b8020fe5cc57a7177fddf5",
+      "src/design-system/components/switch.tsx": "abc4409f50700102691a2261894ee36d",
+      "src/design-system/components/tabs.tsx": "b1f34e86135be8d1ccd33f58fb574ead",
+      "src/design-system/components/textarea.tsx": "7d5eb52b980e532a5e7e34a6c1dbcd95",
+      "src/design-system/components/toast.tsx": "0c5ecd03147625db7e9fe914a35e5dfc",
+      "src/design-system/components/tooltip.tsx": "ad2603b70ad17eddb72bb8e5f3cb52b1",
       "src/design-system/lib.ts": "68b1b903329d1d880bf000551a84bc6f",
-      "src/design-system/styles/theme.css": "3faa104ea8ae4d8a408f68a2eeeb43e2",
+      "src/design-system/styles/theme.css": "93d7e3682ab7bb061a90b12a781d59e5",
       "src/hooks/use-mobile.tsx": "c0a0bdd4638c391a1dd06ac82074e60b",
-      "src/index.ts": "b4a5028adf07338a167b1eeb5c491b9f",
+      "src/index.ts": "72d5912d72db032f9f0c80e383094b05",
       "src/lib/error-capture.ts": "f630d9686a9a989170f22eff4de7b30d",
       "src/lib/error-page.ts": "8da0ddd7569bac2676b9a5c8edff8a36",
       "src/lib/lovable-error-reporting.ts": "0367e03b7d71917510e4dc1cdae172ec",
@@ -103,12 +115,13 @@
       "src/router.tsx": "8f905e713b0eba7fa8148b7995a708c9",
       "src/routes/README.md": "b3a2f259b66fd1a11f54b6d5ac83bf57",
       "src/routes/__root.tsx": "27cf61bb40cdfa238ba76ae653c04013",
-      "src/routes/colors.tsx": "48792f4542f6dce4d8a85bc44d2deef7",
-      "src/routes/components.tsx": "2919f59200b04614bab530282aeb28d6",
+      "src/routes/colors.tsx": "6bfc1fa840f56e136d5ab5a742059923",
+      "src/routes/components.tsx": "5ed332a2a08ec097eb19fd6914c32363",
       "src/routes/index.tsx": "33ac4142215d36c748a1ab1a230f5875",
       "src/routes/typography.tsx": "d4065f467dee05ab5c124d515787a8eb",
       "src/server.ts": "c7bbc49bb70e318af618d92775ee0f27",
-      "src/showcase/layout.tsx": "6e20ae28fb275027a185d6b09d41fdae",
+      "src/showcase/layout.tsx": "0dbe4885d076191afdaea5a8811a9b77",
+      "src/showcase/motion-components.tsx": "e9809b79847a0d8493b3cc029dd52c36",
       "src/showcase/palettes.ts": "a3965ebc78ce4336d26e54dfb3235a0b",
       "src/start.ts": "0502f82c58afce5012b4c102e6fe2437",
       "src/styles.css": "a36a36b6e13d9681c3f3e9915f212e69",
@@ -265,6 +278,68 @@
         "raw": "0 8px 30px oklch(0.2 0.022 255 / 5%)",
         "source": "src/design-system/styles/theme.css"
       }
+    ],
+    "other": [
+      {
+        "name": "--motion-duration-fast",
+        "raw": "140ms",
+        "source": "src/design-system/styles/theme.css"
+      },
+      {
+        "name": "--motion-duration-normal",
+        "raw": "220ms",
+        "source": "src/design-system/styles/theme.css"
+      },
+      {
+        "name": "--motion-duration-slow",
+        "raw": "340ms",
+        "source": "src/design-system/styles/theme.css"
+      },
+      {
+        "name": "--motion-duration-spinner",
+        "raw": "780ms",
+        "source": "src/design-system/styles/theme.css"
+      },
+      {
+        "name": "--motion-ease-standard",
+        "raw": "cubic-bezier(0.2, 0, 0, 1)",
+        "source": "src/design-system/styles/theme.css"
+      },
+      {
+        "name": "--motion-ease-enter",
+        "raw": "cubic-bezier(0, 0, 0.2, 1)",
+        "source": "src/design-system/styles/theme.css"
+      },
+      {
+        "name": "--motion-ease-exit",
+        "raw": "cubic-bezier(0.4, 0, 1, 1)",
+        "source": "src/design-system/styles/theme.css"
+      },
+      {
+        "name": "--motion-distance",
+        "raw": "0.5rem",
+        "source": "src/design-system/styles/theme.css"
+      },
+      {
+        "name": "--motion-scale-start",
+        "raw": "0.97",
+        "source": "src/design-system/styles/theme.css"
+      },
+      {
+        "name": "--motion-press-y",
+        "raw": "1px",
+        "source": "src/design-system/styles/theme.css"
+      },
+      {
+        "name": "--motion-press-scale",
+        "raw": "0.99",
+        "source": "src/design-system/styles/theme.css"
+      },
+      {
+        "name": "--motion-overlay-blur",
+        "raw": "2px",
+        "source": "src/design-system/styles/theme.css"
+      }
     ]
   },
   "components": [
@@ -305,7 +380,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Button variant=\"primary\">Save changes</Button>"
+          "code": "\u003cButton variant=\"primary\"\u003eSave changes\u003c/Button\u003e"
         }
       ],
       "antipatterns": [
@@ -320,168 +395,11 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<ButtonLink href=\"/projects\" variant=\"outline\">All projects</ButtonLink>"
+          "code": "\u003cButtonLink href=\"/projects\" variant=\"outline\"\u003eAll projects\u003c/ButtonLink\u003e"
         }
       ],
       "antipatterns": [
         "Do not use for form submission or actions without a destination."
-      ]
-    },
-    {
-      "name": "DropdownMenu",
-      "file": "src/design-system/components/dropdown-menu",
-      "import_path": "",
-      "usage": "Use for a compact set of contextual actions.",
-      "examples": [
-        {
-          "label": "Default",
-          "code": "<DropdownMenu><DropdownMenuTrigger asChild><Button>More</Button></DropdownMenuTrigger><DropdownMenuContent><DropdownMenuItem>Rename</DropdownMenuItem></DropdownMenuContent></DropdownMenu>"
-        }
-      ],
-      "antipatterns": [
-        "Do not use as primary navigation or a long selection form."
-      ]
-    },
-    {
-      "name": "DropdownMenuTrigger",
-      "file": "src/design-system/components/dropdown-menu",
-      "import_path": "",
-      "usage": "Use DropdownMenuTrigger as documented by its parent component pattern.",
-      "examples": [
-        {
-          "label": "Default",
-          "code": "<DropdownMenuTrigger />"
-        }
-      ],
-      "antipatterns": [
-        "Do not remove semantic behavior, keyboard access, or visible focus."
-      ]
-    },
-    {
-      "name": "DropdownMenuContent",
-      "file": "src/design-system/components/dropdown-menu",
-      "import_path": "",
-      "usage": "Use DropdownMenuContent as documented by its parent component pattern.",
-      "examples": [
-        {
-          "label": "Default",
-          "code": "<DropdownMenuContent />"
-        }
-      ],
-      "antipatterns": [
-        "Do not remove semantic behavior, keyboard access, or visible focus."
-      ]
-    },
-    {
-      "name": "DropdownMenuItem",
-      "file": "src/design-system/components/dropdown-menu",
-      "import_path": "",
-      "props": [
-        {
-          "name": "destructive",
-          "type": "boolean",
-          "default": "false"
-        }
-      ],
-      "usage": "Use DropdownMenuItem as documented by its parent component pattern.",
-      "examples": [
-        {
-          "label": "Default",
-          "code": "<DropdownMenuItem />"
-        }
-      ],
-      "antipatterns": [
-        "Do not remove semantic behavior, keyboard access, or visible focus."
-      ]
-    },
-    {
-      "name": "DropdownMenuCheckboxItem",
-      "file": "src/design-system/components/dropdown-menu",
-      "import_path": "",
-      "usage": "Use DropdownMenuCheckboxItem as documented by its parent component pattern.",
-      "examples": [
-        {
-          "label": "Default",
-          "code": "<DropdownMenuCheckboxItem />"
-        }
-      ],
-      "antipatterns": [
-        "Do not remove semantic behavior, keyboard access, or visible focus."
-      ]
-    },
-    {
-      "name": "DropdownMenuLabel",
-      "file": "src/design-system/components/dropdown-menu",
-      "import_path": "",
-      "usage": "Use DropdownMenuLabel as documented by its parent component pattern.",
-      "examples": [
-        {
-          "label": "Default",
-          "code": "<DropdownMenuLabel />"
-        }
-      ],
-      "antipatterns": [
-        "Do not remove semantic behavior, keyboard access, or visible focus."
-      ]
-    },
-    {
-      "name": "DropdownMenuSeparator",
-      "file": "src/design-system/components/dropdown-menu",
-      "import_path": "",
-      "usage": "Use DropdownMenuSeparator as documented by its parent component pattern.",
-      "examples": [
-        {
-          "label": "Default",
-          "code": "<DropdownMenuSeparator />"
-        }
-      ],
-      "antipatterns": [
-        "Do not remove semantic behavior, keyboard access, or visible focus."
-      ]
-    },
-    {
-      "name": "DropdownMenuSub",
-      "file": "src/design-system/components/dropdown-menu",
-      "import_path": "",
-      "usage": "Use DropdownMenuSub as documented by its parent component pattern.",
-      "examples": [
-        {
-          "label": "Default",
-          "code": "<DropdownMenuSub />"
-        }
-      ],
-      "antipatterns": [
-        "Do not remove semantic behavior, keyboard access, or visible focus."
-      ]
-    },
-    {
-      "name": "DropdownMenuSubTrigger",
-      "file": "src/design-system/components/dropdown-menu",
-      "import_path": "",
-      "usage": "Use DropdownMenuSubTrigger as documented by its parent component pattern.",
-      "examples": [
-        {
-          "label": "Default",
-          "code": "<DropdownMenuSubTrigger />"
-        }
-      ],
-      "antipatterns": [
-        "Do not remove semantic behavior, keyboard access, or visible focus."
-      ]
-    },
-    {
-      "name": "DropdownMenuSubContent",
-      "file": "src/design-system/components/dropdown-menu",
-      "import_path": "",
-      "usage": "Use DropdownMenuSubContent as documented by its parent component pattern.",
-      "examples": [
-        {
-          "label": "Default",
-          "code": "<DropdownMenuSubContent />"
-        }
-      ],
-      "antipatterns": [
-        "Do not remove semantic behavior, keyboard access, or visible focus."
       ]
     },
     {
@@ -498,7 +416,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Input id=\"email\" type=\"email\" />"
+          "code": "\u003cInput id=\"email\" type=\"email\" /\u003e"
         }
       ],
       "antipatterns": [
@@ -527,7 +445,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Badge variant=\"accent\">In review</Badge>"
+          "code": "\u003cBadge variant=\"accent\"\u003eIn review\u003c/Badge\u003e"
         }
       ],
       "antipatterns": [
@@ -545,7 +463,8 @@
           "values": [
             "default",
             "flat",
-            "accent"
+            "accent",
+            "interactive"
           ],
           "default": "default"
         },
@@ -564,7 +483,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Card size=\"md\">Project summary</Card>"
+          "code": "\u003cCard size=\"md\"\u003eProject summary\u003c/Card\u003e"
         }
       ],
       "antipatterns": [
@@ -590,7 +509,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Switch id=\"alerts\" defaultChecked />"
+          "code": "\u003cSwitch id=\"alerts\" defaultChecked /\u003e"
         }
       ],
       "antipatterns": [
@@ -611,7 +530,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Textarea id=\"brief\" placeholder=\"Project brief\" />"
+          "code": "\u003cTextarea id=\"brief\" placeholder=\"Project brief\" /\u003e"
         }
       ],
       "antipatterns": [
@@ -626,7 +545,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Accordion type=\"single\" collapsible>...</Accordion>"
+          "code": "\u003cAccordion type=\"single\" collapsible\u003e...\u003c/Accordion\u003e"
         }
       ],
       "antipatterns": [
@@ -641,7 +560,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Accordion type=\"single\" collapsible>...</Accordion>"
+          "code": "\u003cAccordion type=\"single\" collapsible\u003e...\u003c/Accordion\u003e"
         }
       ],
       "antipatterns": [
@@ -656,7 +575,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Accordion type=\"single\" collapsible>...</Accordion>"
+          "code": "\u003cAccordion type=\"single\" collapsible\u003e...\u003c/Accordion\u003e"
         }
       ],
       "antipatterns": [
@@ -671,7 +590,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Accordion type=\"single\" collapsible>...</Accordion>"
+          "code": "\u003cAccordion type=\"single\" collapsible\u003e...\u003c/Accordion\u003e"
         }
       ],
       "antipatterns": [
@@ -686,7 +605,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Collapsible>...</Collapsible>"
+          "code": "\u003cCollapsible\u003e...\u003c/Collapsible\u003e"
         }
       ],
       "antipatterns": [
@@ -701,7 +620,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Collapsible>...</Collapsible>"
+          "code": "\u003cCollapsible\u003e...\u003c/Collapsible\u003e"
         }
       ],
       "antipatterns": [
@@ -716,7 +635,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Collapsible>...</Collapsible>"
+          "code": "\u003cCollapsible\u003e...\u003c/Collapsible\u003e"
         }
       ],
       "antipatterns": [
@@ -731,7 +650,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Dialog><DialogContent><DialogTitle>Edit</DialogTitle></DialogContent></Dialog>"
+          "code": "\u003cDialog\u003e\u003cDialogContent\u003e\u003cDialogTitle\u003eEdit\u003c/DialogTitle\u003e\u003c/DialogContent\u003e\u003c/Dialog\u003e"
         }
       ],
       "antipatterns": [
@@ -746,7 +665,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Dialog><DialogContent><DialogTitle>Edit</DialogTitle></DialogContent></Dialog>"
+          "code": "\u003cDialog\u003e\u003cDialogContent\u003e\u003cDialogTitle\u003eEdit\u003c/DialogTitle\u003e\u003c/DialogContent\u003e\u003c/Dialog\u003e"
         }
       ],
       "antipatterns": [
@@ -761,7 +680,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Dialog><DialogContent><DialogTitle>Edit</DialogTitle></DialogContent></Dialog>"
+          "code": "\u003cDialog\u003e\u003cDialogContent\u003e\u003cDialogTitle\u003eEdit\u003c/DialogTitle\u003e\u003c/DialogContent\u003e\u003c/Dialog\u003e"
         }
       ],
       "antipatterns": [
@@ -776,7 +695,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Dialog><DialogContent><DialogTitle>Edit</DialogTitle></DialogContent></Dialog>"
+          "code": "\u003cDialog\u003e\u003cDialogContent\u003e\u003cDialogTitle\u003eEdit\u003c/DialogTitle\u003e\u003c/DialogContent\u003e\u003c/Dialog\u003e"
         }
       ],
       "antipatterns": [
@@ -787,11 +706,18 @@
       "name": "DialogContent",
       "file": "src/design-system/components/dialog",
       "import_path": "",
+      "props": [
+        {
+          "name": "hideClose",
+          "type": "boolean",
+          "default": "false"
+        }
+      ],
       "usage": "Use for focused decisions or short modal forms.",
       "examples": [
         {
           "label": "Default",
-          "code": "<Dialog><DialogContent><DialogTitle>Edit</DialogTitle></DialogContent></Dialog>"
+          "code": "\u003cDialog\u003e\u003cDialogContent\u003e\u003cDialogTitle\u003eEdit\u003c/DialogTitle\u003e\u003c/DialogContent\u003e\u003c/Dialog\u003e"
         }
       ],
       "antipatterns": [
@@ -806,7 +732,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Dialog><DialogContent><DialogTitle>Edit</DialogTitle></DialogContent></Dialog>"
+          "code": "\u003cDialog\u003e\u003cDialogContent\u003e\u003cDialogTitle\u003eEdit\u003c/DialogTitle\u003e\u003c/DialogContent\u003e\u003c/Dialog\u003e"
         }
       ],
       "antipatterns": [
@@ -821,7 +747,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Dialog><DialogContent><DialogTitle>Edit</DialogTitle></DialogContent></Dialog>"
+          "code": "\u003cDialog\u003e\u003cDialogContent\u003e\u003cDialogTitle\u003eEdit\u003c/DialogTitle\u003e\u003c/DialogContent\u003e\u003c/Dialog\u003e"
         }
       ],
       "antipatterns": [
@@ -836,7 +762,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Dialog><DialogContent><DialogTitle>Edit</DialogTitle></DialogContent></Dialog>"
+          "code": "\u003cDialog\u003e\u003cDialogContent\u003e\u003cDialogTitle\u003eEdit\u003c/DialogTitle\u003e\u003c/DialogContent\u003e\u003c/Dialog\u003e"
         }
       ],
       "antipatterns": [
@@ -851,11 +777,168 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Dialog><DialogContent><DialogTitle>Edit</DialogTitle></DialogContent></Dialog>"
+          "code": "\u003cDialog\u003e\u003cDialogContent\u003e\u003cDialogTitle\u003eEdit\u003c/DialogTitle\u003e\u003c/DialogContent\u003e\u003c/Dialog\u003e"
         }
       ],
       "antipatterns": [
         "Do not use for long workflows or navigation."
+      ]
+    },
+    {
+      "name": "DropdownMenu",
+      "file": "src/design-system/components/dropdown-menu",
+      "import_path": "",
+      "usage": "Use for a compact set of contextual actions.",
+      "examples": [
+        {
+          "label": "Default",
+          "code": "\u003cDropdownMenu\u003e\u003cDropdownMenuTrigger asChild\u003e\u003cButton\u003eMore\u003c/Button\u003e\u003c/DropdownMenuTrigger\u003e\u003cDropdownMenuContent\u003e\u003cDropdownMenuItem\u003eRename\u003c/DropdownMenuItem\u003e\u003c/DropdownMenuContent\u003e\u003c/DropdownMenu\u003e"
+        }
+      ],
+      "antipatterns": [
+        "Do not use as primary navigation or a long selection form."
+      ]
+    },
+    {
+      "name": "DropdownMenuTrigger",
+      "file": "src/design-system/components/dropdown-menu",
+      "import_path": "",
+      "usage": "Use DropdownMenuTrigger as documented by its parent component pattern.",
+      "examples": [
+        {
+          "label": "Default",
+          "code": "\u003cDropdownMenuTrigger /\u003e"
+        }
+      ],
+      "antipatterns": [
+        "Do not remove semantic behavior, keyboard access, or visible focus."
+      ]
+    },
+    {
+      "name": "DropdownMenuContent",
+      "file": "src/design-system/components/dropdown-menu",
+      "import_path": "",
+      "usage": "Use DropdownMenuContent as documented by its parent component pattern.",
+      "examples": [
+        {
+          "label": "Default",
+          "code": "\u003cDropdownMenuContent /\u003e"
+        }
+      ],
+      "antipatterns": [
+        "Do not remove semantic behavior, keyboard access, or visible focus."
+      ]
+    },
+    {
+      "name": "DropdownMenuItem",
+      "file": "src/design-system/components/dropdown-menu",
+      "import_path": "",
+      "props": [
+        {
+          "name": "destructive",
+          "type": "boolean",
+          "default": "false"
+        }
+      ],
+      "usage": "Use DropdownMenuItem as documented by its parent component pattern.",
+      "examples": [
+        {
+          "label": "Default",
+          "code": "\u003cDropdownMenuItem /\u003e"
+        }
+      ],
+      "antipatterns": [
+        "Do not remove semantic behavior, keyboard access, or visible focus."
+      ]
+    },
+    {
+      "name": "DropdownMenuCheckboxItem",
+      "file": "src/design-system/components/dropdown-menu",
+      "import_path": "",
+      "usage": "Use DropdownMenuCheckboxItem as documented by its parent component pattern.",
+      "examples": [
+        {
+          "label": "Default",
+          "code": "\u003cDropdownMenuCheckboxItem /\u003e"
+        }
+      ],
+      "antipatterns": [
+        "Do not remove semantic behavior, keyboard access, or visible focus."
+      ]
+    },
+    {
+      "name": "DropdownMenuLabel",
+      "file": "src/design-system/components/dropdown-menu",
+      "import_path": "",
+      "usage": "Use DropdownMenuLabel as documented by its parent component pattern.",
+      "examples": [
+        {
+          "label": "Default",
+          "code": "\u003cDropdownMenuLabel /\u003e"
+        }
+      ],
+      "antipatterns": [
+        "Do not remove semantic behavior, keyboard access, or visible focus."
+      ]
+    },
+    {
+      "name": "DropdownMenuSeparator",
+      "file": "src/design-system/components/dropdown-menu",
+      "import_path": "",
+      "usage": "Use DropdownMenuSeparator as documented by its parent component pattern.",
+      "examples": [
+        {
+          "label": "Default",
+          "code": "\u003cDropdownMenuSeparator /\u003e"
+        }
+      ],
+      "antipatterns": [
+        "Do not remove semantic behavior, keyboard access, or visible focus."
+      ]
+    },
+    {
+      "name": "DropdownMenuSub",
+      "file": "src/design-system/components/dropdown-menu",
+      "import_path": "",
+      "usage": "Use DropdownMenuSub as documented by its parent component pattern.",
+      "examples": [
+        {
+          "label": "Default",
+          "code": "\u003cDropdownMenuSub /\u003e"
+        }
+      ],
+      "antipatterns": [
+        "Do not remove semantic behavior, keyboard access, or visible focus."
+      ]
+    },
+    {
+      "name": "DropdownMenuSubTrigger",
+      "file": "src/design-system/components/dropdown-menu",
+      "import_path": "",
+      "usage": "Use DropdownMenuSubTrigger as documented by its parent component pattern.",
+      "examples": [
+        {
+          "label": "Default",
+          "code": "\u003cDropdownMenuSubTrigger /\u003e"
+        }
+      ],
+      "antipatterns": [
+        "Do not remove semantic behavior, keyboard access, or visible focus."
+      ]
+    },
+    {
+      "name": "DropdownMenuSubContent",
+      "file": "src/design-system/components/dropdown-menu",
+      "import_path": "",
+      "usage": "Use DropdownMenuSubContent as documented by its parent component pattern.",
+      "examples": [
+        {
+          "label": "Default",
+          "code": "\u003cDropdownMenuSubContent /\u003e"
+        }
+      ],
+      "antipatterns": [
+        "Do not remove semantic behavior, keyboard access, or visible focus."
       ]
     },
     {
@@ -866,7 +949,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Popover><PopoverContent>Filters</PopoverContent></Popover>"
+          "code": "\u003cPopover\u003e\u003cPopoverContent\u003eFilters\u003c/PopoverContent\u003e\u003c/Popover\u003e"
         }
       ],
       "antipatterns": [
@@ -881,7 +964,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Popover><PopoverContent>Filters</PopoverContent></Popover>"
+          "code": "\u003cPopover\u003e\u003cPopoverContent\u003eFilters\u003c/PopoverContent\u003e\u003c/Popover\u003e"
         }
       ],
       "antipatterns": [
@@ -896,7 +979,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Popover><PopoverContent>Filters</PopoverContent></Popover>"
+          "code": "\u003cPopover\u003e\u003cPopoverContent\u003eFilters\u003c/PopoverContent\u003e\u003c/Popover\u003e"
         }
       ],
       "antipatterns": [
@@ -911,7 +994,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Popover><PopoverContent>Filters</PopoverContent></Popover>"
+          "code": "\u003cPopover\u003e\u003cPopoverContent\u003eFilters\u003c/PopoverContent\u003e\u003c/Popover\u003e"
         }
       ],
       "antipatterns": [
@@ -922,11 +1005,18 @@
       "name": "Progress",
       "file": "src/design-system/components/progress",
       "import_path": "",
+      "props": [
+        {
+          "name": "indeterminate",
+          "type": "boolean",
+          "default": "false"
+        }
+      ],
       "usage": "Use for known completion or indeterminate activity.",
       "examples": [
         {
           "label": "Default",
-          "code": "<Progress value={64} />"
+          "code": "\u003cProgress value={64} /\u003e"
         }
       ],
       "antipatterns": [
@@ -937,11 +1027,24 @@
       "name": "Sheet",
       "file": "src/design-system/components/sheet",
       "import_path": "",
+      "props": [
+        {
+          "name": "side",
+          "type": "enum",
+          "values": [
+            "top",
+            "bottom",
+            "left",
+            "right"
+          ],
+          "default": "right"
+        }
+      ],
       "usage": "Use for supporting work that slides from a page edge.",
       "examples": [
         {
           "label": "Default",
-          "code": "<Sheet><SheetContent side=\"right\"><SheetTitle>Filters</SheetTitle></SheetContent></Sheet>"
+          "code": "\u003cSheet\u003e\u003cSheetContent side=\"right\"\u003e\u003cSheetTitle\u003eFilters\u003c/SheetTitle\u003e\u003c/SheetContent\u003e\u003c/Sheet\u003e"
         }
       ],
       "antipatterns": [
@@ -956,7 +1059,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Sheet><SheetContent side=\"right\"><SheetTitle>Filters</SheetTitle></SheetContent></Sheet>"
+          "code": "\u003cSheet\u003e\u003cSheetContent side=\"right\"\u003e\u003cSheetTitle\u003eFilters\u003c/SheetTitle\u003e\u003c/SheetContent\u003e\u003c/Sheet\u003e"
         }
       ],
       "antipatterns": [
@@ -971,7 +1074,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Sheet><SheetContent side=\"right\"><SheetTitle>Filters</SheetTitle></SheetContent></Sheet>"
+          "code": "\u003cSheet\u003e\u003cSheetContent side=\"right\"\u003e\u003cSheetTitle\u003eFilters\u003c/SheetTitle\u003e\u003c/SheetContent\u003e\u003c/Sheet\u003e"
         }
       ],
       "antipatterns": [
@@ -986,7 +1089,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Sheet><SheetContent side=\"right\"><SheetTitle>Filters</SheetTitle></SheetContent></Sheet>"
+          "code": "\u003cSheet\u003e\u003cSheetContent side=\"right\"\u003e\u003cSheetTitle\u003eFilters\u003c/SheetTitle\u003e\u003c/SheetContent\u003e\u003c/Sheet\u003e"
         }
       ],
       "antipatterns": [
@@ -997,11 +1100,18 @@
       "name": "SheetContent",
       "file": "src/design-system/components/sheet",
       "import_path": "",
+      "props": [
+        {
+          "name": "hideClose",
+          "type": "boolean",
+          "default": "false"
+        }
+      ],
       "usage": "Use for supporting work that slides from a page edge.",
       "examples": [
         {
           "label": "Default",
-          "code": "<Sheet><SheetContent side=\"right\"><SheetTitle>Filters</SheetTitle></SheetContent></Sheet>"
+          "code": "\u003cSheet\u003e\u003cSheetContent side=\"right\"\u003e\u003cSheetTitle\u003eFilters\u003c/SheetTitle\u003e\u003c/SheetContent\u003e\u003c/Sheet\u003e"
         }
       ],
       "antipatterns": [
@@ -1016,7 +1126,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Sheet><SheetContent side=\"right\"><SheetTitle>Filters</SheetTitle></SheetContent></Sheet>"
+          "code": "\u003cSheet\u003e\u003cSheetContent side=\"right\"\u003e\u003cSheetTitle\u003eFilters\u003c/SheetTitle\u003e\u003c/SheetContent\u003e\u003c/Sheet\u003e"
         }
       ],
       "antipatterns": [
@@ -1031,7 +1141,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Sheet><SheetContent side=\"right\"><SheetTitle>Filters</SheetTitle></SheetContent></Sheet>"
+          "code": "\u003cSheet\u003e\u003cSheetContent side=\"right\"\u003e\u003cSheetTitle\u003eFilters\u003c/SheetTitle\u003e\u003c/SheetContent\u003e\u003c/Sheet\u003e"
         }
       ],
       "antipatterns": [
@@ -1046,7 +1156,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Sheet><SheetContent side=\"right\"><SheetTitle>Filters</SheetTitle></SheetContent></Sheet>"
+          "code": "\u003cSheet\u003e\u003cSheetContent side=\"right\"\u003e\u003cSheetTitle\u003eFilters\u003c/SheetTitle\u003e\u003c/SheetContent\u003e\u003c/Sheet\u003e"
         }
       ],
       "antipatterns": [
@@ -1061,7 +1171,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Sheet><SheetContent side=\"right\"><SheetTitle>Filters</SheetTitle></SheetContent></Sheet>"
+          "code": "\u003cSheet\u003e\u003cSheetContent side=\"right\"\u003e\u003cSheetTitle\u003eFilters\u003c/SheetTitle\u003e\u003c/SheetContent\u003e\u003c/Sheet\u003e"
         }
       ],
       "antipatterns": [
@@ -1076,7 +1186,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Skeleton className=\"h-4 w-32\" />"
+          "code": "\u003cSkeleton className=\"h-4 w-32\" /\u003e"
         }
       ],
       "antipatterns": [
@@ -1091,7 +1201,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Tabs defaultValue=\"overview\">...</Tabs>"
+          "code": "\u003cTabs defaultValue=\"overview\"\u003e...\u003c/Tabs\u003e"
         }
       ],
       "antipatterns": [
@@ -1106,7 +1216,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Tabs defaultValue=\"overview\">...</Tabs>"
+          "code": "\u003cTabs defaultValue=\"overview\"\u003e...\u003c/Tabs\u003e"
         }
       ],
       "antipatterns": [
@@ -1121,7 +1231,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Tabs defaultValue=\"overview\">...</Tabs>"
+          "code": "\u003cTabs defaultValue=\"overview\"\u003e...\u003c/Tabs\u003e"
         }
       ],
       "antipatterns": [
@@ -1136,7 +1246,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Tabs defaultValue=\"overview\">...</Tabs>"
+          "code": "\u003cTabs defaultValue=\"overview\"\u003e...\u003c/Tabs\u003e"
         }
       ],
       "antipatterns": [
@@ -1151,26 +1261,11 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Toaster />"
+          "code": "\u003cToaster /\u003e"
         }
       ],
       "antipatterns": [
         "Do not replace inline validation or critical confirmation."
-      ]
-    },
-    {
-      "name": "TooltipProvider",
-      "file": "src/design-system/components/tooltip",
-      "import_path": "",
-      "usage": "Use for short nonessential helper text.",
-      "examples": [
-        {
-          "label": "Default",
-          "code": "<TooltipProvider><Tooltip>...</Tooltip></TooltipProvider>"
-        }
-      ],
-      "antipatterns": [
-        "Do not put essential instructions only in a tooltip."
       ]
     },
     {
@@ -1181,7 +1276,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<TooltipProvider><Tooltip>...</Tooltip></TooltipProvider>"
+          "code": "\u003cTooltipProvider\u003e\u003cTooltip\u003e...\u003c/Tooltip\u003e\u003c/TooltipProvider\u003e"
         }
       ],
       "antipatterns": [
@@ -1196,7 +1291,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<TooltipProvider><Tooltip>...</Tooltip></TooltipProvider>"
+          "code": "\u003cTooltipProvider\u003e\u003cTooltip\u003e...\u003c/Tooltip\u003e\u003c/TooltipProvider\u003e"
         }
       ],
       "antipatterns": [
@@ -1211,7 +1306,22 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<TooltipProvider><Tooltip>...</Tooltip></TooltipProvider>"
+          "code": "\u003cTooltipProvider\u003e\u003cTooltip\u003e...\u003c/Tooltip\u003e\u003c/TooltipProvider\u003e"
+        }
+      ],
+      "antipatterns": [
+        "Do not put essential instructions only in a tooltip."
+      ]
+    },
+    {
+      "name": "TooltipProvider",
+      "file": "src/design-system/components/tooltip",
+      "import_path": "",
+      "usage": "Use for short nonessential helper text.",
+      "examples": [
+        {
+          "label": "Default",
+          "code": "\u003cTooltipProvider\u003e\u003cTooltip\u003e...\u003c/Tooltip\u003e\u003c/TooltipProvider\u003e"
         }
       ],
       "antipatterns": [

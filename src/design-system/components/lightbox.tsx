@@ -1,4 +1,4 @@
-import { forwardRef, useCallback, useEffect, useRef, useState, type ReactNode } from 'react';
+import React, { forwardRef, useCallback, useEffect, useRef, useState, type ReactNode } from 'react';
 import * as DialogPrimitive from '@radix-ui/react-dialog';
 import { ChevronLeft, ChevronRight, X } from 'lucide-react';
 import { cn } from '../lib';
@@ -57,6 +57,8 @@ export const Lightbox = forwardRef<HTMLDivElement, LightboxProps>(function Light
   const prev = useCallback(() => { if (canPrev) setIndex((current - 1 + total) % total); }, [canPrev, current, total, setIndex]);
   const next = useCallback(() => { if (canNext) setIndex((current + 1) % total); }, [canNext, current, total, setIndex]);
   const touchX = useRef<number | null>(null);
+  const closeRef = useRef<HTMLButtonElement>(null);
+  const closeOnBackdrop = (e: React.MouseEvent) => { if (e.target === e.currentTarget) closeRef.current?.click(); };
   const image = images[current];
 
   useEffect(() => { if (index === undefined && inner > total - 1) setInner(Math.max(total - 1, 0)); }, [index, inner, total]);
@@ -69,16 +71,17 @@ export const Lightbox = forwardRef<HTMLDivElement, LightboxProps>(function Light
         ref={ref}
         aria-describedby={undefined}
         onKeyDown={(e) => { if (e.key === 'ArrowLeft') { e.preventDefault(); prev(); } if (e.key === 'ArrowRight') { e.preventDefault(); next(); } }}
-        onPointerDown={(e) => { if (e.target === e.currentTarget) onOpenChange?.(false); }}
+        onClick={closeOnBackdrop}
         className={cn('motion-overlay fixed inset-0 z-50 m-auto grid h-[85vh] w-[calc(100vw-2rem)] max-w-5xl grid-rows-[auto_minmax(0,1fr)_auto] gap-3 text-foreground outline-none', className)}
       >
         <div className="flex h-11 items-center justify-between gap-3">
           <DialogPrimitive.Title className="sr-only">{title}</DialogPrimitive.Title>
           <p className="font-sans text-sm text-muted-foreground tabular-nums" aria-live="polite">{total > 0 && formatCounter(current + 1, total)}</p>
-          <DialogPrimitive.Close className={controlClass} aria-label={closeLabel}><X className="size-5" aria-hidden="true" /></DialogPrimitive.Close>
+          <DialogPrimitive.Close ref={closeRef} className={controlClass} aria-label={closeLabel}><X className="size-5" aria-hidden="true" /></DialogPrimitive.Close>
         </div>
 
         <div
+          onClick={closeOnBackdrop}
           className="relative flex min-h-0 items-center justify-center px-14 sm:px-16"
           onTouchStart={(e) => { touchX.current = e.touches[0]?.clientX ?? null; }}
           onTouchEnd={(e) => { const start = touchX.current; const end = e.changedTouches[0]?.clientX; touchX.current = null; if (start == null || end == null) return; const dx = end - start; if (Math.abs(dx) > 40) (dx < 0 ? next : prev)(); }}

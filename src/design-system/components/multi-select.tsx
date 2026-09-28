@@ -68,12 +68,12 @@ export function MultiSelect({ options, value, onValueChange, placeholder = 'Sele
     </div>
     <PopoverContent align="start" className="w-[min(20rem,calc(100vw-2rem))] p-0">
       <Command shouldFilter={query.trim().length > 0}>
-        <CommandInput placeholder={searchPlaceholder} value={query} onValueChange={setQuery} />
+        <CommandInput placeholder={searchPlaceholder} value={query} onValueChange={setQuery} className="outline-none focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-ring" />
         <CommandList>
           <CommandEmpty>{loading ? '' : emptyMessage}</CommandEmpty>
           {loading && <div className="space-y-2 p-3">{[0, 1, 2].map(row => <Skeleton key={row} className="h-6 w-full" />)}</div>}
           <CommandGroup>
-            {options.map(option => <CommandItem key={option.value} value={option.value} keywords={[option.label]} disabled={Boolean(option.disabled)} onSelect={() => toggle(option)} className="gap-2">
+            {options.map(option => <CommandItem key={option.value} value={option.value} keywords={[option.label]} disabled={Boolean(option.disabled)} onSelect={() => toggle(option)} className="flex items-center gap-2">
               <span className="flex size-4 shrink-0 items-center justify-center rounded-sm border border-input" aria-hidden="true">{value.includes(option.value) && <Check className="size-3 text-primary" />}</span>
               <span className="min-w-0 flex-1 truncate">{option.label}</span>
               {option.hint && <span className="shrink-0 text-xs text-muted-foreground">{option.hint}</span>}

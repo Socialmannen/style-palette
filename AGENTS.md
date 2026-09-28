@@ -14,3 +14,4 @@
 - Use the Table primitives for comparable rows, and TableEmptyState when a list has no matching rows; never nest a Card inside a cell to build layout.
 - Keep every user-visible string in a new component a prop with a neutral English default so no project language is baked into the library.
 - Wire every Checkbox to a real label or an accessible name, and use `indeterminate` for a group where only some members are selected.
+- Use ChoiceDialog for a focused pick-and-confirm step (single or multiple); keep inline filters in Select, MultiSelect or ToggleGroup. Why: one confirm pattern across projects.

@@ -26,3 +26,4 @@ export { Table, TableHeader, TableBody, TableFooter, TableRow, TableHead, TableC
 export { ToggleGroup, ToggleGroupItem, type ToggleGroupProps, type ToggleGroupItemProps } from './design-system/components/toggle-group';
 export { NavMenu, NavItem, navItemStyles, type NavMenuProps, type NavItemProps } from './design-system/components/nav-menu';
 export { ChoiceDialog, type ChoiceDialogProps, type ChoiceDialogOption } from './design-system/components/choice-dialog';
+export { Lightbox, type LightboxProps, type LightboxImage } from './design-system/components/lightbox';

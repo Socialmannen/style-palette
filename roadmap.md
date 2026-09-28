@@ -1,3 +1,4 @@
 - [x] Establish reusable typography, shapes, semantic palettes, and foundational components.
 - [x] Build multi-page live showcase with palette/theme switching and CSS export.
 - [x] Verify preview and component interactions.
+- [x] Add button-style links and accessible dropdown menu to library and showcase; verify interactions.

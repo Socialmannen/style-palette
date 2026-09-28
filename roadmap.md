@@ -3,4 +3,4 @@
 - [x] Verify preview and component interactions.
 - [x] Add button-style links and accessible dropdown menu to library and showcase; verify interactions.
 - [x] Add live WCAG contrast ratios for text and components across every palette and mode.
-- [ ] Add calm global motion tokens, speed controls, animated standard components, and verification.
+- [ ] Add calm global motion tokens, speed controls, animated standard components, and verification (implementation complete; verification pending).

@@ -1,0 +1,388 @@
+{
+  "meta": {
+    "name": "Style Palette",
+    "package": "@ws-812acc30715dfc5562c6/808b6dd1-c31e-4eb1-acb2-ee755afb07f1",
+    "version": "1.0.0",
+    "framework": "react",
+    "css_framework": "tailwind",
+    "starter_template": "custom_design_system",
+    "theme_files": [
+      "src/design-system/styles/theme.css"
+    ],
+    "source_type": "local",
+    "source_manifest": {
+      "#enrichment": "7435adf403e82912a344df501c200d32dff65db85b60d10d9977f9928df6d2e9",
+      ".dsignore": "2c7d76468c15bc0f1499420154f01ae3",
+      ".gitignore": "6d9e901a692b46a83707c245fb03bc91",
+      ".lovable/meta.yaml": "8ec7245def9c0ef39976dd2bc212ff0a",
+      ".lovable/project.json": "51a90576cd97762828b128ea584e5780",
+      ".lovable/sources.yaml": "1b62005cb01c2413aacc02b0f9500c65",
+      ".lovable/system.md": "431b42f3492f83c48f739144a7290121",
+      ".prettierignore": "7279a476f196a2da5f7edd18db568dc6",
+      ".prettierrc": "185ef0234746ab738ac1ab6cec5e2bd9",
+      "AGENTS.md": "710fe48e09a7b5b2c3898bd294bec0c7",
+      "README.md": "9651f45364ac3524097a14081cd3a7bc",
+      "bunfig.toml": "89115995d9de72fdfc894e16b1e75297",
+      "components.json": "30d3d035361ce807021f5c54620962e9",
+      "eslint.config.js": "345bdd57e188e0e4525edcd00e5003f5",
+      "lovable.toml": "9636c1bf32f9901bfba4eabb92981217",
+      "package.json": "1206bda12fe74e21e3b67920ab4fe633",
+      "public/favicon.ico": "9f504444f85a5af2eef9264b02ae40be",
+      "public/robots.txt": "f9dff89adf98833e676de2205921996a",
+      "roadmap.md": "c2e9b347035ccea79e09255417ff8af3",
+      "src/components/ui/accordion.tsx": "55f9dda62b4e3913c9b23e5015a86aef",
+      "src/components/ui/alert-dialog.tsx": "96350e949e9b7b674545430a410ab89c",
+      "src/components/ui/alert.tsx": "f993d7e96b1e25ce50e68ed97e11d2a8",
+      "src/components/ui/aspect-ratio.tsx": "c5c364545e1b25a94e9e752cd67ad048",
+      "src/components/ui/avatar.tsx": "72989cd32f72c4122802540ef32525a5",
+      "src/components/ui/badge.tsx": "81cade001fc4260f9943e18dcd79449b",
+      "src/components/ui/breadcrumb.tsx": "bb9ac254f12662b20d5d50b84308bf3a",
+      "src/components/ui/button.tsx": "7d07d520f486b12bd47373d694ecd2ee",
+      "src/components/ui/calendar.tsx": "d849cc610e2683271f3f1c47d093cf30",
+      "src/components/ui/card.tsx": "d6c48ea36221b9cdc3576d305d12d5d5",
+      "src/components/ui/carousel.tsx": "e324c68ae00cd5aed49317638abd429a",
+      "src/components/ui/chart.tsx": "6a3baf94f2e89f1f97d4d7a28f3622d2",
+      "src/components/ui/checkbox.tsx": "f78aac270ca482c8c2cb907ef6260462",
+      "src/components/ui/collapsible.tsx": "767631bbc344945c236f185f4078d71d",
+      "src/components/ui/command.tsx": "014782599cc838b021ec68b07ad4ea02",
+      "src/components/ui/context-menu.tsx": "3ba8244ea23df34a1dba92f3a1230dad",
+      "src/components/ui/dialog.tsx": "ef4fe8e7de8675730afe3d633b260e09",
+      "src/components/ui/drawer.tsx": "8be333e8fd8e42576b1b5f72f07f4337",
+      "src/components/ui/dropdown-menu.tsx": "28d6e98d3c7811fc0514bfa69416f087",
+      "src/components/ui/form.tsx": "1b0aa6302b9017ea2a1307c22a1d2983",
+      "src/components/ui/hover-card.tsx": "1442794c5ca2a78d69e4e613b315ed3d",
+      "src/components/ui/input-otp.tsx": "65625f2f1c4d731a760aeed7b54459d1",
+      "src/components/ui/input.tsx": "1d4cc52a4cd8afb3e18e45bda942bb8a",
+      "src/components/ui/label.tsx": "7e35df4ca8edd0835efd97ca7937ef92",
+      "src/components/ui/menubar.tsx": "3c4121a1e78d3f424a7295381a8997d3",
+      "src/components/ui/navigation-menu.tsx": "e85351147a02b29577ff83d188b63c24",
+      "src/components/ui/pagination.tsx": "fac6cdbb4bbf78b273d85cd36d6cbb49",
+      "src/components/ui/popover.tsx": "f18aa1da2144f25ee60795c539c51bcd",
+      "src/components/ui/progress.tsx": "55c462e5c9dd678dcf2c0c510b014ac4",
+      "src/components/ui/radio-group.tsx": "0e1ace237a5da3197e3eb1e6683faba9",
+      "src/components/ui/resizable.tsx": "d9fcb9203c749fcab4e125a99bb12a86",
+      "src/components/ui/scroll-area.tsx": "87b65d3eb26f2b02ff35a7acea585ba5",
+      "src/components/ui/select.tsx": "31ea1bbd6671833b010b2e852c8a55d0",
+      "src/components/ui/separator.tsx": "433d163c4ffa00b59398a0c293198b5e",
+      "src/components/ui/sheet.tsx": "0221fbf97b69611b47fcbc10bb27669a",
+      "src/components/ui/sidebar.tsx": "83c1623eb50ebc370d7b1b84a542e369",
+      "src/components/ui/skeleton.tsx": "41b182e6e2fc3805960d41e767d4a972",
+      "src/components/ui/slider.tsx": "4752f1bfa26426988d325599e01c335b",
+      "src/components/ui/sonner.tsx": "97f59f60be3413196d095fcbf7383216",
+      "src/components/ui/switch.tsx": "82f5d8b0c59bb7ff305caa9f502e79ff",
+      "src/components/ui/table.tsx": "7cc889989d53894b659903c73aded96e",
+      "src/components/ui/tabs.tsx": "56e725558c2ce72c18243bf51717f385",
+      "src/components/ui/textarea.tsx": "c7aad96fb9545210d53135a96c76ed6b",
+      "src/components/ui/toggle-group.tsx": "ac26383acf721d116ca8e3ab5c5355d5",
+      "src/components/ui/toggle.tsx": "ee8c5adac74e7242b85b544db1a8fbad",
+      "src/components/ui/tooltip.tsx": "67d71db5a1ab935695d1def497f5b8a6",
+      "src/design-system/assets/fonts/figtree-400.ttf": "6cd7caa972f68304833cd966b9a6e09e",
+      "src/design-system/assets/fonts/figtree-500.ttf": "9ea5c3347152a5e77a47c2099174d340",
+      "src/design-system/assets/fonts/figtree-600.ttf": "92a7ce5893918522b927b670dc368120",
+      "src/design-system/assets/fonts/figtree-700.ttf": "2ee3091adc84b6783612955cd1f5f0c9",
+      "src/design-system/assets/fonts/outfit-500.ttf": "9c99161d82f75444c9ce0928e94b539f",
+      "src/design-system/assets/fonts/outfit-600.ttf": "5d10e86057713398adb241ac22568b12",
+      "src/design-system/assets/fonts/outfit-700.ttf": "4fa2a7180a009d0a93eaa11d736aed50",
+      "src/design-system/components/badge.tsx": "27e7dd75fdf8853854889f55d4f2ad83",
+      "src/design-system/components/button.tsx": "5e74146e387587644ad8c1e1a6645f29",
+      "src/design-system/components/card.tsx": "2baa8800641e5fb89260e39f46d72665",
+      "src/design-system/components/input.tsx": "0bbdd69e0752c1b0c7f1b40731852a05",
+      "src/design-system/components/switch.tsx": "64ea51487a5d0f653ef96116569d60d7",
+      "src/design-system/components/textarea.tsx": "3d00e91264ea63173f6a616255233f02",
+      "src/design-system/lib.ts": "68b1b903329d1d880bf000551a84bc6f",
+      "src/design-system/styles/theme.css": "309ada67d5f9af8efdafcbb28c7e8fdd",
+      "src/hooks/use-mobile.tsx": "c0a0bdd4638c391a1dd06ac82074e60b",
+      "src/index.ts": "881f662e4b29cbf76df985f799284e54",
+      "src/lib/error-capture.ts": "f630d9686a9a989170f22eff4de7b30d",
+      "src/lib/error-page.ts": "8da0ddd7569bac2676b9a5c8edff8a36",
+      "src/lib/lovable-error-reporting.ts": "0367e03b7d71917510e4dc1cdae172ec",
+      "src/lib/utils.ts": "d9837f38cc05303254571985e3164050",
+      "src/routeTree.gen.ts": "2dc5e557d4680374df7a86d2e2bb05a7",
+      "src/router.tsx": "8f905e713b0eba7fa8148b7995a708c9",
+      "src/routes/README.md": "b3a2f259b66fd1a11f54b6d5ac83bf57",
+      "src/routes/__root.tsx": "27cf61bb40cdfa238ba76ae653c04013",
+      "src/routes/colors.tsx": "48792f4542f6dce4d8a85bc44d2deef7",
+      "src/routes/components.tsx": "68b661c99f5cb0420da2fea4d6379a72",
+      "src/routes/index.tsx": "33ac4142215d36c748a1ab1a230f5875",
+      "src/routes/typography.tsx": "d4065f467dee05ab5c124d515787a8eb",
+      "src/server.ts": "c7bbc49bb70e318af618d92775ee0f27",
+      "src/showcase/layout.tsx": "6e20ae28fb275027a185d6b09d41fdae",
+      "src/showcase/palettes.ts": "a3965ebc78ce4336d26e54dfb3235a0b",
+      "src/start.ts": "0502f82c58afce5012b4c102e6fe2437",
+      "src/styles.css": "a36a36b6e13d9681c3f3e9915f212e69",
+      "tsconfig.json": "e84e5c7fe88e3c5a4d54f55a816d42c1",
+      "vite.config.ts": "d67e8217e5f31b87c276b6357c9aedcf"
+    },
+    "pipeline_version": 8
+  },
+  "tokens": {
+    "color": [
+      {
+        "name": "--primary",
+        "raw": "oklch(0.55 0.22 259)",
+        "source": "src/design-system/styles/theme.css"
+      },
+      {
+        "name": "--primary-foreground",
+        "raw": "oklch(1 0 0)",
+        "source": "src/design-system/styles/theme.css"
+      },
+      {
+        "name": "--accent",
+        "raw": "oklch(0.93 0.035 257)",
+        "source": "src/design-system/styles/theme.css"
+      },
+      {
+        "name": "--accent-foreground",
+        "raw": "oklch(0.37 0.14 259)",
+        "source": "src/design-system/styles/theme.css"
+      },
+      {
+        "name": "--ring",
+        "raw": "oklch(0.55 0.22 259)",
+        "source": "src/design-system/styles/theme.css"
+      },
+      {
+        "name": "--background",
+        "raw": "oklch(0.985 0.003 255)",
+        "source": "src/design-system/styles/theme.css"
+      },
+      {
+        "name": "--foreground",
+        "raw": "oklch(0.2 0.022 255)",
+        "source": "src/design-system/styles/theme.css"
+      },
+      {
+        "name": "--card",
+        "raw": "oklch(1 0 0)",
+        "source": "src/design-system/styles/theme.css"
+      },
+      {
+        "name": "--card-foreground",
+        "raw": "oklch(0.2 0.022 255)",
+        "source": "src/design-system/styles/theme.css"
+      },
+      {
+        "name": "--secondary",
+        "raw": "oklch(0.955 0.006 255)",
+        "source": "src/design-system/styles/theme.css"
+      },
+      {
+        "name": "--secondary-foreground",
+        "raw": "oklch(0.27 0.025 255)",
+        "source": "src/design-system/styles/theme.css"
+      },
+      {
+        "name": "--muted",
+        "raw": "oklch(0.962 0.006 255)",
+        "source": "src/design-system/styles/theme.css"
+      },
+      {
+        "name": "--muted-foreground",
+        "raw": "oklch(0.48 0.025 255)",
+        "source": "src/design-system/styles/theme.css"
+      },
+      {
+        "name": "--destructive",
+        "raw": "oklch(0.59 0.21 25)",
+        "source": "src/design-system/styles/theme.css"
+      },
+      {
+        "name": "--destructive-foreground",
+        "raw": "oklch(1 0 0)",
+        "source": "src/design-system/styles/theme.css"
+      },
+      {
+        "name": "--border",
+        "raw": "oklch(0.89 0.01 255)",
+        "source": "src/design-system/styles/theme.css"
+      },
+      {
+        "name": "--input",
+        "raw": "oklch(0.87 0.01 255)",
+        "source": "src/design-system/styles/theme.css"
+      },
+      {
+        "name": "--palette-cobalt",
+        "raw": "oklch(0.55 0.22 259)",
+        "source": "src/design-system/styles/theme.css"
+      },
+      {
+        "name": "--palette-emerald",
+        "raw": "oklch(0.51 0.14 165)",
+        "source": "src/design-system/styles/theme.css"
+      },
+      {
+        "name": "--palette-amber",
+        "raw": "oklch(0.58 0.14 68)",
+        "source": "src/design-system/styles/theme.css"
+      },
+      {
+        "name": "--palette-violet",
+        "raw": "oklch(0.57 0.21 298)",
+        "source": "src/design-system/styles/theme.css"
+      }
+    ],
+    "typography": [
+      {
+        "name": "--font-display",
+        "raw": "\"Outfit\", sans-serif",
+        "source": "src/design-system/styles/theme.css"
+      },
+      {
+        "name": "--font-sans",
+        "raw": "\"Figtree\", sans-serif",
+        "source": "src/design-system/styles/theme.css"
+      }
+    ],
+    "radius": [
+      {
+        "name": "--radius-sm",
+        "raw": "calc(var(--radius) - 4px)",
+        "source": "src/design-system/styles/theme.css"
+      },
+      {
+        "name": "--radius-md",
+        "raw": "calc(var(--radius) - 2px)",
+        "source": "src/design-system/styles/theme.css"
+      },
+      {
+        "name": "--radius-xl",
+        "raw": "calc(var(--radius) + 4px)",
+        "source": "src/design-system/styles/theme.css"
+      },
+      {
+        "name": "--radius",
+        "raw": "0.625rem",
+        "source": "src/design-system/styles/theme.css"
+      }
+    ],
+    "shadow": [
+      {
+        "name": "--surface-shadow",
+        "raw": "0 8px 30px oklch(0.2 0.022 255 / 5%)",
+        "source": "src/design-system/styles/theme.css"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Button",
+      "file": "src/design-system/components/button",
+      "import_path": "",
+      "props": [
+        {
+          "name": "variant",
+          "type": "enum",
+          "values": [
+            "primary",
+            "secondary",
+            "outline",
+            "ghost",
+            "destructive"
+          ],
+          "default": "primary"
+        },
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg",
+            "icon"
+          ],
+          "default": "md"
+        },
+        {
+          "name": "loading",
+          "type": "boolean"
+        }
+      ]
+    },
+    {
+      "name": "Input",
+      "file": "src/design-system/components/input",
+      "import_path": "",
+      "props": [
+        {
+          "name": "invalid",
+          "type": "boolean"
+        }
+      ]
+    },
+    {
+      "name": "Badge",
+      "file": "src/design-system/components/badge",
+      "import_path": "",
+      "props": [
+        {
+          "name": "variant",
+          "type": "enum",
+          "values": [
+            "primary",
+            "secondary",
+            "outline",
+            "accent",
+            "destructive"
+          ],
+          "default": "primary"
+        }
+      ]
+    },
+    {
+      "name": "Card",
+      "file": "src/design-system/components/card",
+      "import_path": "",
+      "props": [
+        {
+          "name": "variant",
+          "type": "enum",
+          "values": [
+            "default",
+            "flat",
+            "accent"
+          ],
+          "default": "default"
+        },
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ],
+          "default": "md"
+        }
+      ]
+    },
+    {
+      "name": "Switch",
+      "file": "src/design-system/components/switch",
+      "import_path": "",
+      "props": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md"
+          ],
+          "default": "md"
+        }
+      ]
+    },
+    {
+      "name": "Textarea",
+      "file": "src/design-system/components/textarea",
+      "import_path": "",
+      "props": [
+        {
+          "name": "invalid",
+          "type": "boolean"
+        }
+      ]
+    }
+  ]
+}

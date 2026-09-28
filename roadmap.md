@@ -2,3 +2,4 @@
 - [x] Build multi-page live showcase with palette/theme switching and CSS export.
 - [x] Verify preview and component interactions.
 - [x] Add button-style links and accessible dropdown menu to library and showcase; verify interactions.
+- [x] Add live WCAG contrast ratios for text and components across every palette and mode.

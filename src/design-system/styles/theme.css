@@ -114,8 +114,8 @@
 
 @keyframes ds-fade-in { from { opacity: 0; } to { opacity: 1; } }
 @keyframes ds-fade-out { from { opacity: 1; } to { opacity: 0; } }
-@keyframes ds-dialog-in { from { opacity: 0; transform: translate(-50%, -48%) scale(var(--motion-scale-start)); } to { opacity: 1; transform: translate(-50%, -50%) scale(1); } }
-@keyframes ds-dialog-out { from { opacity: 1; transform: translate(-50%, -50%) scale(1); } to { opacity: 0; transform: translate(-50%, -48%) scale(var(--motion-scale-start)); } }
+@keyframes ds-dialog-in { from { opacity: 0; transform: translateY(var(--motion-distance)) scale(var(--motion-scale-start)); } to { opacity: 1; transform: translateY(0) scale(1); } }
+@keyframes ds-dialog-out { from { opacity: 1; transform: translateY(0) scale(1); } to { opacity: 0; transform: translateY(var(--motion-distance)) scale(var(--motion-scale-start)); } }
 @keyframes ds-popover-in { from { opacity: 0; transform: translateY(calc(var(--motion-distance) * -0.5)) scale(var(--motion-scale-start)); } to { opacity: 1; transform: translateY(0) scale(1); } }
 @keyframes ds-popover-out { from { opacity: 1; transform: translateY(0) scale(1); } to { opacity: 0; transform: translateY(calc(var(--motion-distance) * -0.5)) scale(var(--motion-scale-start)); } }
 @keyframes ds-sheet-in-left { from { transform: translateX(-100%); } to { transform: translateX(0); } }
@@ -155,6 +155,7 @@
   &[data-state="closed"] { animation: ds-fade-out var(--motion-duration-fast) var(--motion-ease-exit) both; }
 }
 @utility motion-dialog {
+  translate: -50% -50%;
   &[data-state="open"] { animation: ds-dialog-in var(--motion-duration-normal) var(--motion-ease-enter) both; }
   &[data-state="closed"] { animation: ds-dialog-out var(--motion-duration-fast) var(--motion-ease-exit) both; }
 }

@@ -9,6 +9,7 @@
 - Use the motion tokens and utilities from the canonical theme; never introduce local durations or easing curves in consumer components.
 - Keep `data-motion` and `data-motion-speed` independent so projects can choose movement level and consistent global speed.
 - Preserve Radix focus management, Escape handling, outside-click dismissal, and restored focus in Dialog and Sheet.
+- Keep Dialog centering in the motion-dialog utility's independent translate property, not animation transforms, so animation and layout never center it twice.
 - Choose the selection control by the shape of the choice: Select for one value out of a list, MultiSelect when several values are kept or the list needs search, ToggleGroup only for two to five options that should stay visible side by side.
 - Use NavMenu and NavItem for top-level page links so the active page keeps the same look across projects; pass the project's own link element through `asChild` and never hand-style a nav row.
 - Use the Table primitives for comparable rows, and TableEmptyState when a list has no matching rows; never nest a Card inside a cell to build layout.

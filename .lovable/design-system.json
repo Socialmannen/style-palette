@@ -1,8 +1,8 @@
 {
   "meta": {
     "name": "Style Palette",
-    "package": "@ws-0c85c6ec0d681ca902ae/808b6dd1-c31e-4eb1-acb2-ee755afb07f1",
-    "version": "1.4.0",
+    "package": "@ws-aab1cf40a2c2aac8fc7d/808b6dd1-c31e-4eb1-acb2-ee755afb07f1",
+    "version": "1.5.0",
     "framework": "react",
     "css_framework": "tailwind",
     "starter_template": "custom_design_system",
@@ -11,7 +11,7 @@
     ],
     "source_type": "local",
     "source_manifest": {
-      "#enrichment": "13477b36a0dbb7095d2405f42ef0af95dfda2ab6064584680dcd2d8eaece20c6",
+      "#enrichment": "eba39ff09bab2dc766a7b634a2294e952ab3a7d6b9f2832ec5886677c4c9f290",
       ".dsignore": "2c7d76468c15bc0f1499420154f01ae3",
       ".gitignore": "6d9e901a692b46a83707c245fb03bc91",
       ".lovable/meta.yaml": "8794970d6049858cc148d2b86f7a2b22",
@@ -29,7 +29,7 @@
       "components.json": "30d3d035361ce807021f5c54620962e9",
       "eslint.config.js": "345bdd57e188e0e4525edcd00e5003f5",
       "lovable.toml": "9636c1bf32f9901bfba4eabb92981217",
-      "package.json": "4424be5ff0a8cca58747d9c0fede3cce",
+      "package.json": "f6a42aba0f7aea71ba34b322eb11481d",
       "public/favicon.ico": "9f504444f85a5af2eef9264b02ae40be",
       "public/robots.txt": "f9dff89adf98833e676de2205921996a",
       "roadmap.md": "2df9d347f5579cc02be1a5372e27a6c5",
@@ -46,11 +46,14 @@
       "src/design-system/components/button.tsx": "5f0ccf53b51d9cb7070e7c3b8e077858",
       "src/design-system/components/card.tsx": "fe7e1baa2d9f11e9ff9c5c4adf125bb5",
       "src/design-system/components/checkbox.tsx": "b52ba53f0c002dae06cfbc26cca9cdf1",
+      "src/design-system/components/choice-dialog.test.tsx": "86a35bd1faa9fb50c428e5bb08beffb0",
       "src/design-system/components/choice-dialog.tsx": "ebc1aac714ad5d00d179e7049aa6066a",
       "src/design-system/components/collapsible.tsx": "3044e7ea91d963490c34634914214f6f",
+      "src/design-system/components/dialog.test.tsx": "e08943c22fea078d1f4209a7a4c6d6f5",
       "src/design-system/components/dialog.tsx": "b09afada7e15bf56e663fda01f985caa",
       "src/design-system/components/dropdown-menu.tsx": "fdbd3e25adf68358ed62854eaa5e82be",
       "src/design-system/components/input.tsx": "f27ef4db19cb0d83964ac56f2fcac57a",
+      "src/design-system/components/lightbox.tsx": "a20d26cbf67b0aa2068580c682a60741",
       "src/design-system/components/multi-select.tsx": "ea793d915e7087dc49abc8e1037224ca",
       "src/design-system/components/nav-menu.tsx": "183c54bbd9173d4e41e2cfa7bcf96f07",
       "src/design-system/components/popover.tsx": "dfbb4b262bf63d1cc5998cbabf78d024",
@@ -68,7 +71,7 @@
       "src/design-system/lib.ts": "68b1b903329d1d880bf000551a84bc6f",
       "src/design-system/styles/theme.css": "e808020c082457f5084bfad1727b0784",
       "src/hooks/use-mobile.tsx": "c0a0bdd4638c391a1dd06ac82074e60b",
-      "src/index.ts": "8ed417064fef7acb969aecdfeff609dd",
+      "src/index.ts": "0a156a3da03dd7dd1084760016efb320",
       "src/lib/error-capture.ts": "f630d9686a9a989170f22eff4de7b30d",
       "src/lib/error-page.ts": "8da0ddd7569bac2676b9a5c8edff8a36",
       "src/lib/lovable-error-reporting.ts": "0367e03b7d71917510e4dc1cdae172ec",
@@ -78,18 +81,20 @@
       "src/routes/README.md": "b3a2f259b66fd1a11f54b6d5ac83bf57",
       "src/routes/__root.tsx": "185221750d8f1f40d7d142d1ccacfd34",
       "src/routes/colors.tsx": "6bfc1fa840f56e136d5ab5a742059923",
-      "src/routes/components.tsx": "3c366b69e7b3d9eaa8d467fee1b2db99",
+      "src/routes/components.tsx": "2d8389a3b0933584a8c72fd32d3a9887",
       "src/routes/index.tsx": "33ac4142215d36c748a1ab1a230f5875",
       "src/routes/typography.tsx": "d4065f467dee05ab5c124d515787a8eb",
       "src/server.ts": "c7bbc49bb70e318af618d92775ee0f27",
       "src/showcase/layout.tsx": "0dbe4885d076191afdaea5a8811a9b77",
-      "src/showcase/menu-components.tsx": "32419b0e47303d469b15007db42e88cc",
+      "src/showcase/menu-components.tsx": "bbf30ddaa2fe4263fff4a6a580497665",
       "src/showcase/motion-components.tsx": "f4c5993ecab755942aca117624fbd781",
       "src/showcase/palettes.ts": "a3965ebc78ce4336d26e54dfb3235a0b",
       "src/start.ts": "0502f82c58afce5012b4c102e6fe2437",
       "src/styles.css": "a36a36b6e13d9681c3f3e9915f212e69",
       "tsconfig.json": "e84e5c7fe88e3c5a4d54f55a816d42c1",
-      "vite.config.ts": "d67e8217e5f31b87c276b6357c9aedcf"
+      "vite.config.ts": "d67e8217e5f31b87c276b6357c9aedcf",
+      "vitest.config.ts": "3879c01b20aa390dff2df19741c470de",
+      "vitest.setup.ts": "9305460c1f087388e7ded364a524a605"
     },
     "pipeline_version": 8
   },
@@ -348,7 +353,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Button variant=\"primary\">Save changes</Button>"
+          "code": "\u003cButton variant=\"primary\"\u003eSave changes\u003c/Button\u003e"
         }
       ],
       "antipatterns": [
@@ -363,7 +368,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<ButtonLink href=\"/projects\" variant=\"outline\">All projects</ButtonLink>"
+          "code": "\u003cButtonLink href=\"/projects\" variant=\"outline\"\u003eAll projects\u003c/ButtonLink\u003e"
         }
       ],
       "antipatterns": [
@@ -384,7 +389,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Input id=\"email\" type=\"email\" />"
+          "code": "\u003cInput id=\"email\" type=\"email\" /\u003e"
         }
       ],
       "antipatterns": [
@@ -413,7 +418,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Badge variant=\"accent\">In review</Badge>"
+          "code": "\u003cBadge variant=\"accent\"\u003eIn review\u003c/Badge\u003e"
         }
       ],
       "antipatterns": [
@@ -451,7 +456,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Card size=\"md\">Project summary</Card>"
+          "code": "\u003cCard size=\"md\"\u003eProject summary\u003c/Card\u003e"
         }
       ],
       "antipatterns": [
@@ -477,7 +482,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Switch id=\"alerts\" defaultChecked />"
+          "code": "\u003cSwitch id=\"alerts\" defaultChecked /\u003e"
         }
       ],
       "antipatterns": [
@@ -498,7 +503,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Textarea id=\"brief\" placeholder=\"Project brief\" />"
+          "code": "\u003cTextarea id=\"brief\" placeholder=\"Project brief\" /\u003e"
         }
       ],
       "antipatterns": [
@@ -513,7 +518,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Accordion type=\"single\" collapsible>...</Accordion>"
+          "code": "\u003cAccordion type=\"single\" collapsible\u003e...\u003c/Accordion\u003e"
         }
       ],
       "antipatterns": [
@@ -528,7 +533,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Accordion type=\"single\" collapsible>...</Accordion>"
+          "code": "\u003cAccordion type=\"single\" collapsible\u003e...\u003c/Accordion\u003e"
         }
       ],
       "antipatterns": [
@@ -543,7 +548,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Accordion type=\"single\" collapsible>...</Accordion>"
+          "code": "\u003cAccordion type=\"single\" collapsible\u003e...\u003c/Accordion\u003e"
         }
       ],
       "antipatterns": [
@@ -558,7 +563,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Accordion type=\"single\" collapsible>...</Accordion>"
+          "code": "\u003cAccordion type=\"single\" collapsible\u003e...\u003c/Accordion\u003e"
         }
       ],
       "antipatterns": [
@@ -573,7 +578,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Collapsible>...</Collapsible>"
+          "code": "\u003cCollapsible\u003e...\u003c/Collapsible\u003e"
         }
       ],
       "antipatterns": [
@@ -588,7 +593,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Collapsible>...</Collapsible>"
+          "code": "\u003cCollapsible\u003e...\u003c/Collapsible\u003e"
         }
       ],
       "antipatterns": [
@@ -603,7 +608,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Collapsible>...</Collapsible>"
+          "code": "\u003cCollapsible\u003e...\u003c/Collapsible\u003e"
         }
       ],
       "antipatterns": [
@@ -618,7 +623,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Dialog><DialogContent><DialogTitle>Edit</DialogTitle></DialogContent></Dialog>"
+          "code": "\u003cDialog\u003e\u003cDialogContent\u003e\u003cDialogTitle\u003eEdit\u003c/DialogTitle\u003e\u003c/DialogContent\u003e\u003c/Dialog\u003e"
         }
       ],
       "antipatterns": [
@@ -633,7 +638,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Dialog><DialogContent><DialogTitle>Edit</DialogTitle></DialogContent></Dialog>"
+          "code": "\u003cDialog\u003e\u003cDialogContent\u003e\u003cDialogTitle\u003eEdit\u003c/DialogTitle\u003e\u003c/DialogContent\u003e\u003c/Dialog\u003e"
         }
       ],
       "antipatterns": [
@@ -648,7 +653,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Dialog><DialogContent><DialogTitle>Edit</DialogTitle></DialogContent></Dialog>"
+          "code": "\u003cDialog\u003e\u003cDialogContent\u003e\u003cDialogTitle\u003eEdit\u003c/DialogTitle\u003e\u003c/DialogContent\u003e\u003c/Dialog\u003e"
         }
       ],
       "antipatterns": [
@@ -663,7 +668,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Dialog><DialogContent><DialogTitle>Edit</DialogTitle></DialogContent></Dialog>"
+          "code": "\u003cDialog\u003e\u003cDialogContent\u003e\u003cDialogTitle\u003eEdit\u003c/DialogTitle\u003e\u003c/DialogContent\u003e\u003c/Dialog\u003e"
         }
       ],
       "antipatterns": [
@@ -685,7 +690,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Dialog><DialogContent><DialogTitle>Edit</DialogTitle></DialogContent></Dialog>"
+          "code": "\u003cDialog\u003e\u003cDialogContent\u003e\u003cDialogTitle\u003eEdit\u003c/DialogTitle\u003e\u003c/DialogContent\u003e\u003c/Dialog\u003e"
         }
       ],
       "antipatterns": [
@@ -700,7 +705,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Dialog><DialogContent><DialogTitle>Edit</DialogTitle></DialogContent></Dialog>"
+          "code": "\u003cDialog\u003e\u003cDialogContent\u003e\u003cDialogTitle\u003eEdit\u003c/DialogTitle\u003e\u003c/DialogContent\u003e\u003c/Dialog\u003e"
         }
       ],
       "antipatterns": [
@@ -715,7 +720,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Dialog><DialogContent><DialogTitle>Edit</DialogTitle></DialogContent></Dialog>"
+          "code": "\u003cDialog\u003e\u003cDialogContent\u003e\u003cDialogTitle\u003eEdit\u003c/DialogTitle\u003e\u003c/DialogContent\u003e\u003c/Dialog\u003e"
         }
       ],
       "antipatterns": [
@@ -730,7 +735,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Dialog><DialogContent><DialogTitle>Edit</DialogTitle></DialogContent></Dialog>"
+          "code": "\u003cDialog\u003e\u003cDialogContent\u003e\u003cDialogTitle\u003eEdit\u003c/DialogTitle\u003e\u003c/DialogContent\u003e\u003c/Dialog\u003e"
         }
       ],
       "antipatterns": [
@@ -745,7 +750,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Dialog><DialogContent><DialogTitle>Edit</DialogTitle></DialogContent></Dialog>"
+          "code": "\u003cDialog\u003e\u003cDialogContent\u003e\u003cDialogTitle\u003eEdit\u003c/DialogTitle\u003e\u003c/DialogContent\u003e\u003c/Dialog\u003e"
         }
       ],
       "antipatterns": [
@@ -760,7 +765,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<DropdownMenu><DropdownMenuTrigger asChild><Button>More</Button></DropdownMenuTrigger><DropdownMenuContent><DropdownMenuItem>Rename</DropdownMenuItem></DropdownMenuContent></DropdownMenu>"
+          "code": "\u003cDropdownMenu\u003e\u003cDropdownMenuTrigger asChild\u003e\u003cButton\u003eMore\u003c/Button\u003e\u003c/DropdownMenuTrigger\u003e\u003cDropdownMenuContent\u003e\u003cDropdownMenuItem\u003eRename\u003c/DropdownMenuItem\u003e\u003c/DropdownMenuContent\u003e\u003c/DropdownMenu\u003e"
         }
       ],
       "antipatterns": [
@@ -775,7 +780,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<DropdownMenuTrigger />"
+          "code": "\u003cDropdownMenuTrigger /\u003e"
         }
       ],
       "antipatterns": [
@@ -790,7 +795,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<DropdownMenuContent />"
+          "code": "\u003cDropdownMenuContent /\u003e"
         }
       ],
       "antipatterns": [
@@ -812,7 +817,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<DropdownMenuItem />"
+          "code": "\u003cDropdownMenuItem /\u003e"
         }
       ],
       "antipatterns": [
@@ -827,7 +832,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<DropdownMenuCheckboxItem />"
+          "code": "\u003cDropdownMenuCheckboxItem /\u003e"
         }
       ],
       "antipatterns": [
@@ -842,7 +847,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<DropdownMenuLabel />"
+          "code": "\u003cDropdownMenuLabel /\u003e"
         }
       ],
       "antipatterns": [
@@ -857,7 +862,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<DropdownMenuSeparator />"
+          "code": "\u003cDropdownMenuSeparator /\u003e"
         }
       ],
       "antipatterns": [
@@ -872,7 +877,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<DropdownMenuSub />"
+          "code": "\u003cDropdownMenuSub /\u003e"
         }
       ],
       "antipatterns": [
@@ -887,7 +892,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<DropdownMenuSubTrigger />"
+          "code": "\u003cDropdownMenuSubTrigger /\u003e"
         }
       ],
       "antipatterns": [
@@ -902,7 +907,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<DropdownMenuSubContent />"
+          "code": "\u003cDropdownMenuSubContent /\u003e"
         }
       ],
       "antipatterns": [
@@ -917,7 +922,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Popover><PopoverContent>Filters</PopoverContent></Popover>"
+          "code": "\u003cPopover\u003e\u003cPopoverContent\u003eFilters\u003c/PopoverContent\u003e\u003c/Popover\u003e"
         }
       ],
       "antipatterns": [
@@ -932,7 +937,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Popover><PopoverContent>Filters</PopoverContent></Popover>"
+          "code": "\u003cPopover\u003e\u003cPopoverContent\u003eFilters\u003c/PopoverContent\u003e\u003c/Popover\u003e"
         }
       ],
       "antipatterns": [
@@ -947,7 +952,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Popover><PopoverContent>Filters</PopoverContent></Popover>"
+          "code": "\u003cPopover\u003e\u003cPopoverContent\u003eFilters\u003c/PopoverContent\u003e\u003c/Popover\u003e"
         }
       ],
       "antipatterns": [
@@ -962,7 +967,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Popover><PopoverContent>Filters</PopoverContent></Popover>"
+          "code": "\u003cPopover\u003e\u003cPopoverContent\u003eFilters\u003c/PopoverContent\u003e\u003c/Popover\u003e"
         }
       ],
       "antipatterns": [
@@ -984,7 +989,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Progress value={64} />"
+          "code": "\u003cProgress value={64} /\u003e"
         }
       ],
       "antipatterns": [
@@ -1012,7 +1017,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Sheet><SheetContent side=\"right\"><SheetTitle>Filters</SheetTitle></SheetContent></Sheet>"
+          "code": "\u003cSheet\u003e\u003cSheetContent side=\"right\"\u003e\u003cSheetTitle\u003eFilters\u003c/SheetTitle\u003e\u003c/SheetContent\u003e\u003c/Sheet\u003e"
         }
       ],
       "antipatterns": [
@@ -1027,7 +1032,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Sheet><SheetContent side=\"right\"><SheetTitle>Filters</SheetTitle></SheetContent></Sheet>"
+          "code": "\u003cSheet\u003e\u003cSheetContent side=\"right\"\u003e\u003cSheetTitle\u003eFilters\u003c/SheetTitle\u003e\u003c/SheetContent\u003e\u003c/Sheet\u003e"
         }
       ],
       "antipatterns": [
@@ -1042,7 +1047,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Sheet><SheetContent side=\"right\"><SheetTitle>Filters</SheetTitle></SheetContent></Sheet>"
+          "code": "\u003cSheet\u003e\u003cSheetContent side=\"right\"\u003e\u003cSheetTitle\u003eFilters\u003c/SheetTitle\u003e\u003c/SheetContent\u003e\u003c/Sheet\u003e"
         }
       ],
       "antipatterns": [
@@ -1057,7 +1062,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Sheet><SheetContent side=\"right\"><SheetTitle>Filters</SheetTitle></SheetContent></Sheet>"
+          "code": "\u003cSheet\u003e\u003cSheetContent side=\"right\"\u003e\u003cSheetTitle\u003eFilters\u003c/SheetTitle\u003e\u003c/SheetContent\u003e\u003c/Sheet\u003e"
         }
       ],
       "antipatterns": [
@@ -1079,7 +1084,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Sheet><SheetContent side=\"right\"><SheetTitle>Filters</SheetTitle></SheetContent></Sheet>"
+          "code": "\u003cSheet\u003e\u003cSheetContent side=\"right\"\u003e\u003cSheetTitle\u003eFilters\u003c/SheetTitle\u003e\u003c/SheetContent\u003e\u003c/Sheet\u003e"
         }
       ],
       "antipatterns": [
@@ -1094,7 +1099,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Sheet><SheetContent side=\"right\"><SheetTitle>Filters</SheetTitle></SheetContent></Sheet>"
+          "code": "\u003cSheet\u003e\u003cSheetContent side=\"right\"\u003e\u003cSheetTitle\u003eFilters\u003c/SheetTitle\u003e\u003c/SheetContent\u003e\u003c/Sheet\u003e"
         }
       ],
       "antipatterns": [
@@ -1109,7 +1114,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Sheet><SheetContent side=\"right\"><SheetTitle>Filters</SheetTitle></SheetContent></Sheet>"
+          "code": "\u003cSheet\u003e\u003cSheetContent side=\"right\"\u003e\u003cSheetTitle\u003eFilters\u003c/SheetTitle\u003e\u003c/SheetContent\u003e\u003c/Sheet\u003e"
         }
       ],
       "antipatterns": [
@@ -1124,7 +1129,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Sheet><SheetContent side=\"right\"><SheetTitle>Filters</SheetTitle></SheetContent></Sheet>"
+          "code": "\u003cSheet\u003e\u003cSheetContent side=\"right\"\u003e\u003cSheetTitle\u003eFilters\u003c/SheetTitle\u003e\u003c/SheetContent\u003e\u003c/Sheet\u003e"
         }
       ],
       "antipatterns": [
@@ -1139,7 +1144,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Sheet><SheetContent side=\"right\"><SheetTitle>Filters</SheetTitle></SheetContent></Sheet>"
+          "code": "\u003cSheet\u003e\u003cSheetContent side=\"right\"\u003e\u003cSheetTitle\u003eFilters\u003c/SheetTitle\u003e\u003c/SheetContent\u003e\u003c/Sheet\u003e"
         }
       ],
       "antipatterns": [
@@ -1154,7 +1159,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Skeleton className=\"h-4 w-32\" />"
+          "code": "\u003cSkeleton className=\"h-4 w-32\" /\u003e"
         }
       ],
       "antipatterns": [
@@ -1169,7 +1174,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Tabs defaultValue=\"overview\">...</Tabs>"
+          "code": "\u003cTabs defaultValue=\"overview\"\u003e...\u003c/Tabs\u003e"
         }
       ],
       "antipatterns": [
@@ -1184,7 +1189,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Tabs defaultValue=\"overview\">...</Tabs>"
+          "code": "\u003cTabs defaultValue=\"overview\"\u003e...\u003c/Tabs\u003e"
         }
       ],
       "antipatterns": [
@@ -1199,7 +1204,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Tabs defaultValue=\"overview\">...</Tabs>"
+          "code": "\u003cTabs defaultValue=\"overview\"\u003e...\u003c/Tabs\u003e"
         }
       ],
       "antipatterns": [
@@ -1214,7 +1219,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Tabs defaultValue=\"overview\">...</Tabs>"
+          "code": "\u003cTabs defaultValue=\"overview\"\u003e...\u003c/Tabs\u003e"
         }
       ],
       "antipatterns": [
@@ -1229,7 +1234,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<Toaster />"
+          "code": "\u003cToaster /\u003e"
         }
       ],
       "antipatterns": [
@@ -1244,7 +1249,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<TooltipProvider><Tooltip>...</Tooltip></TooltipProvider>"
+          "code": "\u003cTooltipProvider\u003e\u003cTooltip\u003e...\u003c/Tooltip\u003e\u003c/TooltipProvider\u003e"
         }
       ],
       "antipatterns": [
@@ -1259,7 +1264,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<TooltipProvider><Tooltip>...</Tooltip></TooltipProvider>"
+          "code": "\u003cTooltipProvider\u003e\u003cTooltip\u003e...\u003c/Tooltip\u003e\u003c/TooltipProvider\u003e"
         }
       ],
       "antipatterns": [
@@ -1274,7 +1279,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<TooltipProvider><Tooltip>...</Tooltip></TooltipProvider>"
+          "code": "\u003cTooltipProvider\u003e\u003cTooltip\u003e...\u003c/Tooltip\u003e\u003c/TooltipProvider\u003e"
         }
       ],
       "antipatterns": [
@@ -1289,7 +1294,7 @@
       "examples": [
         {
           "label": "Default",
-          "code": "<TooltipProvider><Tooltip>...</Tooltip></TooltipProvider>"
+          "code": "\u003cTooltipProvider\u003e\u003cTooltip\u003e...\u003c/Tooltip\u003e\u003c/TooltipProvider\u003e"
         }
       ],
       "antipatterns": [
@@ -1316,7 +1321,7 @@
       "examples": [
         {
           "label": "Sort menu",
-          "code": "<Select value={sort} onValueChange={setSort}>\n  <SelectTrigger aria-label=\"Sort by\">\n    <SelectValue placeholder=\"Choose sort order\" />\n  </SelectTrigger>\n  <SelectContent>\n    <SelectItem value=\"newest\">Newest first</SelectItem>\n    <SelectItem value=\"name\">Name</SelectItem>\n  </SelectContent>\n</Select>"
+          "code": "\u003cSelect value={sort} onValueChange={setSort}\u003e\n  \u003cSelectTrigger aria-label=\"Sort by\"\u003e\n    \u003cSelectValue placeholder=\"Choose sort order\" /\u003e\n  \u003c/SelectTrigger\u003e\n  \u003cSelectContent\u003e\n    \u003cSelectItem value=\"newest\"\u003eNewest first\u003c/SelectItem\u003e\n    \u003cSelectItem value=\"name\"\u003eName\u003c/SelectItem\u003e\n  \u003c/SelectContent\u003e\n\u003c/Select\u003e"
         }
       ],
       "antipatterns": [
@@ -1465,7 +1470,7 @@
       "examples": [
         {
           "label": "Pick teams",
-          "code": "<MultiSelect\n  options={teams}\n  value={selected}\n  onValueChange={setSelected}\n  placeholder=\"Team members\"\n  searchPlaceholder=\"Search people\"\n/>"
+          "code": "\u003cMultiSelect\n  options={teams}\n  value={selected}\n  onValueChange={setSelected}\n  placeholder=\"Team members\"\n  searchPlaceholder=\"Search people\"\n/\u003e"
         }
       ],
       "antipatterns": [
@@ -1497,7 +1502,7 @@
       "examples": [
         {
           "label": "Row selection",
-          "code": "<Checkbox checked={selected} onCheckedChange={toggle}\n  aria-label=\"Select row\" />"
+          "code": "\u003cCheckbox checked={selected} onCheckedChange={toggle}\n  aria-label=\"Select row\" /\u003e"
         }
       ],
       "antipatterns": [
@@ -1534,7 +1539,7 @@
       "examples": [
         {
           "label": "Sortable table",
-          "code": "<Table hoverable stickyHeader>\n  <TableHeader>\n    <TableRow>\n      <TableHead sortable sortDirection=\"ascending\" onSort={toggleSort}>Name</TableHead>\n      <TableHead>Value</TableHead>\n    </TableRow>\n  </TableHeader>\n  <TableBody>{rows.map(...)}</TableBody>\n</Table>"
+          "code": "\u003cTable hoverable stickyHeader\u003e\n  \u003cTableHeader\u003e\n    \u003cTableRow\u003e\n      \u003cTableHead sortable sortDirection=\"ascending\" onSort={toggleSort}\u003eName\u003c/TableHead\u003e\n      \u003cTableHead\u003eValue\u003c/TableHead\u003e\n    \u003c/TableRow\u003e\n  \u003c/TableHeader\u003e\n  \u003cTableBody\u003e{rows.map(...)}\u003c/TableBody\u003e\n\u003c/Table\u003e"
         }
       ],
       "antipatterns": [
@@ -1625,7 +1630,7 @@
       "examples": [
         {
           "label": "Requirement level",
-          "code": "<ToggleGroup type=\"single\" value={mode} onValueChange={setMode} fullWidth aria-label=\"Requirement\">\n  <ToggleGroupItem value=\"off\">Off</ToggleGroupItem>\n  <ToggleGroupItem value=\"preferred\">Preferred</ToggleGroupItem>\n  <ToggleGroupItem value=\"required\">Required</ToggleGroupItem>\n</ToggleGroup>"
+          "code": "\u003cToggleGroup type=\"single\" value={mode} onValueChange={setMode} fullWidth aria-label=\"Requirement\"\u003e\n  \u003cToggleGroupItem value=\"off\"\u003eOff\u003c/ToggleGroupItem\u003e\n  \u003cToggleGroupItem value=\"preferred\"\u003ePreferred\u003c/ToggleGroupItem\u003e\n  \u003cToggleGroupItem value=\"required\"\u003eRequired\u003c/ToggleGroupItem\u003e\n\u003c/ToggleGroup\u003e"
         }
       ],
       "antipatterns": [
@@ -1677,7 +1682,7 @@
       "examples": [
         {
           "label": "Top navigation",
-          "code": "<NavMenu aria-label=\"Main\">\n  <NavItem asChild active={isHome}><Link to=\"/\">Overview</Link></NavItem>\n  <NavItem asChild><Link to=\"/settings\">Settings</Link></NavItem>\n</NavMenu>"
+          "code": "\u003cNavMenu aria-label=\"Main\"\u003e\n  \u003cNavItem asChild active={isHome}\u003e\u003cLink to=\"/\"\u003eOverview\u003c/Link\u003e\u003c/NavItem\u003e\n  \u003cNavItem asChild\u003e\u003cLink to=\"/settings\"\u003eSettings\u003c/Link\u003e\u003c/NavItem\u003e\n\u003c/NavMenu\u003e"
         }
       ],
       "antipatterns": [
@@ -1711,7 +1716,7 @@
       "examples": [
         {
           "label": "Active link",
-          "code": "<NavItem asChild active={current === \"report\"}>\n  <Link to=\"/report\">Report</Link>\n</NavItem>"
+          "code": "\u003cNavItem asChild active={current === \"report\"}\u003e\n  \u003cLink to=\"/report\"\u003eReport\u003c/Link\u003e\n\u003c/NavItem\u003e"
         }
       ],
       "antipatterns": [
@@ -1801,12 +1806,88 @@
     },
     {
       "name": "Lightbox",
-      "import": "import { Lightbox } from \"@/design-system/refined-modern-tech\";",
+      "file": "src/design-system/components/lightbox",
+      "import_path": "",
+      "props": [
+        {
+          "name": "images",
+          "type": "any",
+          "required": true
+        },
+        {
+          "name": "open",
+          "type": "boolean"
+        },
+        {
+          "name": "defaultOpen",
+          "type": "boolean"
+        },
+        {
+          "name": "onOpenChange",
+          "type": "function"
+        },
+        {
+          "name": "index",
+          "type": "number"
+        },
+        {
+          "name": "defaultIndex",
+          "type": "number",
+          "default": "0"
+        },
+        {
+          "name": "onIndexChange",
+          "type": "function"
+        },
+        {
+          "name": "trigger",
+          "type": "any"
+        },
+        {
+          "name": "title",
+          "type": "string",
+          "default": "Image viewer"
+        },
+        {
+          "name": "showThumbnails",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "loop",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "previousLabel",
+          "type": "string",
+          "default": "Previous image"
+        },
+        {
+          "name": "nextLabel",
+          "type": "string",
+          "default": "Next image"
+        },
+        {
+          "name": "closeLabel",
+          "type": "string",
+          "default": "Close viewer"
+        },
+        {
+          "name": "formatCounter",
+          "type": "function"
+        },
+        {
+          "name": "className",
+          "type": "string",
+          "default": "motion-overlay fixed inset-0 z-50 bg-background/90"
+        }
+      ],
       "usage": "Use to view a set of images large and page through them. Controls, counter and close button stay in fixed positions regardless of image shape.",
       "examples": [
         {
           "label": "Gallery",
-          "code": "<Lightbox images={images} open={open} onOpenChange={setOpen} index={index} onIndexChange={setIndex} showThumbnails />"
+          "code": "\u003cLightbox images={images} open={open} onOpenChange={setOpen} index={index} onIndexChange={setIndex} showThumbnails /\u003e"
         }
       ],
       "antipatterns": [

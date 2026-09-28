@@ -7,7 +7,6 @@ import { Checkbox } from '../design-system/components/checkbox';
 import { MultiSelect, type MultiSelectOption } from '../design-system/components/multi-select';
 import { NavItem, NavMenu } from '../design-system/components/nav-menu';
 import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectSeparator, SelectTrigger, SelectValue } from '../design-system/components/select';
-import { Skeleton } from '../design-system/components/skeleton';
 import { Table, TableBody, TableCaption, TableCell, TableEmptyState, TableHead, TableHeader, TableRow } from '../design-system/components/table';
 import { ToggleGroup, ToggleGroupItem } from '../design-system/components/toggle-group';
 
@@ -106,7 +105,7 @@ export function MenuComponents() {
 
     <Section name="Table" description="Comparable rows with sortable headers, two densities, and a horizontal scroll on narrow screens." code={'import { Table, TableHeader, TableBody, TableRow, TableHead, TableCell } from "@/design-system/refined-modern-tech";\n<Table density="compact">\n  <TableHeader><TableRow>\n    <TableHead sortable sortDirection={direction} onSort={toggle}>Page</TableHead>\n    <TableHead>Views</TableHead>\n  </TableRow></TableHeader>\n  <TableBody><TableRow><TableCell>Overview</TableCell><TableCell>1 284</TableCell></TableRow></TableBody>\n</Table>'}>
       <div className="mb-4 flex flex-wrap items-center gap-3">
-        <ToggleGroup aria-label="Table density" value={[density]} onValueChange={([value]) => setDensity((value as 'comfortable' | 'compact') ?? 'comfortable')}><ToggleGroupItem value="comfortable">Comfortable</ToggleGroupItem><ToggleGroupItem value="compact">Compact</ToggleGroupItem></ToggleGroup>
+        <ToggleGroup type="single" aria-label="Table density" value={density} onValueChange={value => setDensity(value === 'compact' ? 'compact' : 'comfortable')}><ToggleGroupItem value="comfortable">Comfortable</ToggleGroupItem><ToggleGroupItem value="compact">Compact</ToggleGroupItem></ToggleGroup>
         <Badge variant="secondary">{sorted.length} rows</Badge>
       </div>
       <Table density={density} stickyHeader><TableCaption>Pages in the last 30 days.</TableCaption><TableHeader><TableRow>

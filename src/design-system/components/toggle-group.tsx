@@ -13,7 +13,7 @@ const itemStyles = cva('motion-press inline-flex shrink-0 items-center justify-c
 });
 
 /** Use for two to five mutually exclusive options that should all stay visible, such as a view mode. Example: <ToggleGroup type="single" value={mode} onValueChange={setMode}>…</ToggleGroup>. Do not use when the list is long or the choice is not compared side by side; use Select. */
-export type ToggleGroupProps = Omit<ComponentPropsWithoutRef<typeof ToggleGroupPrimitive.Root>, 'type'> & { type?: 'single' | 'multiple' } & VariantProps<typeof groupStyles> & { fullWidth?: boolean };
+export type ToggleGroupProps = ComponentPropsWithoutRef<typeof ToggleGroupPrimitive.Root> & VariantProps<typeof groupStyles> & { fullWidth?: boolean };
 export const ToggleGroup = forwardRef<ComponentRef<typeof ToggleGroupPrimitive.Root>, ToggleGroupProps>(function ToggleGroup({ className, variant, fullWidth, children, ...props }, ref) {
   return <ToggleGroupPrimitive.Root ref={ref} className={cn(groupStyles({ variant, fullWidth }), className)} {...props}>{children}</ToggleGroupPrimitive.Root>;
 });

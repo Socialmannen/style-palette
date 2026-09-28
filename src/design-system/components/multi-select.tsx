@@ -73,7 +73,7 @@ export function MultiSelect({ options, value, onValueChange, placeholder = 'Sele
           <CommandEmpty>{loading ? '' : emptyMessage}</CommandEmpty>
           {loading && <div className="space-y-2 p-3">{[0, 1, 2].map(row => <Skeleton key={row} className="h-6 w-full" />)}</div>}
           <CommandGroup>
-            {options.map(option => <CommandItem key={option.value} value={option.value} text={option.label} disabled={option.disabled} onSelect={() => toggle(option)} className="gap-2">
+            {options.map(option => <CommandItem key={option.value} value={option.value} keywords={[option.label]} disabled={option.disabled} onSelect={() => toggle(option)} className="gap-2">
               <span className="flex size-4 shrink-0 items-center justify-center rounded-sm border border-input" aria-hidden="true">{value.includes(option.value) && <Check className="size-3 text-primary" />}</span>
               <span className="min-w-0 flex-1 truncate">{option.label}</span>
               {option.hint && <span className="shrink-0 text-xs text-muted-foreground">{option.hint}</span>}

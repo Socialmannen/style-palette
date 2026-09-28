@@ -39,7 +39,7 @@ export interface TableHeadProps extends ThHTMLAttributes<HTMLTableCellElement> {
 export const TableHead = forwardRef<HTMLTableCellElement, TableHeadProps>(function TableHead({ className, children, sortable, sortDirection = 'none', onSort, ...props }, ref) {
   const { density, stickyHeader } = useContext(TableContext);
   const base = cn('border-b border-border text-left align-middle font-semibold text-muted-foreground', density === 'compact' ? 'px-3 py-2' : 'px-4 py-3', stickyHeader && 'sticky top-0 z-10 bg-background');
-  if (sortable) return <th ref={ref} aria-sort={sortDirection} className={cn(base, className)} {...props}>
+  if (sortable) return <th ref={ref} aria-sort={sortDirection === 'asc' ? 'ascending' : sortDirection === 'desc' ? 'descending' : 'none'} className={cn(base, className)} {...props}>
     <button type="button" onClick={onSort} className="motion-fast -mx-1.5 inline-flex items-center gap-1.5 rounded-sm px-1.5 py-0.5 text-inherit outline-none hover:text-foreground focus-visible:ring-2 focus-visible:ring-ring">{children}{sortDirection === 'asc' ? <ArrowUp className="size-3.5 text-primary" aria-hidden="true" /> : sortDirection === 'desc' ? <ArrowDown className="size-3.5 text-primary" aria-hidden="true" /> : <ArrowUpDown className="size-3.5 opacity-50" aria-hidden="true" />}</button>
   </th>;
   return <th ref={ref} className={cn(base, className)} {...props}>{children}</th>;

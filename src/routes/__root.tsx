@@ -1,3 +1,5 @@
+import { Toaster } from "../design-system/components/toast";
+import { TooltipProvider } from "../design-system/components/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import {
   Outlet,
@@ -105,7 +107,10 @@ function RootShell({ children }: { children: ReactNode }) {
         <HeadContent />
       </head>
       <body>
-        {children}
+        <TooltipProvider>
+          {children}
+          <Toaster />
+        </TooltipProvider>
         <Scripts />
       </body>
     </html>

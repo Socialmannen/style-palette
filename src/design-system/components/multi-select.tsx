@@ -53,9 +53,9 @@ export function MultiSelect({ options, value, onValueChange, placeholder = 'Sele
   return <Popover open={disabled ? false : open} onOpenChange={setOpen}>
     <div className={cn('relative min-h-10 w-full rounded-md border border-input bg-card text-sm text-foreground', disabled && 'cursor-not-allowed opacity-40', aria['aria-invalid'] && 'border-destructive', className)}>
       <div className="flex flex-wrap items-center gap-1.5 py-1.5 pl-3 pr-9">
-        {visible.map(option => <span key={option.value} className="motion-content relative z-10 inline-flex max-w-full items-center gap-1 rounded-sm bg-secondary py-0.5 pl-2 pr-1 text-xs font-medium text-secondary-foreground">
+        {visible.map(option => <span key={option.value} className="motion-content inline-flex max-w-full items-center gap-1 rounded-sm bg-secondary py-0.5 pl-2 pr-1 text-xs font-medium text-secondary-foreground">
           <span className="truncate">{option.label}</span>
-          <button type="button" disabled={disabled} onClick={event => { event.stopPropagation(); remove(option); }} aria-label={`Remove ${option.label}`} className="motion-fast flex size-4 items-center justify-center rounded-sm text-muted-foreground outline-none hover:bg-muted hover:text-foreground focus-visible:ring-2 focus-visible:ring-ring"><X className="size-3" aria-hidden="true" /></button>
+          <button type="button" disabled={disabled} onClick={event => { event.stopPropagation(); remove(option); }} aria-label={`Remove ${option.label}`} className="motion-fast relative z-10 flex size-4 items-center justify-center rounded-sm text-muted-foreground outline-none hover:bg-muted hover:text-foreground focus-visible:ring-2 focus-visible:ring-ring"><X className="size-3" aria-hidden="true" /></button>
         </span>)}
         {hiddenCount > 0 && <Badge variant="outline" className="text-xs">{formatOverflow(hiddenCount)}</Badge>}
         {showCount && selected.length > 0 && <Badge variant="secondary" className="text-xs">{selected.length}</Badge>}

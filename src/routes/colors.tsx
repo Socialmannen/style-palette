@@ -83,6 +83,10 @@ function runContrastAudit(): AuditResult {
   if (!context) return {};
 
   const results: AuditResult = {};
+  // The probe inherits custom properties from <html>, so a lingering `dark`
+  // class would corrupt the light-mode columns. Measure in a known state.
+  const hadDarkClass = document.documentElement.classList.contains('dark');
+  document.documentElement.classList.remove('dark');
   for (const { palette, mode } of auditColumns) {
     const scope = document.createElement('div');
     scope.dataset['palette'] = palette.id;
@@ -97,6 +101,7 @@ function runContrastAudit(): AuditResult {
     }
     scope.remove();
   }
+  if (hadDarkClass) document.documentElement.classList.add('dark');
   return results;
 }
 

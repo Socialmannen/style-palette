@@ -1,8 +1,8 @@
 {
   "meta": {
     "name": "Style Palette",
-    "package": "@ws-aab1cf40a2c2aac8fc7d/808b6dd1-c31e-4eb1-acb2-ee755afb07f1",
-    "version": "1.5.0",
+    "package": "@ws-fd942211f6d04ab19ea3/808b6dd1-c31e-4eb1-acb2-ee755afb07f1",
+    "version": "1.6.0",
     "framework": "react",
     "css_framework": "tailwind",
     "starter_template": "custom_design_system",
@@ -54,7 +54,7 @@
       "src/design-system/components/dropdown-menu.tsx": "fdbd3e25adf68358ed62854eaa5e82be",
       "src/design-system/components/input.tsx": "f27ef4db19cb0d83964ac56f2fcac57a",
       "src/design-system/components/lightbox.tsx": "a20d26cbf67b0aa2068580c682a60741",
-      "src/design-system/components/multi-select.tsx": "ea793d915e7087dc49abc8e1037224ca",
+      "src/design-system/components/multi-select.tsx": "b8ca4209ddebfb4ee7840466e7d6c9be",
       "src/design-system/components/nav-menu.tsx": "183c54bbd9173d4e41e2cfa7bcf96f07",
       "src/design-system/components/popover.tsx": "dfbb4b262bf63d1cc5998cbabf78d024",
       "src/design-system/components/progress.tsx": "a35180316abe999fe513bcebfda5515f",
@@ -80,7 +80,7 @@
       "src/router.tsx": "8f905e713b0eba7fa8148b7995a708c9",
       "src/routes/README.md": "b3a2f259b66fd1a11f54b6d5ac83bf57",
       "src/routes/__root.tsx": "185221750d8f1f40d7d142d1ccacfd34",
-      "src/routes/colors.tsx": "6bfc1fa840f56e136d5ab5a742059923",
+      "src/routes/colors.tsx": "07c4b45a4736b2b897c306d4374de4d8",
       "src/routes/components.tsx": "2d8389a3b0933584a8c72fd32d3a9887",
       "src/routes/index.tsx": "33ac4142215d36c748a1ab1a230f5875",
       "src/routes/typography.tsx": "d4065f467dee05ab5c124d515787a8eb",

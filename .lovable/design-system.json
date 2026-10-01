@@ -270,7 +270,7 @@
       },
       {
         "name": "--motion-duration-progress",
-        "raw": "1200ms",
+        "raw": "2000ms",
         "source": "src/design-system/styles/theme.css"
       },
       {

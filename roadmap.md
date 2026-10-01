@@ -7,3 +7,4 @@
 - [x] Add generic Select, MultiSelect, Checkbox, Table, ToggleGroup, and NavMenu primitives with showcase sections, exports, and verification.
 - [ ] Release a new design system version so attached projects receive the new controls.
 - [x] ChoiceDialog: generic single/multiple choice dialog
+- [x] Give Skeleton its own slower motion token and a clear loading example in the component showcase.

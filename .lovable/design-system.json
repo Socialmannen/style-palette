@@ -274,6 +274,11 @@
         "source": "src/design-system/styles/theme.css"
       },
       {
+        "name": "--motion-duration-skeleton",
+        "raw": "680ms",
+        "source": "src/design-system/styles/theme.css"
+      },
+      {
         "name": "--motion-ease-standard",
         "raw": "cubic-bezier(0.2, 0, 0, 1)",
         "source": "src/design-system/styles/theme.css"

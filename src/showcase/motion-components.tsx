@@ -59,7 +59,7 @@ export function MotionComponents() {
     </MotionSection>
 
     <MotionSection name="Skeleton" description="Reduced-motion-aware loading placeholders that mirror the incoming content.">
-      <div className="max-w-md rounded-md border border-border bg-card p-5"><div className="flex items-center gap-4"><Skeleton className="size-11 rounded-full" /><div className="flex-1 space-y-2"><Skeleton className="h-4 w-36" /><Skeleton className="h-3 w-56 max-w-full" /></div></div><Skeleton className="mt-5 h-20 w-full" /></div>
+      <div className="max-w-md"><p className="mb-3 text-xs font-medium text-muted-foreground">Activity update · loading</p><div role="status" aria-label="Loading activity update" className="rounded-md border border-border bg-card p-5"><div aria-hidden="true"><div className="flex items-center gap-4"><Skeleton className="size-12 shrink-0 rounded-full" /><div className="min-w-0 flex-1 space-y-3"><Skeleton className="h-4 w-32 max-w-full" /><Skeleton className="h-3 w-20 max-w-full" /></div></div><div className="mt-6 space-y-3"><Skeleton className="h-3 w-full" /><Skeleton className="h-3 w-4/5" /><Skeleton className="h-3 w-2/3" /></div><Skeleton className="mt-6 h-28 w-full" /></div></div></div>
     </MotionSection>
 
     <MotionSection name="Progress" description="Smooth determinate progress and a restrained indeterminate state.">

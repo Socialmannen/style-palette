@@ -78,7 +78,7 @@
   --motion-duration-normal: 220ms;
   --motion-duration-slow: 340ms;
   --motion-duration-spinner: 780ms;
-  --motion-duration-progress: 1200ms;
+  --motion-duration-progress: 2000ms;
   --motion-duration-skeleton: 680ms;
   --motion-ease-standard: cubic-bezier(0.2, 0, 0, 1);
   --motion-ease-enter: cubic-bezier(0, 0, 0.2, 1);

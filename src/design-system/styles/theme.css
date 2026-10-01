@@ -90,7 +90,7 @@
   --motion-overlay-blur: 2px;
 }
 [data-motion-speed="fast"] { --motion-duration-fast: 90ms; --motion-duration-normal: 150ms; --motion-duration-slow: 240ms; --motion-duration-spinner: 620ms; --motion-duration-progress: 1500ms; --motion-duration-skeleton: 480ms; }
-[data-motion-speed="slow"] { --motion-duration-fast: 190ms; --motion-duration-normal: 300ms; --motion-duration-slow: 460ms; --motion-duration-spinner: 980ms; --motion-duration-progress: 1600ms; --motion-duration-skeleton: 920ms; }
+[data-motion-speed="slow"] { --motion-duration-fast: 190ms; --motion-duration-normal: 300ms; --motion-duration-slow: 460ms; --motion-duration-spinner: 980ms; --motion-duration-progress: 2700ms; --motion-duration-skeleton: 920ms; }
 [data-motion="expressive"] { --motion-distance: 0.75rem; --motion-scale-start: 0.94; --motion-press-y: 2px; --motion-press-scale: 0.985; }
 [data-motion="none"] { --motion-duration-fast: 1ms; --motion-duration-normal: 1ms; --motion-duration-slow: 1ms; --motion-duration-spinner: 1ms; --motion-duration-progress: 1ms; --motion-duration-skeleton: 1ms; --motion-distance: 0rem; --motion-scale-start: 1; --motion-press-y: 0px; --motion-press-scale: 1; --motion-overlay-blur: 0px; }
 .dark {

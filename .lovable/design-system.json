@@ -2,7 +2,7 @@
   "meta": {
     "name": "Style Palette",
     "package": "@ws-0c85c6ec0d681ca902ae/808b6dd1-c31e-4eb1-acb2-ee755afb07f1",
-    "version": "1.7.0",
+    "version": "1.7.1",
     "framework": "react",
     "css_framework": "tailwind",
     "starter_template": "custom_design_system",
@@ -69,7 +69,7 @@
       "src/design-system/components/toggle-group.tsx": "1e1a69628bd420a2be36a6cae366ca31",
       "src/design-system/components/tooltip.tsx": "ad2603b70ad17eddb72bb8e5f3cb52b1",
       "src/design-system/lib.ts": "68b1b903329d1d880bf000551a84bc6f",
-      "src/design-system/styles/theme.css": "87984cb6ab3766cf51de4458f379e20d",
+      "src/design-system/styles/theme.css": "f263e1c0ec0ad0a4a87c38b0e6e81dd5",
       "src/hooks/use-mobile.tsx": "c0a0bdd4638c391a1dd06ac82074e60b",
       "src/index.ts": "0a156a3da03dd7dd1084760016efb320",
       "src/lib/error-capture.ts": "f630d9686a9a989170f22eff4de7b30d",
